@@ -85,9 +85,33 @@ fieldset{
     }
 }
 
+/* Pills */
+ul.pillBox,
+ul.pillBox li{
+  list-style-position:inside;
+  margin:0px;
+  list-style:none;
+}
+
+ul.pillBox{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  padding:0px;
+  gap:0.5rem;
+}
+
+li.pill{
+  display:block;
+  padding:0.1rem 0.25rem;
+  border:1px solid red;
+  font-family:'FraktionMono';
+  font-size:0.75rem;
+  font-weight:600;
+}
+
 /* Database */
 #DatabaseContentLayout{
-
     display:grid;
     grid-template-columns:300px 1fr;
 
@@ -157,24 +181,26 @@ input.filterValue{
 
 /* for cards */
 
-.ContentContainer ul,
-.ContentContainer li{
+.ContentContainer>ul,
+.ContentContainer>ul>li{
   list-style-position:inside;
   margin:0px;
   list-style:none;
   padding:0px;
 }
 
-.ContentContainer ul{
+.ContentContainer>ul{
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
   gap:10px;
 }
-.ContentContainer li{
+.ContentContainer>ul>li{
   display:block;
   border:2px solid gray;
   padding:1rem;
 }
+
+/* Map */
 
 /* Map Selector */
 .mapContainer{
@@ -252,6 +278,18 @@ input.filterValue{
     }
 }
 
+/* Map Content */
+#CaseStudies{
+}
+
+#CaseStudies .CaseStudyItem{
+  margin:1rem 0;
+}
+
+.ExpandRuleBox:has(>label>input:not(:checked)) .ContentArea > .MoreInfo{
+  display:none;
+}
+
 /* Epanding Rule */
 .ExpandRuleBox{
     display:flex;
@@ -272,8 +310,8 @@ input.filterValue{
     border-width:0 0 0 0;
 
     &.FlagLeft{
+        align-self:stretch;
         border-width:0 var(--BorderWidth) 0 0;
-        height:100%;
     }
 
     &:has(>input:checked){

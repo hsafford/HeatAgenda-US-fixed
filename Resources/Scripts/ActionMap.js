@@ -275,8 +275,11 @@ mapSelect.addEventListener('change', (e) => {
   if(!e.target.classList.contains('filterValue')) return;
 
   const selectedState = e.target.value;
+  updateContentStates(selectedState);
   updateMapSelectionTitle(selectedState);
 })
+
+
 
 const mapTitle = document.querySelector('#map-title');
 const mapTitleSelection = mapTitle.querySelector('#MapSelection');
@@ -285,5 +288,48 @@ function updateMapSelectionTitle(newSelection){
 }
 
 const mapContainer = document.querySelector('.mapContainer')
-mapContainer.prepend(Cmpnt.ExpandRule())
+mapContainer.prepend(Cmpnt.ExpandRule({Expanded: true}))
 
+const ContentContainer = document.querySelector('#CaseStudies')
+Parser.Data.CaseStudies.forEach((study) => {
+    
+    const AssociatedStatesArr = study.State.split(', ');
+    
+    const LocationPills = [];
+    AssociatedStatesArr.forEach((state) => {
+        const pill = Cmpnt.locationPill({ State: state })
+        LocationPills.push(pill);
+    });
+
+    const SourceTitles = study['Link Title'] ? study['Link Title'].split(', ') : [];
+    const SourceUrls = study['Link Url'] ? study['Link Url'].split(', ') : [];
+
+    const Sources = SourceTitles.map((title, index) => ({
+        Title: title,
+        Url: SourceUrls[index] || ''
+    }));
+
+    const item = Cmpnt.caseStudyItem({
+        Title: study['Case Study Title'],
+        LocationPills: LocationPills,
+        DescriptionText: study['Description'],
+        Sources: Sources
+    })
+
+
+    ContentContainer.appendChild(item)
+})
+function updateContentStates(State){
+    const filterIn = ContentContainer.querySelectorAll(':scope > *:has([data-state="' + State + '"])')
+    const filterOut = ContentContainer.querySelectorAll(':scope > *:not(:has([data-state="' + State + '"]))')
+    if (filterOut) {
+        filterOut.forEach((element) => {
+            element.style.display = "none"
+        });
+    }
+    if(filterIn){
+        filterIn.forEach((element) => {
+            element.style.display = ""
+        });
+    }
+}

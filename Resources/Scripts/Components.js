@@ -122,12 +122,13 @@ export const StateBox =({State=null, Abbreviation=null, Pos=null}={} )=>{
   return label
 }
 
-export const ExpandRule =(Direction='Left')=>{
+export const ExpandRule =({Direction='Left', Expanded=false}={})=>{
     let RuleLabel = document.createElement('label')
     RuleLabel.classList.add(`Flag${Direction}`)
 
     let RuleInput = document.createElement('input')
     RuleInput.type = 'checkbox'
+    RuleInput.checked = Expanded
 
     let RuleFlag = document.createElement('span')
     RuleFlag.classList.add('RuleFlag')
@@ -144,22 +145,115 @@ export const ExpandRuleBox =()=>{
     const RuleToggle = ExpandRule()
 
     let ContentArea = document.createElement('div')
-
-    ExpandRuleBox.append(RuleLabel)
+    ContentArea.classList.add('ContentArea')
+    ExpandRuleBox.append(RuleToggle)
     ExpandRuleBox.append(ContentArea)
 
     return ExpandRuleBox
 }
 
-export function ProcessExpandRuleBox(){
-    
-}
-
 export function addContent(Container, Content){
-    let ContentArea = Container.querySelector("> .ContentArea")
+    let ContentArea = Container.querySelector(":scope > .ContentArea")
     if(!ContentArea){throw new Error("ContentArea not found")}
 
     ContentArea.appendChild(Content)
 
     
+}
+
+const pill =()=>{
+    const pill = document.createElement("li")
+    pill.classList.add("pill")
+
+    return pill
+}
+
+export const pillBox =()=>{
+    const pillBox = document.createElement('ul')
+    pillBox.classList.add('pillBox')
+    return pillBox
+}
+
+export const locationPill =({State=null, Local=null}={})=>{
+    const newPill = pill()
+
+    if(State){
+        const StateText = document.createElement('span')
+        StateText.textContent = State
+        newPill.appendChild(StateText)
+        newPill.dataset.state = State
+    }
+    if(Local){
+        const LocalText = document.createElement('span')
+        LocalText.textContent = Local
+        newPill.appendChild(LocalText)
+        newPill.dataset.local = Local
+    }
+    return newPill
+}
+
+const caseStudyItemTaxonomyItem = ({ TaxonomyName = "Taxonomy", Value = "Value" } = {}) => {
+    const item = document.createElement('span');
+    item.classList.add('TaxonomyItem');
+    item.dataset.taxonomy = TaxonomyName
+    item.innerHTML = `<p>${Value}</p>`
+    return item;
+};
+
+export const caseStudyItem =({
+    Title="Title",
+    LocationPills=[],
+    DescriptionText="Description",
+    Sources=[],
+    Pillar="Pillar",
+    Recc="Policy Recommendation",
+    PType="Policy Type"
+}={})=>{
+
+    const CaseStudyItem = ExpandRuleBox()
+    CaseStudyItem.classList.add('CaseStudyItem')
+
+    const CaseStudyInfo = document.createElement('div')
+    CaseStudyInfo.classList.add('CaseStudyInfo')
+    
+    const CaseStudyTitle = document.createElement('h4')
+    CaseStudyTitle.textContent = Title
+
+    const LocationPillsContainer = pillBox()
+    LocationPills.forEach((pill) => {
+        LocationPillsContainer.appendChild(pill)
+    })
+
+    const Taxonomy = document.createElement('div')
+    Taxonomy.classList.add('Taxonomy')
+
+    const MoreInfo = document.createElement('div')
+    MoreInfo.classList.add('MoreInfo')
+
+    const Description = document.createElement('p')
+    Description.textContent = DescriptionText
+    MoreInfo.append(Description)
+
+    const SourcesList = document.createElement('div')
+    SourcesList.classList.add('Sources')
+    const SourcesTitle = document.createElement('h4')
+    SourcesTitle.textContent = 'Sources'
+
+    SourcesList.append(SourcesTitle)
+    Sources.forEach((source) => {
+        const SourceItem = document.createElement('a')
+        SourceItem.textContent = source.Title
+        SourceItem.href = source.Url
+        SourceItem.target = "_blank"
+        SourcesList.appendChild(SourceItem)
+    })
+    MoreInfo.append(SourcesList)
+
+    CaseStudyInfo.appendChild(CaseStudyTitle)
+    CaseStudyInfo.appendChild(LocationPillsContainer)
+
+
+    addContent(CaseStudyItem, CaseStudyInfo)
+    addContent(CaseStudyItem, MoreInfo)
+    return CaseStudyItem
 }
