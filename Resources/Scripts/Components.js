@@ -156,9 +156,7 @@ export function addContent(Container, Content){
     let ContentArea = Container.querySelector(":scope > .ContentArea")
     if(!ContentArea){throw new Error("ContentArea not found")}
 
-    ContentArea.appendChild(Content)
-
-    
+    ContentArea.appendChild(Content)   
 }
 
 const pill =()=>{
@@ -266,3 +264,215 @@ export const caseStudyItem =({
     addContent(CaseStudyItem, MoreInfo)
     return CaseStudyItem
 }
+
+const DrillDownFilterMenuItem = (value)=>{
+    const MenuItem = document.createElement('button')
+    MenuItem.value = value;
+    MenuItem.textContent = value
+    MenuItem.classList.add("DrillDownFilterMenuItem")
+    return MenuItem
+}
+
+const DrillDownFilterMenuSection = ({Taxonomy=null, level=1}={}) => {
+    const Section = document.createElement('ul')
+    Section.classList.add('DrillDownFilterMenuSection')
+    Section.dataset.taxonomy = Taxonomy
+    Section.dataset.level = level
+
+    return Section
+}
+
+const DrillDownFilterMenu = (TaxonomyList) => {
+    const FilterMenu = document.createElement('div')
+    FilterMenu.classList.add('DrillDownFilterMenu')
+
+    TaxonomyList.forEach((taxonomy,i) => {
+        const level = i+1
+        let Section = DrillDownFilterMenuSection({Taxonomy:taxonomy, level:level})
+        if(level === 1){
+            populateMenuSection({
+                MenuSection:Section,
+                Taxonomy:taxonomy
+            })
+        }
+
+        FilterMenu.append(Section)
+    })
+
+
+
+    return FilterMenu
+}
+
+function populateMenuSection({
+    MenuSection=null,
+    Dataset=Parser.Data.PolicyDataBase,
+    ParentTaxonomy=null,
+    ParentValue=null,
+    Taxonomy=null,
+    Value=null
+}={}){
+
+    let values
+
+    if(!ParentTaxonomy || !ParentValue){
+        values = Parser.getUnique(Dataset, Taxonomy)
+    }
+
+    if(ParentTaxonomy && ParentValue){
+        values = Parser.getAssociated(Dataset, ParentTaxonomy, ParentValue, Taxonomy)
+    }
+
+    values.forEach((value)=>{
+        const MenuItem = DrillDownFilterMenuItem(value)
+        MenuSection.append(MenuItem)
+    })
+}
+
+const DrillDownFilterNavItem =({Name, Taxonomy, Level=1}={})=>{
+    const NavItem = document.createElement('button')
+    NavItem.classList.add('DrillDownFilterNavItem')
+    NavItem.value = Name
+    NavItem.dataset.level = Level
+    NavItem.dataset.taxonomy = Taxonomy
+    NavItem.innerHTML = Name
+
+    return NavItem
+}
+
+const DrillDownFilterResetBtn =()=>{
+    const ResetBtn = document.createElement('button')
+    ResetBtn.classList.add('DrillDownFilterResetBtn')
+    return ResetBtn
+}
+
+function addDrillDownFilterNavItem({DrillDownFilter, NewItemName, Taxonomy, Level}={}){
+
+    const filterNav = DrillDownFilter.querySelector('.DrillDownFilterNav')
+    const newNavItem = DrillDownFilterNavItem({Name:NewItemName, Taxonomy:Taxonomy, Level:Level})
+    filterNav.append(newNavItem)
+}
+
+export function processDrillDownFilter({
+    FilterContainer=null,
+    Dataset=Parser.Data.PolicyDataBase,
+    TaxonomyList=["Pillar", "Recommendation", "Policy Type"]
+}={}){
+
+    FilterContainer.dataset.activelevel = 1;
+
+    const FilterNav = document.createElement('div')
+    FilterNav.classList.add('DrillDownFilterNav')
+    FilterNav.append(DrillDownFilterResetBtn())
+
+    const FilterMenu = DrillDownFilterMenu(TaxonomyList)
+
+    FilterContainer.appendChild(FilterNav)
+    FilterContainer.appendChild(FilterMenu)
+    FilterContainer.addEventListener('click', drillDownFilterClickHandler)
+}
+
+function drillDownFilterClickHandler(e){
+
+    if(e.target.classList.contains('DrillDownFilterMenuItem')){
+        DrillDownFilterDrillDown(e)
+    }
+    if(e.target.classList.contains('DrillDownFilterNavItem')){
+        DrillDownFilterDrillUp(e)
+    }
+    if(e.target.classList.contains('DrillDownFilterResetBtn')){
+        ResetFilter(e)
+    }
+    
+}
+
+function DrillDownFilterDrillDown(e){
+    const Menu = e.target.closest('.DrillDownFilterMenu')
+    const CurrentValue = e.target.value
+    const CurrentMenuSection = e.target.closest('.DrillDownFilterMenuSection')
+    const DrillDownFilter = e.target.closest('.DrillDownFilter')
+    const FilterNav = DrillDownFilter.querySelector('.DrillDownFilterNav')
+    const CurrentTaxonomy = CurrentMenuSection.dataset.taxonomy
+    CurrentMenuSection.innerHTML = ''
+    const CurrentLevel = parseInt(DrillDownFilter.dataset.activelevel)
+    const NewLevel = CurrentLevel+1
+
+    DrillDownFilter.dataset.activelevel = NewLevel
+
+    const NextMenuSection = Menu.querySelector(`.DrillDownFilterMenuSection[data-level="${NewLevel}"]`)
+    if(NextMenuSection){
+        const NewTaxonomy = NextMenuSection.dataset.taxonomy
+        populateMenuSection({
+            MenuSection:NextMenuSection,
+            ParentTaxonomy:CurrentTaxonomy,
+            ParentValue:CurrentValue,
+            Taxonomy:NewTaxonomy
+        })
+    }
+
+
+    addDrillDownFilterNavItem({DrillDownFilter:DrillDownFilter, NewItemName:CurrentValue, Taxonomy:CurrentTaxonomy, Level:NewLevel})
+    toggleDrillDownFilterNav(DrillDownFilter)
+}
+
+function DrillDownFilterDrillUp(e){
+    const DrillDownFilter = e.target.closest('.DrillDownFilter')
+    const Nav = e.target.closest('.DrillDownFilterNav')
+
+    const CurrentLevel = parseInt(DrillDownFilter.dataset.activelevel)
+    const NewLevel = parseInt(e.target.dataset.level)
+    // console.log(CurrentLevel, NewLevel)
+    if(CurrentLevel === NewLevel) return
+    
+    if(CurrentLevel !== NewLevel){
+        DrillDownFilter.dataset.activelevel = NewLevel
+        const CurrentMenuSection = DrillDownFilter.querySelector(`.DrillDownFilterMenuSection[data-level="${CurrentLevel}"]`)
+        const NewMenuSection = DrillDownFilter.querySelector(`.DrillDownFilterMenuSection[data-level="${NewLevel}"]`)
+        const CurrentValue = e.target.value
+        const CurrentTaxonomy = e.target.dataset.taxonomy
+        const NewTaxonomy = NewMenuSection.dataset.taxonomy
+
+        const NavItems = DrillDownFilter.querySelectorAll('.DrillDownFilterNav>.DrillDownFilterNavItem');
+        NavItems.forEach((NavItem)=>{
+            if(NavItem.dataset.level > NewLevel){NavItem.remove()}
+        })
+
+        if(CurrentMenuSection){CurrentMenuSection.innerHTML = ''}
+
+        populateMenuSection({
+            MenuSection:NewMenuSection,
+            ParentTaxonomy:CurrentTaxonomy,
+            ParentValue:CurrentValue,
+            Taxonomy:NewTaxonomy
+        })
+    }    
+}
+
+function toggleDrillDownFilterNav(DrillDownFilter){
+    const ActiveLevel = DrillDownFilter.dataset.activelevel;
+    const ShowNav = ActiveLevel > 1
+
+    DrillDownFilter.classList.toggle('ShowNav', ShowNav)
+}
+
+function ResetFilter(e){
+    const DrillDownFilter = e.target.closest('.DrillDownFilter')
+    const CurrentLevel = DrillDownFilter.dataset.activelevel
+    const FilterNav = DrillDownFilter.querySelector('.DrillDownFilterNav')
+    const InitialMenuSection = DrillDownFilter.querySelector(`.DrillDownFilterMenuSection[data-level="${1}"]`)
+    const CurrentMenuSection = DrillDownFilter.querySelector(`.DrillDownFilterMenuSection[data-level="${CurrentLevel}"]`)
+    const FilterNavItems = FilterNav.querySelectorAll('.DrillDownFilterNavItem')
+    FilterNavItems.forEach((NavItem)=>{NavItem.remove()})
+
+    if(CurrentMenuSection){
+        CurrentMenuSection.style.display = ''
+        CurrentMenuSection.innerHTML = ''
+    }
+    populateMenuSection({
+        MenuSection:InitialMenuSection,
+        Taxonomy:InitialMenuSection.dataset.taxonomy
+    })
+    DrillDownFilter.dataset.activelevel = 1
+    toggleDrillDownFilterNav(DrillDownFilter)
+}
+

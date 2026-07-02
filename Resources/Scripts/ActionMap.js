@@ -264,8 +264,6 @@ const statesLayout = [
   }
 ]
 
-
-
 const mapSelect = document.querySelector('.mapSelect');
 statesLayout.forEach((state, i)=>{
     mapSelect.append( Cmpnt.StateBox(statesLayout[i]) )
@@ -278,8 +276,6 @@ mapSelect.addEventListener('change', (e) => {
   updateContentStates(selectedState);
   updateMapSelectionTitle(selectedState);
 })
-
-
 
 const mapTitle = document.querySelector('#map-title');
 const mapTitleSelection = mapTitle.querySelector('#MapSelection');
@@ -336,3 +332,7 @@ function updateContentStates(State){
         });
     }
 }
+
+//
+const DrillDownFilter = document.querySelector('.DrillDownFilter')
+Cmpnt.processDrillDownFilter({FilterContainer: DrillDownFilter})
