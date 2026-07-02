@@ -274,7 +274,7 @@ const DrillDownFilterMenuItem = (value)=>{
 }
 
 const DrillDownFilterMenuSection = ({Taxonomy=null, level=1}={}) => {
-    const Section = document.createElement('ul')
+    const Section = document.createElement('div')
     Section.classList.add('DrillDownFilterMenuSection')
     Section.dataset.taxonomy = Taxonomy
     Section.dataset.level = level

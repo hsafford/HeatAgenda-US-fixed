@@ -38,6 +38,25 @@
     --SafeEnvironment: #0000ff;
 
     --width-max:1200px;
+
+    --ArrowRight:polygon(0% 0%, 100% 50%, 0% 100%);
+    --ArrowLeft:polygon(0% 50%, 100% 0%, 100% 100%);
+    --ArrowUp:polygon(50% 0%, 100% 100%, 0% 100%);
+    --ArrowDown:polygon(0% 0%, 100% 0%, 50% 100%);
+
+    --BorderHeavy:3px;
+    --BorderMedium:2px;
+    --BorderLight:1px;
+
+    --Accent100:#707070;
+    --Accent050:#4a4a4a;
+    --Accent025:#1c1c1c;
+}
+
+[data-pillar="Safe Workplaces"]{
+    --Accent100:#E94F37;
+    --Accent050:#BF412D;
+    --Accent025:#8F3022;
 }
 
 body{
@@ -119,18 +138,32 @@ li.pill{
 
 /* Drilldown */
 
-.DrillDownFilter.DrillDownFilterMenuSection,
-.DrillDownFilter.DrillDownFilterNav{
+/* .DrillDownFilter .DrillDownFilterMenuSection,
+.DrillDownFilter .DrillDownFilterNav{
   display: flex;
-  flex-wrap: none;
-}
+  flex-wrap: no-wrap;
+} */
 
 .DrillDownFilterNav{
+  color:#ffffff;
+  background-color:red;
+  display:flex;
+  flex-wrap:nowrap;
+
   :not(.ShowNav)>&{
     display: none;
   }
 }
 .DrillDownFilterMenuSection{
+  display:grid;
+  grid-template-columns:1fr;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+
+  &[data-level="1"]{
+    gap:1rem;
+  }
+
   &:not(.ActiveSection){
     display:none;
   }
@@ -140,12 +173,63 @@ li.pill{
   border-radius: 0px;
   background:none;
   border:none;
+  text-align: left;
+
+  padding: 1rem;
+
+
+  .DrillDownFilterNav>&{
+    color:#ffffff;
+
+
+    &[data-level="2"]{
+      background-color: var(--Accent100);
+    }
+    &[data-level="3"]{
+      background-color: var(--Accent050);
+    }
+    &[data-level="4"]{
+      background-color: var(--Accent025);
+    }
+  }
+
+
+  .DrillDownFilterMenuSection>&{
+    flex-grow:1
+  }
+
+  .DrillDownFilterMenuSection[data-level="1"]>&{
+    background-color:var(--Accent100);
+    text-align: center;
+    color:#ffffff;
+  }
+
+  .DrillDownFilterMenuSection:not([data-level="1"])>&{
+    border-left:var(--BorderMedium) solid var(--Accent100);
+  }
+
 }
 
 .DrillDownFilterNav>button.DrillDownFilterResetBtn{
  height: 100%;
  aspect-ratio: 1/1;
  background-color: red;
+ position: relative;
+ align-self: center;
+}
+.DrillDownFilterNav>button.DrillDownFilterResetBtn::before{
+  content:'';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+
+  width:0.5rem;
+  aspect-ratio: 1/1;
+  background-color: currentColor;
+  clip-path:var(--ArrowLeft);
+
 }
 
 /* Check Nested */
@@ -194,7 +278,7 @@ label.visToggleLabel::before{
   width:0.5rem;
   height:0.5rem;
   background-color:currentColor;
-  clip-path:polygon(0% 0%, 100% 50%, 0% 100%);
+  clip-path:var(--ArrowRight);
   transform:rotate(0deg);
   transition:transform 0.25s;
 }
