@@ -278,6 +278,7 @@ const DrillDownFilterMenuSection = ({Taxonomy=null, level=1}={}) => {
     Section.classList.add('DrillDownFilterMenuSection')
     Section.dataset.taxonomy = Taxonomy
     Section.dataset.level = level
+    Section.dataset.pillar = null;
 
     return Section
 }
@@ -321,6 +322,9 @@ function populateMenuSection({
 
     if(ParentTaxonomy && ParentValue){
         values = Parser.getAssociated(Dataset, ParentTaxonomy, ParentValue, Taxonomy)
+
+        const Pillar = Parser.getAssociated(Parser.Data.PolicyDataBase, ParentTaxonomy, ParentValue, "Pillar")
+        MenuSection.dataset.pillar = Pillar
     }
 
     values.forEach((value)=>{
@@ -335,6 +339,7 @@ function hideMenuSection(MenuSection){
     if(MenuSection){
         MenuSection.innerHTML = ''
         MenuSection.classList.toggle('ActiveSection', false)
+        MenuSection.dataset.pillar = null
     }
 }
 
@@ -359,6 +364,10 @@ function addDrillDownFilterNavItem({DrillDownFilter, NewItemName, Taxonomy, Leve
 
     const filterNav = DrillDownFilter.querySelector('.DrillDownFilterNav')
     const newNavItem = DrillDownFilterNavItem({Name:NewItemName, Taxonomy:Taxonomy, Level:Level})
+    if(Taxonomy == "Pillar"){
+        filterNav.dataset.pillar = NewItemName
+    }
+
     filterNav.append(newNavItem)
 }
 
