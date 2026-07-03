@@ -48,9 +48,9 @@
     --BorderMedium:2px;
     --BorderLight:1px;
 
-    --Accent100:#707070;
-    --Accent050:#4a4a4a;
-    --Accent025:#1c1c1c;
+    --Accent100:#255579;
+    --Accent050:#163247;
+    --Accent025:#0D1E2B;
 }
 
 
@@ -142,7 +142,9 @@ fieldset{
     &.BorderContainer{
 
         --borderWeight:var(--BorderMedium);
+        --borderColor:var(--Accent100);
         border:var(--borderWeight) solid var(--Accent100);
+
 
         &.BorderLeft{
           border-width:0px 0px 0px var(--BorderMedium);
