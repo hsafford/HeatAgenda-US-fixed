@@ -104,6 +104,15 @@ footer{
     justify-content:space-between;
 }
 
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header>.pageTitle{
+  
+}
+
 fieldset{
   padding:0px;
   margin:0px;
@@ -128,6 +137,24 @@ fieldset{
 
     &.ContainerGap-Small{
         gap:1rem;
+    }
+
+    &.BorderContainer{
+
+        --borderWeight:var(--BorderMedium);
+        border:var(--borderWeight) solid var(--Accent100);
+
+        &.BorderLeft{
+          border-width:0px 0px 0px var(--BorderMedium);
+        }
+        &.BorderTop{
+          border-width:var(--BorderMedium) 0px 0px 0px;
+        }
+        
+    }
+
+    &.BorderContainer-Left-medium{
+        border:var(--BorderMedium) solid var(--Accent100);
     }
 }
 

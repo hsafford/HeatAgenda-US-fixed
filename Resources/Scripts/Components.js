@@ -1,5 +1,18 @@
 import * as Parser from './JsonParser.js'
 
+export const container =({
+  classes=[],  
+}={})=>{
+    const container = document.createElement('div')
+    container.classList.add('Container')
+
+    if(classes && Array.isArray(classes) && classes.length > 0){
+        container.classList.add(...classes)
+    }
+
+    return container
+}
+
 const navItem =(name, href)=>{
     const item = document.createElement('a');
     item.textContent = name;
@@ -17,8 +30,34 @@ const navBar =(items=[])=>{
     return navbar;
 }
 
+const HeaderInfo=()=>{
+    const HeaderInfo =document.createElement('div')
+    HeaderInfo.classList.add('HeaderInfo')
+
+    HeaderInfo.innerHTML = `
+        <img src="#"
+        <p>Heat Policy Agenda</p>
+    `
+    return HeaderInfo
+}
+
+const PageTitle=()=>{
+    const PageTitleContainer = container({classes:[
+        'PageTitle', 'BorderContainer', 'BorderTop']})
+    const PageTitle = document.createElement('h1')
+    PageTitle.textContent = document.title
+
+
+    PageTitleContainer.appendChild(PageTitle)
+    return PageTitleContainer
+    
+}
+
 export function ProcessHeader(){
     const header = document.querySelector('header');
+    
+  
+    header.append(HeaderInfo())
 
     header.append(navBar([
         { name: 'The Agenda', href: './index.html' },
@@ -26,6 +65,9 @@ export function ProcessHeader(){
         { name: 'Database', href: './database.html' },
         { name: 'Policy in Action', href: './map.html' }
     ]));
+
+    header.append(PageTitle())
+    
 }
 
 export function ProcessFooter(){
