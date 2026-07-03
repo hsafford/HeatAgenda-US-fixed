@@ -79,6 +79,13 @@
     --Accent025:#0057A8;
 }
 
+h4{
+  margin:0.5em;
+}
+p{
+  margin-top: 0;
+}
+
 body{
   font-family:StabilGrotesk;
   font-weight: 100;
@@ -423,6 +430,12 @@ input.filterValue{
   margin:1rem 0;
 }
 
+.CaseStudyItem .ContentArea{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+
 #CaseStudies .CaseStudyItem .CaseStudyInfo,
 #CaseStudies .CaseStudyItem .MoreInfo{
   display:grid;
@@ -443,6 +456,25 @@ input.filterValue{
   grid-template-columns:1fr 1fr 1fr;
 }
 
+.CaseStudyItem .Taxonomy .TaxonomyItem{
+}
+
+.CaseStudyItem .Sources{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.CaseStudyItem .Taxonomy .TaxonomyItem,
+.CaseStudyItem .Sources{
+  border-left: var(--BorderMedium) solid var(--Accent100);
+  padding: 0.5rem;
+}
+
+
+
+
+
 .ExpandRuleBox:has(>label>input:not(:checked)) .ContentArea > .MoreInfo{
   display:none !important;
 }
@@ -452,6 +484,7 @@ input.filterValue{
 /* Epanding Rule */
 .ExpandRuleBox{
     display:flex;
+    gap:0.5rem;
 }
 
 .ExpandRuleBox>label>input{
@@ -463,10 +496,10 @@ input.filterValue{
     align-items:start;
 
     --BorderWidth:2px;
-    --ColorMain:green;
-    border-color:var(--ColorMain);
+    border-color:var(--Accent100);
     border-style:solid;
     border-width:0 0 0 0;
+    color:#ffffff;
 
     &.FlagLeft{
         align-self:stretch;
@@ -479,7 +512,21 @@ input.filterValue{
 }
 
 .ExpandRuleBox>label> .RuleFlag{
-    width:1rem;
-    height:1rem;
-    background-color:var(--ColorMain);
+    aspect-ratio: 1/1;
+    background-color:var(--Accent100);
+    display: block;
+    padding: 0.25rem;
+}
+
+.ExpandRuleBox>label> .RuleFlag::before{
+  content:'';
+  display: block;
+  width: 0.5rem;
+  aspect-ratio: 1/1;
+  background-color:currentColor;
+  clip-path: var(--ArrowDown);
+}
+
+.ExpandRuleBox>label:has(input:checked)> .RuleFlag::before{
+  clip-path: var(--ArrowUp);
 }

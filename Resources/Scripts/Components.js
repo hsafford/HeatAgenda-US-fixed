@@ -130,7 +130,7 @@ export const ExpandRule =({Direction='Left', Expanded=false}={})=>{
     RuleInput.type = 'checkbox'
     RuleInput.checked = Expanded
 
-    let RuleFlag = document.createElement('span')
+    let RuleFlag = document.createElement('div')
     RuleFlag.classList.add('RuleFlag')
 
     RuleLabel.append(RuleInput)
@@ -210,6 +210,7 @@ export const caseStudyItem =({
 
     const CaseStudyItem = ExpandRuleBox()
     CaseStudyItem.classList.add('CaseStudyItem')
+    CaseStudyItem.dataset.pillar = Pillar
 
     const CaseStudyInfo = document.createElement('div')
     CaseStudyInfo.classList.add('CaseStudyInfo')
@@ -374,7 +375,8 @@ function addDrillDownFilterNavItem({DrillDownFilter, NewItemName, Taxonomy, Leve
 export function processDrillDownFilter({
     FilterContainer=null,
     Dataset=Parser.Data.PolicyDataBase,
-    TaxonomyList=["Pillar", "Recommendation", "Policy Type"]
+    TaxonomyList=["Pillar", "Recommendation", "Policy Type"],
+    ContentContainer = null
 }={}){
 
     FilterContainer.dataset.activelevel = 1;
@@ -387,10 +389,10 @@ export function processDrillDownFilter({
 
     FilterContainer.appendChild(FilterNav)
     FilterContainer.appendChild(FilterMenu)
-    FilterContainer.addEventListener('click', drillDownFilterClickHandler)
+    FilterContainer.addEventListener('click', (e)=>{drillDownFilterClickHandler(e, ContentContainer)})
 }
 
-function drillDownFilterClickHandler(e){
+function drillDownFilterClickHandler(e, ContentContainer){
 
     if(e.target.classList.contains('DrillDownFilterMenuItem')){
         DrillDownFilterDrillDown(e)
@@ -401,6 +403,11 @@ function drillDownFilterClickHandler(e){
     if(e.target.classList.contains('DrillDownFilterResetBtn')){
         ResetFilter(e)
     }
+
+    if(ContentContainer){
+        console.log(ContentContainer)
+    }
+
     
 }
 
