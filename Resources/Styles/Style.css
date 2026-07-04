@@ -634,3 +634,35 @@ input.filterValue{
     background-blend-mode: luminosity;
   }
 }
+/* Agenda Page */
+
+.PillarGroup{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  & .PillarTitleCard{
+    grid-column:span 2;
+  }
+
+  & .ReccsGroup{
+    grid-column:span 2;
+  }
+
+}
+
+
+.PillarTitleCard{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--Accent100);
+  
+}
+.ImageBlock{
+  display: block;
+  height: 100%;
+  background-color: var(--Accent100);
+  background-image: var(--heroImage);
+  background-position: center;
+  background-size: cover;
+}
+

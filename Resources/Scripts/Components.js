@@ -50,11 +50,11 @@ const HeaderInfo=()=>{
     return HeaderInfo
 }
 
-const PageTitle=()=>{
+const PageTitle=(Name)=>{
     const PageTitleContainer = container({classes:[
         'PageTitle', 'BorderContainer', 'BorderTop']})
     const PageTitle = document.createElement('h1')
-    PageTitle.textContent = document.title
+    PageTitle.textContent = Name
 
 
     PageTitleContainer.appendChild(PageTitle)
@@ -75,7 +75,7 @@ export function ProcessHeader(){
         { name: 'Policy in Action', href: './map.html' }
     ]));
 
-    header.append(PageTitle())
+    header.append(PageTitle(header.dataset.pagename))
     
 }
 
@@ -83,11 +83,11 @@ export function ProcessFooter(){
     const footer = document.querySelector('footer');
     
     const FASInfo = document.createElement('p')
-    FASInfo.textContent = 'Footer content goes here.'
+    FASInfo.textContent = 'Federation of American Scientists © 2026'
     footer.appendChild(FASInfo)
 
     const Attribution = document.createElement('p')
-    Attribution.textContent = 'Attribution content goes here.'
+    Attribution.textContent = 'Designed & Built by Harrison Jude'
     footer.appendChild(Attribution)
 }
 
