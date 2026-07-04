@@ -1,0 +1,347 @@
+[
+  {
+    "Element": "Pillar",
+    "Name": "Safe Homes",
+    "Description": "Protect every family from dangerous heat at home."
+  },
+  {
+    "Element": "Pillar",
+    "Name": "Safe Workplaces",
+    "Description": "Protect every worker from dangerous heat on the job."
+  },
+  {
+    "Element": "Pillar",
+    "Name": "Safe Schools and Childcare",
+    "Description": "Protect every child from dangerous heat at school and childcare."
+  },
+  {
+    "Element": "Pillar",
+    "Name": "Safe Communities",
+    "Description": "Help every community get heat-safe."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Establish the right to cooling",
+    "Description": "Every household should have guaranteed access to active and passive cooling systems that keep their home at safe, comfortable temperatures."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Protect energy access during hot weather",
+    "Description": "Every household should be protected from utility disconnection and during power outages in hot weather. Every household should also be able to afford the energy needed to keep homes cool."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Upgrade existing homes for extreme heat",
+    "Description": "Every household should be able to afford and easily implement upgrades to their homes, from heat pumps to cool roofs."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Create a heat-resilient housing supply",
+    "Description": "Every new home should be built to stay cool during extreme temperatures, even when the power goes out."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Ensure large loads do not create affordability and reliability risks during extreme heat",
+    "Description": "Every household should be protected from electricity price spikes and reliability issues due to large-load customer demand, like data centers, on high heat days. Households should also not subsidize energy costs and infrastructure for large-load customers."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Secure heat protections in all workplaces",
+    "Description": "Every worker should be guaranteed paid rest, water and shade access, heat-acclimatization periods, and, if applicable, cooling in their employer-provided housing."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Create or expand paid leave and income protection for days too hot to work",
+    "Description": "Every worker should be able to stay safe from heat without financial penalty or risk to job security."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Incentivize uptake of best practices for workplace heat safety",
+    "Description": "Every government should develop strategies that encourage employers to implement protections and maintain good heat safety records, such as through workers compensation or procurement practices."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Keep kids safe from extreme heat at school and childcare",
+    "Description": "Every child should be guaranteed a cool environment, including classrooms, school grounds, athletic facilities, and school buses. Every school and childcare facility should have plans, training, and policies for hot weather, including school operations, recess, and for sporting and outdoor activities."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Make heat resilience possible for all schools and childcare facilities",
+    "Description": "Every school and childcare provider should be able to afford to upgrade their facilities to keep children cool."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Prepare for higher temperatures as an acute emergency as well as a chronic risk",
+    "Description": "Every government should have plans for annual heat preparedness and long-term risk mitigation as well as strategies to coordinate with surrounding governments on efforts."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Establish a governance structure and training for extreme heat",
+    "Description": "Every government should designate a public official (either a new hire or current employee) with authority and budget to lead heat efforts, coordinate interagency and intergovernmental efforts, and form partnerships with nonprofits, health systems, and the private sector. Every government should also upskill all frontline employees in their roles for heat mitigation and response."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Assess heat’s impacts and costs",
+    "Description": "Every government should track heat impacts on people, infrastructure, the economy, and their budgets and set goals to reduce heat’s effects."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Declare and respond to heat as an emergency",
+    "Description": "Every government should have and deploy the resources to protect their populations, such as shelter and welfare checks. Every government should prepare for infrastructure failures like of energy and water systems."
+  },
+  {
+    "Element": "Recommendation",
+    "Name": "Shape and finance heat-resilient infrastructure",
+    "Description": "Every government should set incentives or requirements to reduce heat’s impacts on people and infrastructure and identify or create public and private funding for building and maintaining heat-resilient infrastructure like trees, shade, back up power for critical facilities, and grid upgrades."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Make cooling a habitability requirement",
+    "Description": "Make cooling a legal habitability condition by either setting locally-relevant maximum indoor temperature standards, by requiring functional cooling equipment (both mechanical and passive), or both."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Disclose housing energy costs and cooling abilities",
+    "Description": "Require landlords or sellers to disclose energy performance data, cooling system information, or both to prospective renters or buyers to identify which housing gets dangerously hot or is prohibitively expensive to cool."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Allow home alterations for cooling",
+    "Description": "Prevent landlords and homeowners associations from prohibiting installation of active and passive cooling devices as a condition of their lease, building policy, or park rules."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Address eviction on hot days",
+    "Description": "Protect renters from the physical act of eviction being carried out on dangerous heat days."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Prevent utility disconnection during hot weather",
+    "Description": "Prohibit electric and/or water utilities from disconnecting service to residential customers during periods of dangerous heat, such as declared heat emergencies, when the National Weather Service issues excessive heat warnings, when temperatures exceed a threshold, and/or throughout the summer months."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Expand programs for energy bill assistance",
+    "Description": "Expand energy financial assistance programs to ensure low and middle-income households can afford the energy needed to keep their homes cool."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Deliver affordable electricity rates",
+    "Description": "Structure electricity rates to reduce costs for low- and moderate-income households, through developing tiered rates, income-based fixed charges, and time-of-use rates with low-cost off-peak periods, and prioritizing affordability in ratemaking and energy planning processes."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Ensure cooling access during planned and unplanned outages",
+    "Description": "Make sure power outages do not strand residents without cooling through backup power requirements for facilities serving vulnerable populations, proactive utility notification obligations, emergency cooling center activation protocols, and investments in community energy resilience."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Expand financial assistance for home upgrades",
+    "Description": "Expand the availability and accessibility of financial tools, like grants, rebates, tax credits, point of sale exemptions, inclusive utility investment, and low-interest loans, that help homeowners and renters upgrade their homes for heat."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Reduce barriers to upgrading homes",
+    "Description": "Address non-financial barriers to home upgrades, including permitting complexity, multiple applications, contractor availability, lack of technology availability, and pre-weatherization requirements, that prevent home upgrades even when financially possible."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Offer technical assistance to homeowners and renters",
+    "Description": "Close the gap between eligibility and enrollment by creating 'one-stop shop' navigation services, offering application assistance, and arranging free or low-cost home energy assessments."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Set heat-protective building and energy codes",
+    "Description": "Update building and energy codes to require that newly constructed or substantially renovated homes are designed to stay cool during current and future extreme heat, through things like passive cooling requirements (eg insulation requirements, solar heat gain limits, cool roof requirements), back-up power requirements, thermal safety standards, passive survivability standards, overheating assessments, or heat pump mandates."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Incentivize uptake of stretch codes for heat resilience",
+    "Description": "Create or identify stretch codes for heat resilience, like Passive House and Enterprise Green Communities, and then incentivize builders and developers to meet them through tax credits, expedited permitting, density bonuses, or access to favorable financing."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Address workforce capacity gaps for heat-resilient construction",
+    "Description": "Build the workforce needed to build heat-resilient homes as well as install and maintain heat-resilient technologies at the scale required to meet program demand."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Prevent costs from large loads falling on household customers' energy bills",
+    "Description": "Ensure that the infrastructure costs associated with connecting large new electricity users are borne by those customers and not spread across all ratepayers."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Require large load customers to participate in demand/response and energy storage programs",
+    "Description": "Require large electricity users to curtail their consumption or deploy on-site battery storage during periods of grid stress on hot days."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Collect fees from large load customers to pay for household upgrades and energy bills",
+    "Description": "Require large electricity users to contribute to funds that subsidize residential energy bills and finance home upgrades for heat and energy resilience."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Increase transparency around energy and water consumption of large loads",
+    "Description": "Require large electricity users to publicly disclose their energy and water consumption, grid impact, and infrastructure investment needs."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Establish workplace heat safety regulations",
+    "Description": "Enact legally enforceable heat illness prevention standards that require employers to provide workers with water, rest, shade, acclimatization periods, heat illness prevention plans, and emergency response protocols."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Set cooling requirements for employer-provided housing",
+    "Description": "Require that housing provided by employers meets minimum temperature and cooling standards, extending heat protection from the workplace to the home for the most vulnerable workers."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Strengthen workplace heat surveillance and enforcement",
+    "Description": "Increase the capacity of state labor agencies to detect, investigate, and penalize workplace heat violations through increased inspector staffing, targeted inspection programs in high-risk industries, medical surveillance systems for heat illness, and better data collection on heat-related injuries and workers compensation claims."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Establish or expand paid leave",
+    "Description": "Create or expand paid sick leave to address extreme heat, such as explicitly covering days when temperatures make work dangerous or when heat impacts the worker or their dependents (eg recovery from heat illness, school and childcare closures)."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Develop or update insurance policies for income protection",
+    "Description": "Develop new (eg parametric) or leverage existing (eg short-term disability, long-term disability, unemployment, workers’ compensation) insurance mechanisms to provide income protections for all workers."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Leverage workers compensation insurance",
+    "Description": "Use the workers compensation system to create financial incentives for businesses to implement heat safety measures."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Procure from businesses that protect their workers from heat",
+    "Description": "Use purchasing power to require or incentivize suppliers to meet workplace heat safety standards as a condition of doing business with the government."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Offer incentives for implementing heat safety practices",
+    "Description": "Create financial benefits, tax credits, city service discounts, recognition programs, for employers to voluntarily adopt heat safety best practices beyond minimum regulatory requirements."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Establish safe temperature thresholds/protocols for indoors and outdoors",
+    "Description": "Establish legally binding temperature limits and decision-making protocols for schools and childcare facilities, including maximum indoor temperatures that trigger action like early closure and outdoor thresholds for modifying or canceling athletic activities and recess."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Prepare students, staff and operations for heat waves and chronic heat",
+    "Description": "Build the institutional capacity of schools and childcare facilities to respond to both acute heat emergencies and the chronic heat exposure of a warming school year. Activities include heat action plans and technical assistance to develop these plans, staff training, student heat literacy curricula, and food service continuity during closures."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Monitor heat conditions and impacts to guide decision-making",
+    "Description": "Deploy sensor networks, surveillance systems, and data tools to track indoor temperatures, outdoor temperatures, heat-related illness in schools, and the effectiveness of cooling infrastructure and use that data to make sound decisions."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Address extreme heat on school buses and at bus stops",
+    "Description": "Address dangerous heat conditions on school buses through air conditioning or passive cooling requirements and at bus stops where students wait without shade."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Assess the state of cooling capabilities to guide investment decisions",
+    "Description": "Conduct systematic inventories and assessments of cooling infrastructure across school and childcare facilities, identifying where gaps are greatest, how many children and staff are at risk, and what investments are most urgently needed."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Create funding resources for improvements to buildings, schoolyards, and outdoor play spaces",
+    "Description": "Develop dedicated funding streams or financing tools to help school districts and childcare providers finance cooling upgrades, green schoolyards, shaded play spaces and other heat resilience investments."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Develop metrics for how investments in cooling infrastructure benefit students",
+    "Description": "Establish evidence-based measures of how school and childcare cooling investments affect student attendance, learning, health, and other key measures, creating the information needed to make the case for investment and hold governments accountable for outcomes."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Develop annual response operations plans",
+    "Description": "Create heat response plans that establish clear protocols for response efforts, such as activating cooling centers, conducting wellness checks, surging social services, coordinating with utilities, and communicating with residents during heat emergencies, as well as prepare for critical infrastructure failures."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Develop plans for long-term risk mitigation (including compounding risk)",
+    "Description": "Create comprehensive heat action plans or integrate heat throughout relevant planning activities (eg hazard mitigation planning, transportation planning, energy planning, and capital planning) to enable long-term risk reduction. Where relevant, these plans should account for compounding risks like combined heat and wildfire smoke events or heat-exacerbated drought."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Regularly evaluate the effectiveness of plans and track implementation",
+    "Description": "Test heat plans against outcomes through after-action reviews following heat events, progress reporting against plan goals, and public accountability mechanisms."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Offer technical assistance to smaller jurisdictions/rural communities",
+    "Description": "Provide support to local governments, including model plans, planning cohort programs, staffing assistance, and peer learning networks, to help small towns, rural counties, and tribal governments develop heat preparedness capabilities."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Establish internal leadership and authorities on extreme heat",
+    "Description": "Create dedicated heat leadership within government by establishing new roles or appointing existing staff members with clear authority, resources and accountability mechanisms to steward action across agencies and with external partners."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Convene partners across governments and the community",
+    "Description": "Develop formal networks and councils that bring together government agencies and key partners, such as utilities, health systems, community-based organizations, and the private sector, to share information, delegate responsibilities, and coordinate response."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Prepare municipal employees to be a part of heat response efforts",
+    "Description": "Train frontline government employees, including social workers, police officers, parks staff, transit workers, and public health workers, to recognize heat illness, know what resources are available, and act as an extension of the heat response network."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Adopt standards and protocols for measuring heat’s impacts and costs",
+    "Description": "Assess what heat is actually costing communities through standardized methods for attributing heat-related and exacerbated illnesses and deaths, infrastructure impacts and damages, economic losses, and public sector spending."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Identify heat-vulnerable populations and systems",
+    "Description": "Map which populations and geographic areas face the greatest heat risk as well as which infrastructure systems (eg energy, water, and health care systems) are most vulnerable to failure."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Create data-informed decision-support tools and thresholds",
+    "Description": "Make data actionable for decision-making through developing early warning systems, locally-calibrated response thresholds, near real-time impacts surveillance dashboards, and risk scoring systems that guide planners on where to invest."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Enact response activities when locally-relevant thresholds are crossed",
+    "Description": "Execute standardized heat emergency response protocols, including cooling center activation, free transit, wellness checks, utility bill assistance and public communications, activated by locally-relevant thresholds If needed, use emergency declarations when impacts overwhelm local or state capacity."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Ensure critical infrastructure systems remain online",
+    "Description": "Prioritize keeping key critical infrastructure systems, like energy, water, transportation, and healthcare, operating when heat stress is highest and deploy contingency plans if any of these systems becomes non-operational."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Create funding sources for heat response activities",
+    "Description": "Develop dedicated, pre-positioned financial resources for heat emergency response that governments can access quickly without waiting for a federal declaration."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Make critical infrastructure systems heat resilient",
+    "Description": "Set resilience standards for and invest in upgrades to critical infrastructure, like the electric grid, water systems, transportation networks, and health facilities, necessary to withstand extreme heat. Where possible, also address compounding risks."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Leverage land use, transportation, and capital planning policies to increase shade, blue spaces and reflective surfaces",
+    "Description": "Use land use planning, capital improvement planning, and transportation planning to systematically embed heat resilience into the built environment."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Treat heat mitigation infrastructure as critical infrastructure",
+    "Description": "Keep infrastructure built to mitigate heat, like shade structures, urban trees canopies, cooling centers, and resilience hubs, functional by designating them as critical infrastructure with maintenance budgets, capital plan inclusion, and protection from encroaching development."
+  },
+  {
+    "Element": "Policy Type",
+    "Name": "Create funds for and enable financial investment in heat-resilient communities",
+    "Description": "Develop dedicated funding streams and financial tools, such as grants, revolving loan funds, infrastructure banks, tourism fees, insurance levies, climate resilience districts, and private-sector partnerships to finance heat resilience infrastructure."
+  }
+]
