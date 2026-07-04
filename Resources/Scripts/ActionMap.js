@@ -336,5 +336,3 @@ function updateContentStates(State){
 //
 const DrillDownFilter = document.querySelector('.DrillDownFilter')
 Cmpnt.processDrillDownFilter({FilterContainer: DrillDownFilter, ContentContainer:ContentContainer})
-
-document.body.append(Cmpnt.container({classes:['BorderContainer']}))

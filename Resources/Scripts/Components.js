@@ -1,7 +1,8 @@
 import * as Parser from './JsonParser.js'
 
 export const container =({
-  classes=[],  
+  classes=[],
+  datasets=[]
 }={})=>{
     const container = document.createElement('div')
     container.classList.add('Container')
@@ -10,11 +11,18 @@ export const container =({
         container.classList.add(...classes)
     }
 
+    if(datasets && Array.isArray(datasets) && datasets.length > 0){
+       datasets.forEach(([key, value]) => {
+            container.dataset[key] = value;
+        });
+    }
+
     return container
 }
 
 const navItem =(name, href)=>{
     const item = document.createElement('a');
+    item.classList.add('navItem')
     item.textContent = name;
     item.href = href;
     return item;
@@ -35,8 +43,9 @@ const HeaderInfo=()=>{
     HeaderInfo.classList.add('HeaderInfo')
 
     HeaderInfo.innerHTML = `
-        <img src="#"
-        <p>Heat Policy Agenda</p>
+        <img class="logo" src="./Resources/Assets/Graphics/FAS7154_Logo_FAS_PrimaryBlue_RGB.svg"/>
+        <span class="rule-vertical"></span>
+        <h1 class="site-title">Heat Policy Agenda</h1>
     `
     return HeaderInfo
 }
@@ -539,5 +548,68 @@ function ResetFilter(e){
     })
     DrillDownFilter.dataset.activelevel = 1
     toggleDrillDownFilterNav(DrillDownFilter)
+}
+
+export const ExploreElement =(Pillar)=>{
+    const ExploreElement = container({
+        classes:['ExploreElement'],
+        datasets:[['pillar', Pillar]]
+    })
+
+    const PillarSection = ExploreTaxonomySection({Taxonomy:'Pillar'})
+
+
+    const ReccSection = ExploreTaxonomySection({Taxonomy:'Recommendation'})
+    const PTypeSection = ExploreTaxonomySection({Taxonomy:'Policy Type'})
+
+    ExploreElement.append(PillarSection, ReccSection, PTypeSection)
+
+    return ExploreElement
+}
+
+const ExploreTaxonomySection =({
+    Taxonomy
+}={})=>{
+    const Section = container({
+        classes:['TaxonomySection'],
+        datasets:[['Taxonomy',Taxonomy]]
+    })
+
+    const SectionToggle = document.createElement('button')
+    SectionToggle.classList.add('ExploreSectionToggle')
+
+    const SectionContent = container({
+        classes:["ExploreSectionContent"]
+    })
+
+    Section.append(SectionToggle)
+    return Section
+}
+
+const ExploreTaxonomyItem =({Taxonomy, Level})=>{
+    const Label = document.createElement('label')
+    Label.classList.add('TaxonomyItem')
+
+    const radio = document.createElement('input').type = 'radio'
+    const Title = document.createElement('h4')
+    Title.textContent = Value
+    const Description = document.createElement('p')
+    Description.textContent = Parser.MatchDescription(Value)
+
+    Label.append(Title, Description, radio)
+}
+
+function populateExploreSection({Section, Taxonomy, Value=null}={}){
+    let values
+    if(!Value){
+        values = Parser.getUnique(Taxonomy)
+    }
+    if(Value){
+        values = Parser.getAssociated(Parser.Data.PolicyDataBase, Taxonomy, Value, )
+    }
+}
+
+function ExploreClickHandler(e){
+    
 }
 

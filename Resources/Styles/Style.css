@@ -59,24 +59,28 @@
     --Accent100:#E94F37;
     --Accent050:#BF412D;
     --Accent025:#8F3022;
+    --heroImage:url('../Assets/Images/pexels-fung0818-18568174.jpg')
 }
 [data-pillar="Safe Homes"],
 [value="Safe Homes"]{
     --Accent100:#FF7F39;
     --Accent050:#DB5912;
     --Accent025:#BD4300;
+    --heroImage:url('../Assets/Images/pexels-shehab-al-qadhi-472755071-20858565.jpg')
 }
 [data-pillar="Safe Communities"],
 [value="Safe Communities"]{
     --Accent100:#30C73C;
     --Accent050:#29A833;
     --Accent025:#1B7022;
+    --heroImage:url('../Assets/Images/pexels-brett-sayles-937485.jpg')
 }
 [data-pillar="Safe Schools and Childcare"],
 [value="Safe Schools and Childcare"]{
     --Accent100:#329AFB;
     --Accent050:#1875CC;
     --Accent025:#0057A8;
+    --heroImage:url('../Assets/Images/pexels-oliver-hung-265548590-30281236.jpg')
 }
 
 h4{
@@ -100,18 +104,64 @@ footer{
 }
 
 footer{
+    border-top:var(--BorderMedium) solid var(--Accent100);
+    padding:1rem 0px;
     display:flex;
     justify-content:space-between;
 }
 
 header{
+  background-color:#ffffff;
+  z-index:100;
+  position:sticky;
+  top:0px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+  "Info Nav"
+  "Title Title";
+}
+header>.HeaderInfo{
+  grid-area:Info;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+
+  height: 40px;
+
+  & img.logo{
+    height: 100%;
+  }
+
+  & h1.site-title{
+    font-size: 1rem;
+    font-weight: 100;
+    margin:0px;
+  }
 }
-header>.pageTitle{
-  
+header>nav{
+  grid-area:Nav;
+
+  display:flex;
+  align-items:center;
+
+  &>.navItem{
+    display:block;
+    text-decoration:none;
+    position:relative;
+  }
+
+  &>.navItem::before{
+    content:'';
+    width:2px;
+    height:100%;
+    display:inline-block;
+    background-color:var(--Accent100);
+  }
 }
+header>.PageTitle{
+  grid-area:Title;
+}
+
 
 fieldset{
   padding:0px;
@@ -558,4 +608,29 @@ input.filterValue{
 
 .ExpandRuleBox>label:has(input:checked)> .RuleFlag::before{
   clip-path: var(--ArrowUp);
+}
+
+/* Explore */
+.ExplorePillar{
+  margin:1rem 0px;
+}
+
+.ExplorePillar>.InfoSection{
+  background-color: var(--Accent100);
+  color:#ffffff;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &::after{
+    content:'';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Accent100);
+    background-image:var(--heroImage);
+    background-size:cover;
+    background-position:center;
+    background-blend-mode: luminosity;
+  }
 }
