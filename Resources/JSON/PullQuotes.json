@@ -1,0 +1,50 @@
+[
+  {
+    "StatFor": "Agenda Introduction",
+    "StatNum": "150",
+    "StatText": "organizations and government offices support the Agenda",
+    "StatDataFrom": "https://www.ncdc.noaa.gov/cdo-web/datatools/records"
+  },
+  {
+    "StatFor": "Agenda Introduction",
+    "StatNum": "3100",
+    "StatText": "all-time temperature records have fallen",
+    "StatDataFrom": ""
+  },
+  {
+    "StatFor": "Safe Workplaces",
+    "StatNum": "28,000",
+    "StatText": "workers are injured on the job during high heat days",
+    "StatDataFrom": ""
+  },
+  {
+    "StatFor": "Safe Workplaces",
+    "StatNum": "35,000",
+    "StatText": "costs workers face after a heat-related injury",
+    "StatDataFrom": "https://equitablegrowth.org/working-papers/temperature-workplace-safety-and-labor-market-inequality/"
+  },
+  {
+    "StatFor": "Safe Schools and Childcare",
+    "StatNum": "1 in 3",
+    "StatText": "Schools don’t have access to adequate cooling",
+    "StatDataFrom": ""
+  },
+  {
+    "StatFor": "Safe Schools and Childcare",
+    "StatNum": "45%",
+    "StatText": "of childcare facilities have been physically or financially strained by extreme weather.",
+    "StatDataFrom": ""
+  },
+  {
+    "StatFor": "Safe Communities",
+    "StatNum": "99%",
+    "StatText": "of U.S. counties are experiencing warmer summers now compared to 1970",
+    "StatDataFrom": "https://www.climatecentral.org/climate-matters/2025-summer-package"
+  },
+  {
+    "StatFor": "Safe Communities",
+    "StatNum": "$162 billion",
+    "StatText": "the estimated annual cost of extreme heat [FAS]",
+    "StatDataFrom": ""
+  }
+]

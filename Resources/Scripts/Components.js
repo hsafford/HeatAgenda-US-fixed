@@ -624,3 +624,14 @@ function ExploreClickHandler(e){
     
 }
 
+export const statBlock =(value, description)=>{
+    const statBlock = document.createElement('div')
+    statBlock.classList.add('statBlock')
+
+    statBlock.innerHTML = `
+    <p>${value}</p>
+    <p>${description}</p>
+    `
+    return statBlock
+}
+

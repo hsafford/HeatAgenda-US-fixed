@@ -35,10 +35,6 @@ const ReccOverviews = {
     ]
 }
 
-const PillarStats = {
-    
-}
-
 const PillarTitleCard =(Pillar)=>{
     
 }
