@@ -50,14 +50,14 @@ const ReccsGroup =(Pillar)=>{
         <p class="bodyLarge ReccsGroupIntro"><strong>${ReccOverview[0]} </strong><br>${ReccOverview[1]}</p>
     `
     const ReccsList = document.createElement('ul')
-    ReccsList.classList.add('ReccsList')
+    ReccsList.classList.add('ReccsList', 'gridList')
 
     const Reccs = Parser.getAssociated(Parser.Data.PolicyDataBase, "Pillar", Pillar, 'Recommendation')
     Reccs.forEach((Recc)=>{
         const ReccDescription = Parser.MatchDescription(Recc)
         const ReccItem = document.createElement('li')
         ReccItem.innerHTML = `
-            <h4>${Recc}</h4>
+            <h3>${Recc}</h3>
             <p>${ReccDescription}</p>
         `
 
