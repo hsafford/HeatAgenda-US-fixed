@@ -83,8 +83,9 @@
     --heroImage:url('../Assets/Images/pexels-oliver-hung-265548590-30281236.jpg')
 }
 
-h4{
-  margin:0.5em;
+h1, h2, h3, h4{
+  line-height: 100%;
+  margin:0.5em 0px;
 }
 p{
   margin-top: 0;
@@ -707,9 +708,11 @@ input.filterValue{
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: var(--Accent100);
+  color:#ffffff;
 
   & h2{
     font-size: 3rem;
+    margin-left: 0.5em;
   }
   
 }

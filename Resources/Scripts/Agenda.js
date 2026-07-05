@@ -80,8 +80,11 @@ Parser.List.Pillars.forEach(pillar => {
     const PillarTitleCard = Cmpnt.container({
         classes:['PillarTitleCard']
     })
+
+    const PillarTitleWords = pillar.split(' ')
+    const PillarTitleLineBreak = PillarTitleWords.join('<br>')
     PillarTitleCard.innerHTML = `
-        <h2>${pillar}</h2>
+        <h2>${PillarTitleLineBreak}</h2>
         <span class="ImageBlock"></span>
     `
 
