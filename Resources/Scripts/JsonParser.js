@@ -3,6 +3,7 @@ import PolicyDataBase from '../JSON/PolicyDataBase-062626.json' with { type: 'js
 import Descriptions from '../JSON/Descriptions-062626.json' with { type: 'json' }
 import CaseStudies from '../JSON/CaseStudies-063026.json' with { type: 'json' }
 import PullQuotes from '../JSON/PullQuotes-070526.json' with { type: 'json' }
+import Signitories from '..JSON/Signitories.json' with { type: 'json' }
 
 import * as Cmpnt from './Components.js'
 
