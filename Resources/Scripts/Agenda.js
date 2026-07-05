@@ -47,7 +47,7 @@ const ReccsGroup =(Pillar)=>{
     const ReccsGroup = Cmpnt.container({classes:["ReccsGroup"]})
     const ReccOverview = ReccOverviews[Pillar]
     ReccsGroup.innerHTML = `
-        <p><strong>${ReccOverview[0]} </strong><br>${ReccOverview[1]}</p>
+        <p class="bodyLarge ReccsGroupIntro"><strong>${ReccOverview[0]} </strong><br>${ReccOverview[1]}</p>
     `
     const ReccsList = document.createElement('ul')
     ReccsList.classList.add('ReccsList')
@@ -88,8 +88,8 @@ Parser.List.Pillars.forEach(pillar => {
         <span class="ImageBlock"></span>
     `
 
-    const Description = document.createElement('p')
-    Description.classList.add('Description')
+    const Description = document.createElement('span')
+    Description.classList.add('Description', 'bodyLarge')
     Description.innerHTML = PillarIntros[pillar]
 
     PillarSection.append(
