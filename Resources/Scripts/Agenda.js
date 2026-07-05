@@ -72,6 +72,21 @@ function addStats(statContainer, statsFor){
      })
 }
 
+const signitoryList =(type)=>{
+    const list = document.createElement('ul')
+    const singitories = Parser.getAssociated(
+        Parser.Data.Signitories, 'Type', type, 'Name'
+    )
+
+    singitories.forEach((signitory)=>{
+        const li = document.createElement('li')
+        li.textContent = signitory
+        list.append(li)
+    })
+
+    return list
+}
+
 const PillarsOverview = document.querySelector("#PillarsOverview")
 
 Parser.List.Pillars.forEach(pillar => {
@@ -112,8 +127,13 @@ Parser.List.Pillars.forEach(pillar => {
 
 const statContainers = document.querySelectorAll('.StatsSection')
 statContainers.forEach((container)=>{
-    console.log(container)
     if(container.dataset.stats){
         addStats(container, container.dataset.stats)
     }
 })
+
+const SignitoriesSection = document.querySelector('#Signitories')
+SignitoriesSection.append(
+    signitoryList('Organization'),
+    signitoryList('Government')
+)
