@@ -176,11 +176,54 @@ export function ActionCard({Action="Action", DataControl="NA"}={}){
     ActionCard.classList.add('ActionCard', 'TaxonomyItem')
     ActionCard.dataset.controller = DataControl;
 
-    const Title = document.createElement('h3');
+    const ActionItemData = Parser.getAssociated(Parser.Data.PolicyDataBase, 'Policy Action', Action)[0]
+
+    const Lever = document.createElement('p')
+    Lever.textContent = ActionItemData['Policy Lever']
+    Lever.classList.add('PolicyLeverFlag')
+
+    const Title = document.createElement('p');
     Title.textContent = Action;
-    ActionCard.appendChild(Title);
+
+    ActionCard.append(Lever, Title, ActionCardExamples(ActionItemData));
 
     return ActionCard;
+}
+
+
+function getActionExampleLinks(ActionItemData, type){
+    const ExamplesContainer = container({classes:['ActionExamplesList'], datasets:[['type', type]]})
+    const LinkTitles = Parser.parseListString(ActionItemData[`${type} Link Title`])
+    if(LinkTitles){
+        const URLS = Parser.parseListString(ActionItemData[`${type} Link URL`])
+        LinkTitles.forEach((Title, i)=>{
+            const ExampleLink = document.createElement('a')
+            ExampleLink.target = 'blank'
+            ExampleLink.innerText = Title
+            const url = URLS && URLS[i] ? URLS[i] : '#'
+            ExampleLink.href = url
+
+            ExamplesContainer.append(ExampleLink)
+        })
+    }
+
+
+    return ExamplesContainer
+}
+
+const ActionCardExamples =(ActionItemData)=>{
+    const ExamplesContainer = container({classes:['ActionExamples']})
+
+    ExamplesContainer.innerHTML = `
+        <p>Policy in action</p>
+    `
+
+    const Local = getActionExampleLinks(ActionItemData, "Local")
+    const State = getActionExampleLinks(ActionItemData, "State")
+    
+    ExamplesContainer.append(State, Local)
+
+    return ExamplesContainer
 }
 
 export const StateBox =({State=null, Abbreviation=null, Pos=null}={} )=>{

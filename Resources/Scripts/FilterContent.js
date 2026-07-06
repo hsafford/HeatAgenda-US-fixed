@@ -100,6 +100,7 @@ FilterGroup.addEventListener('change', (e)=>{
 })
 
 const ContentContainer = document.querySelector('.ContentContainer>ul');
+ContentContainer.classList.add('gridList')
 Parser.List.PolicyActions.forEach(action => {
     const AssociatedPType = Parser.getAssociated(Parser.Data.PolicyDataBase, 'Policy Action', action, 'Policy Type')
   const actionCard = Cmpnt.ActionCard({ Action: action, DataControl: AssociatedPType });

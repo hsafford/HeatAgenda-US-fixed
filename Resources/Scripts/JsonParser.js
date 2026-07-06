@@ -17,7 +17,14 @@ export function getUnique(JSON, Key){
 
 export function getAssociated(JSON, NameKey, Name, AssociatedKey){
     const Filtered = JSON.filter(item => item[NameKey] === Name)
-    return getUnique(Filtered, AssociatedKey)
+
+    if(AssociatedKey){
+        return getUnique(Filtered, AssociatedKey)
+    }
+    if(!AssociatedKey){
+        return Filtered
+    }
+
 }
 
 export function pullAllOf(JSON, Key, value){
@@ -27,6 +34,12 @@ export function pullAllOf(JSON, Key, value){
 export function MatchDescription(Name){
     const Item = Descriptions.find(item => item.Name === Name)
     return Item.Description
+}
+
+export function parseListString(ListString){
+    if(ListString && ListString !== '#'){
+        return ListString.split(',')
+    }
 }
 
 const Pillars = getUnique(PolicyDataBase, 'Pillar');
