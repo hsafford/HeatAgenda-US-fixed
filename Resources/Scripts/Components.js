@@ -677,6 +677,8 @@ export function ExploreClickHandler(e){
     if(e.target.classList.contains('TaxRadioInput')){
         SetChildrenVis(e)
     }
+
+    console.log(e)
     
 }
 function ResetTaxonomySection(e){

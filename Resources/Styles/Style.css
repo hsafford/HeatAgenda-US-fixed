@@ -1135,6 +1135,10 @@ ul.signitoryList{
     }
 
   }
+
+
+
+
 }
 
 /* Screen Size 700px */
@@ -1152,6 +1156,11 @@ ul.signitoryList{
       &>.navbar{
         display: grid;
         grid-template-columns: auto 1fr;
+
+
+        &>a.navBtn{
+          padding: var(--Spc-Mini);
+        }
       }
 
     }
@@ -1163,5 +1172,33 @@ ul.signitoryList{
     }
 
   }
-}
+
+  .ExploreElement{
+
+
+    &>.TaxonomySection.ExplorePillarHead>.TaxItems{
+      grid-template-columns: auto 1fr;
+      grid-template-rows: 4rem auto;
+      grid-template-areas:
+        "Img Img"
+        "Btn Info"
+      ;
+
+    }
+    & .TaxonomySection[data-taxonomy="Recommendation"]>.TaxItems>.ExploreSectionContent,
+    & .TaxonomySection[data-taxonomy="Policy Type"]>.TaxItems>.ExploreSectionContent{
+      grid-template-columns: 1fr;
+      grid-auto-flow: row;
+
+      &>.TaxonomyItem{
+        border-width: var(--BorderMedium) 0px 0px 0px;
+        border-style: solid;
+        border-color: var(--Accent100);
+      }
+    }
+  }
+
+
+  }
+
 
