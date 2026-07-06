@@ -734,8 +734,20 @@ input.filterValue{
     &>.TaxItems{
       display: grid;
       grid-template-columns: auto 1fr 1fr;
+      grid-template-areas: "Btn Info Img";
       background-color: var(--Accent100);
       color:#ffffff;
+
+      &>button{
+        grid-area: Btn;
+      }
+      &>.Info{
+        grid-area: Info;
+        padding: 1rem;
+      }
+      &>.ImageBlock{
+        grid-area: Img;
+      }
     }
   }
   
@@ -743,6 +755,12 @@ input.filterValue{
   &[data-taxonomy="Policy Type"]>.TaxItems{
     display: flex;
   }
+
+  &[data-taxonomy="Recommendation"]>.TaxItems{
+    background-color: var(--Accent025);
+    color:#ffffff;
+  }
+
 
   .TaxonomySection:not(:has(>.TaxItems label>input:checked))>&
   {

@@ -641,7 +641,7 @@ const ExploreTaxonomyItem =({ParentTaxonomy, Taxonomy, Value}={})=>{
     const Title = document.createElement('h4')
     Title.textContent = Value
     const Description = document.createElement('p')
-    // Description.textContent = Parser.MatchDescription(Value)
+    Description.textContent = Parser.MatchDescription(Value)
 
     Label.append(Title, Description, radio)
 
