@@ -131,7 +131,12 @@ export function CheckGroup({ name='name', value='value', taxonomy='taxonomy', ch
     CheckGroup.dataset.name = name;
     CheckGroup.dataset.checklevel = level;
 
+    if(taxonomy = 'Pillar'){
+        CheckGroup.dataset.pillar = value
+    }
+
     const CheckGroupHead = document.createElement('div');
+
     CheckGroupHead.className = 'CheckGroupHead';
     CheckGroup.appendChild(CheckGroupHead);
 
@@ -144,8 +149,8 @@ export function CheckGroup({ name='name', value='value', taxonomy='taxonomy', ch
     input.name = name;
     input.value = value;
     input.checked = checked;
-    input.classList.add('filterValue');
-    label.prepend(input);
+    input.classList.add('filterValue', 'hiddenInput');
+    label.append(input);
 
     return CheckGroup;
 }
@@ -159,14 +164,16 @@ export function CheckNested(ParentCheckGroup){
     
     const toggleElement = document.createElement('input')
     toggleElement.type = "checkbox"
-    toggleElement.classList.add('visToggle')
+    toggleElement.classList.add('visToggle', 'hiddenInput')
 
 
     const toggleLabel = document.createElement('label');
     toggleLabel.classList.add('visToggleLabel')
     toggleLabel.prepend(toggleElement)
 
-    CheckGroupHead.appendChild(toggleLabel)
+
+
+    CheckGroupHead.append(toggleLabel)
 
     return CheckNested;
 }
@@ -256,8 +263,9 @@ export const ExpandRule =({Direction='Left', Expanded=false}={})=>{
     let RuleInput = document.createElement('input')
     RuleInput.type = 'checkbox'
     RuleInput.checked = Expanded
+    RuleInput.classList.add('hiddenInput')
 
-    let RuleFlag = document.createElement('div')
+    let RuleFlag = document.createElement('span')
     RuleFlag.classList.add('RuleFlag')
 
     RuleLabel.append(RuleInput)

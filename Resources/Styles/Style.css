@@ -544,10 +544,9 @@ li.pill{
 }
 
 /* Check Nested */
-.CheckNested{
-}
 
-.CheckGroup:has(>.CheckGroupHead input.visToggle:not(:checked)) > .CheckNested{
+.CheckGroup:has(>.CheckGroupHead input.visToggle:not(:checked)) > .CheckNested,
+.CheckGroup:not(:has(>.CheckGroupHead>label>input.filterValue:checked)) > .CheckNested{
   display:none;
 }
 
@@ -557,51 +556,87 @@ li.pill{
   flex-direction:Column;
 }
 
-.CheckGroup>.CheckGroupHead:has(>label>input:checked.filterValue) > label{
-  font-weight:bold;
-}
-
 .CheckGroup>.CheckGroupHead{
-  padding:1rem;
   display:flex;
   flex-grow:1;
-  align-items:center;
-  gap:0.25rem;
-}
-.CheckGroup.CheckGroupL1>.CheckGroupHead{
-  background-color:red;
-  color:#FFFFFF;
-}
-.CheckGroup.CheckGroupL2>.CheckGroupHead{
-  border-left:4px solid red;
-}
-.CheckGroup.CheckGroupL3>.CheckGroupHead{
-  border-left:1px solid red;
-}
+  align-items:stretch;
 
-label.visToggleLabel{
-  display:inline-Block;
-}
+  &>label:has(>input.filterValue){
+    padding: 1rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap:var(--Spc-Mini);
 
-label.visToggleLabel::before{
-  display:block;
-  content:'';
-  width:0.5rem;
-  height:0.5rem;
-  background-color:currentColor;
-  clip-path:var(--ArrowRight);
-  transform:rotate(0deg);
-  transition:transform 0.25s;
-}
-label.visToggleLabel:has(input:checked)::before{
-  transform:rotate(90deg);
-}
-input.visToggle{
-  display:none;
-}
+    &::before{
+      content:'';
+      display:inline-block;
+      flex-shrink: 0;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      border:1px solid var(--Accent100)
+    }
+  }
+  &>label:has(>input.filterValue:checked){
+    &::before{
+      background-color:var(--Accent050);
+    }
+  }
 
-input.filterValue{
- display:none;
+
+
+
+  .CheckGroupL1>&:not(:has(>label>input.filterValue:checked)){
+    outline: 1px solid var(--Accent100)
+  }
+  .CheckGroupL1>&:has(>label>input.filterValue:checked){
+    background-color:var(--Accent100);
+    color:#FFFFFF;
+  }
+
+
+  .CheckGroupL2>&>label:has(input.filterValue){
+    border-left: var(--BorderHeavy) solid var(--Accent100);
+  }
+  .CheckGroupL2>&:has(>label>input.filterValue:checked){
+    /* background-color:var(--Accent025);
+    color:#FFFFFF; */
+  }
+
+  .CheckGroupL3>&{
+    border-left: var(--BorderLight) solid var(--Accent100);
+  }
+
+
+  &:not(:has(label>input.filterValue:checked))>.visToggleLabel{
+    display: none;
+  }
+  &>.visToggleLabel{
+    display: block;
+    align-self: stretch;
+    padding: var(--Spc-Mini);
+    background-color: var(--Accent050);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#ffffff;
+
+    &::before{
+      content:'';
+      display: block;
+      width:0.5rem;
+      height:0.5rem;
+      background-color:currentColor;
+      clip-path:var(--ArrowRight);
+      transform:rotate(0deg);
+      transition:transform 0.25s;
+    }
+    &:has(input:checked)::before{
+      transform:rotate(90deg);
+    }
+
+  }
 }
 
 /* Map */
@@ -742,46 +777,53 @@ input.filterValue{
 .ExpandRuleBox{
     display:flex;
     gap:0.5rem;
-}
 
-.ExpandRuleBox>label>input{
-    display:none;
-}
+    &.RuleTop{
+      flex-direction: column;
 
-.ExpandRuleBox>label{
-    display:flex;
-    align-items:start;
+      &>label.FlagIn{
+        width: 100%;
+        border-top:var(--BorderMedium) solid var(--Accent100);
+      }
 
-    --BorderWidth:2px;
-    border-color:var(--Accent100);
-    border-style:solid;
-    border-width:0 0 0 0;
-    color:#ffffff;
+      &>label{
+        flex-direction: row;
+      }
 
-    &.FlagLeft{
-        align-self:stretch;
-        border-width:0 var(--BorderWidth) 0 0;
     }
 
-    &:has(>input:checked){
-        align-items:end;
+    &>label{
+      display: flex;
+      justify-content: start;
+
+      &:has(input:checked){
+        justify-content: end;
+      }
+
+      &>.RuleFlag{
+        aspect-ratio: 1/1;
+        background-color:var(--Accent100);
+        display: block;
+        padding: 0.25rem; 
+
+        &::before{
+          content:'';
+          display: block;
+          width: 0.5rem;
+          aspect-ratio: 1/1;
+          background-color:currentColor;
+          clip-path: var(--ArrowDown);
+        }
+      }
     }
-}
 
-.ExpandRuleBox>label> .RuleFlag{
-    aspect-ratio: 1/1;
-    background-color:var(--Accent100);
-    display: block;
-    padding: 0.25rem;
-}
+    &.RuleTop:not(:has(>label>input:checked)){
+      max-width: 100px;
+    }
 
-.ExpandRuleBox>label> .RuleFlag::before{
-  content:'';
-  display: block;
-  width: 0.5rem;
-  aspect-ratio: 1/1;
-  background-color:currentColor;
-  clip-path: var(--ArrowDown);
+    &.CollapseHidden:not(:has(>label>input:checked))>.ContentArea{
+      display: none;
+    }
 }
 
 .ExpandRuleBox>label:has(input:checked)> .RuleFlag::before{
