@@ -80,9 +80,9 @@
 }
 [data-pillar="Safe Homes"],
 [value="Safe Homes"]{
-    --Accent100:#FF7F39;
-    --Accent050:#DB5912;
-    --Accent025:#BD4300;
+    --Accent100:#E56A22;
+    --Accent050:#C55712;
+    --Accent025:#A64500;
     --heroImage:url('../Assets/Images/pexels-shehab-al-qadhi-472755071-20858565.jpg')
 }
 [data-pillar="Safe Communities"],
@@ -1017,12 +1017,18 @@ main.ExploreContent{
 }
 
 .ExploreButtonGrid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 
+.ExploreButtonGrid > .ExploreDrillBtn{
+  flex: 0 1 240px;
+}
+
 .ExploreButtonGrid--pillars{
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
