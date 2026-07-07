@@ -912,6 +912,10 @@ li.pill{
     margin-bottom: 0.25rem;
     list-style: disc outside;
     text-wrap: balance;
+
+    &::marker{
+      color: var(--Accent100);
+    }
   }
 
   & a{
@@ -981,7 +985,7 @@ main.ExploreContent > .ExploreNav{
 }
 
 .ExplorePrompt{
-  font-size: var(--FontSize-Med);
+  font-size: var(--FontSize-Lrg);
   font-weight: 600;
   color: var(--Accent100);
   margin: 0;

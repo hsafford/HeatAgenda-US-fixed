@@ -5,7 +5,7 @@ const ExploreContent = document.querySelector('main.ExploreContent')
 
 const intro = document.createElement('p')
 intro.classList.add('ExploreIntro')
-intro.textContent = "There are lots of ways to address the escalating threat of extreme heat. Click through to explore different strategies, and specific policy solutions, that state and local leaders can put in place to achieve the Agenda's vision of Safe Homes, Safe Workplaces, Safe Schools and Childcare, and Safe Communities."
+intro.textContent = "There are lots of ways to address the escalating threat of extreme heat. Click through to explore different strategies – and specific policy solutions - that state and local leaders can put in place to achieve the Agenda's vision of Safe Homes, Safe Workplaces, Safe Schools and Childcare, and Safe Communities."
 ExploreContent.append(intro)
 
 const state = {
