@@ -358,6 +358,25 @@ const caseStudyItemTaxonomyItem = ({ TaxonomyName = "Taxonomy", Value = "Value" 
     return item;
 };
 
+const US_STATE_ABBR = {
+    'Alabama':'AL','Alaska':'AK','Arizona':'AZ','Arkansas':'AR','California':'CA',
+    'Colorado':'CO','Connecticut':'CT','Delaware':'DE','District of Columbia':'DC',
+    'D.C.':'DC','Florida':'FL','Georgia':'GA','Hawaii':'HI','Idaho':'ID',
+    'Illinois':'IL','Indiana':'IN','Iowa':'IA','Kansas':'KS','Kentucky':'KY',
+    'Louisiana':'LA','Maine':'ME','Maryland':'MD','Massachusetts':'MA','Michigan':'MI',
+    'Minnesota':'MN','Mississippi':'MS','Missouri':'MO','Montana':'MT','Nebraska':'NE',
+    'Nevada':'NV','New Hampshire':'NH','New Jersey':'NJ','New Mexico':'NM','New York':'NY',
+    'North Carolina':'NC','North Dakota':'ND','Ohio':'OH','Oklahoma':'OK','Oregon':'OR',
+    'Pennsylvania':'PA','Rhode Island':'RI','South Carolina':'SC','South Dakota':'SD',
+    'Tennessee':'TN','Texas':'TX','Utah':'UT','Vermont':'VT','Virginia':'VA',
+    'Washington':'WA','West Virginia':'WV','Wisconsin':'WI','Wyoming':'WY'
+}
+function stateAbbrev(name){
+    if(!name) return ''
+    const trimmed = name.trim()
+    return US_STATE_ABBR[trimmed] || trimmed
+}
+
 export const caseStudyItem =({
     Title="Title",
     LocationPills=[],
@@ -380,9 +399,11 @@ export const caseStudyItem =({
     const stateNames = LocationPills
         .map(pill => pill?.dataset?.state)
         .filter(Boolean)
+    const primaryState = stateNames[0] || null
+    const otherStates = stateNames.slice(1)
     const StateNode = document.createElement('span')
     StateNode.classList.add('CaseStudyFlag-State')
-    StateNode.textContent = stateNames.length ? stateNames.join(', ') : '—'
+    StateNode.textContent = primaryState || '—'
     const ArrowNode = document.createElement('span')
     ArrowNode.classList.add('CaseStudyFlag-Arrow')
     ArrowNode.setAttribute('aria-hidden', 'true')
@@ -441,6 +462,16 @@ export const caseStudyItem =({
     }
 
     CaseStudyInfo.append(Flag, CaseStudyTitle, Taxonomy, MoreInfo, SourcesList)
+
+    if(otherStates.length){
+        const AlsoIn = document.createElement('div')
+        AlsoIn.classList.add('CaseStudyAlsoIn')
+        const label = document.createElement('span')
+        label.classList.add('CaseStudyAlsoIn-Label')
+        label.textContent = 'Also in:'
+        AlsoIn.append(label, ' ', otherStates.map(stateAbbrev).join(', '))
+        CaseStudyInfo.append(AlsoIn)
+    }
     CaseStudyItem.append(CaseStudyInfo)
     return CaseStudyItem
 }

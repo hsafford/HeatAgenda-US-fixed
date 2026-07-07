@@ -332,9 +332,11 @@ function applyStateFilter(state){
 
 function setCountLabel(shown, state){
     if(!countLabel) return
+    const num = `<span class="CaseStudiesCount-Num">${shown}</span>`
     if(state){
-        countLabel.textContent = `${shown} case ${shown === 1 ? 'study' : 'studies'} in ${state}`
+        const stateNode = `<span class="CaseStudiesCount-State">${state}</span>`
+        countLabel.innerHTML = `${num} case ${shown === 1 ? 'study' : 'studies'} in ${stateNode}`
     } else {
-        countLabel.textContent = `Showing all ${shown} case studies`
+        countLabel.innerHTML = `Showing all ${num} case studies`
     }
 }
