@@ -226,7 +226,8 @@ header{
 
   &>.headerMain{
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
+    gap: var(--Spc-Small);
 
     &>.HeaderInfo{
       display: flex;
@@ -261,6 +262,7 @@ header{
       flex-wrap: nowrap;
       gap:var(--Spc-Small);
       align-items:stretch;
+      justify-content: center;
 
       &>a{
         text-decoration: none;
