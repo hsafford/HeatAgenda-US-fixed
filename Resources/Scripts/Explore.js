@@ -9,8 +9,14 @@ const state = {
     policyType: null
 }
 
-function render(){
-    ExploreContent.innerHTML = ''
+const TRANSITION_MS = 160
+
+async function render(){
+    const oldLevel = ExploreContent.querySelector('.ExploreLevel')
+    if(oldLevel){
+        oldLevel.classList.add('is-exiting')
+        await new Promise(r => setTimeout(r, TRANSITION_MS))
+    }
 
     if(state.pillar){
         ExploreContent.dataset.pillar = state.pillar
@@ -18,21 +24,27 @@ function render(){
         delete ExploreContent.dataset.pillar
     }
 
+    ExploreContent.innerHTML = ''
+
     if(state.pillar){
         ExploreContent.append(renderNav())
     }
 
-    ExploreContent.append(renderPrompt())
+    const level = document.createElement('div')
+    level.classList.add('ExploreLevel')
+    level.append(renderPrompt())
 
     if(!state.pillar){
-        ExploreContent.append(renderPillarButtons())
+        level.append(renderPillarButtons())
     } else if(!state.recommendation){
-        ExploreContent.append(renderRecommendationButtons())
+        level.append(renderRecommendationButtons())
     } else if(!state.policyType){
-        ExploreContent.append(renderPolicyTypeButtons())
+        level.append(renderPolicyTypeButtons())
     } else {
-        ExploreContent.append(renderActions())
+        level.append(renderActions())
     }
+
+    ExploreContent.append(level)
 }
 
 function renderNav(){
@@ -116,9 +128,10 @@ function jumpTo(target){
 function makeGrid(values, onSelect){
     const grid = document.createElement('div')
     grid.classList.add('ExploreButtonGrid')
-    values.forEach(value => {
+    values.forEach((value, i) => {
         const btn = document.createElement('button')
         btn.classList.add('ExploreDrillBtn')
+        btn.style.setProperty('--i', i)
         btn.textContent = value
         btn.addEventListener('click', () => onSelect(value))
         grid.append(btn)

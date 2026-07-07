@@ -939,6 +939,27 @@ main.ExploreContent{
   max-width: none;
 }
 
+.ExploreLevel{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: explore-in 260ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.ExploreLevel.is-exiting{
+  animation: explore-out 160ms ease-in both;
+}
+
+@keyframes explore-in{
+  from{ opacity: 0; transform: translateY(14px); }
+  to{ opacity: 1; transform: translateY(0); }
+}
+
+@keyframes explore-out{
+  from{ opacity: 1; transform: translateY(0); }
+  to{ opacity: 0; transform: translateY(-10px); }
+}
+
 .ExploreButtonGrid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -957,10 +978,40 @@ main.ExploreContent{
   text-align: center;
   min-height: 6rem;
   line-height: 1.2;
+  transition: background-color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+  animation: explore-btn-in 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc(60ms * var(--i, 0));
 }
 
 .ExploreDrillBtn:hover{
   background-color: var(--Accent050);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.ExploreDrillBtn:active{
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+@keyframes explore-btn-in{
+  from{ opacity: 0; transform: translateY(10px) scale(0.98); }
+  to{ opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .ExploreLevel,
+  .ExploreLevel.is-exiting,
+  .ExploreDrillBtn{
+    animation: none !important;
+  }
+  .ExploreDrillBtn{
+    transition: background-color 150ms ease;
+  }
+  .ExploreDrillBtn:hover{
+    transform: none;
+    box-shadow: none;
+  }
 }
 
 .ExploreActionList{
