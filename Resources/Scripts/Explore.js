@@ -3,6 +3,11 @@ import * as Parser from './JsonParser.js'
 
 const ExploreContent = document.querySelector('main.ExploreContent')
 
+const intro = document.createElement('p')
+intro.classList.add('ExploreIntro')
+intro.textContent = "There are lots of ways to address the escalating threat of extreme heat. Click through to explore different strategies, and specific policy solutions, that state and local leaders can put in place to achieve the Agenda's vision of Safe Homes, Safe Workplaces, Safe Schools and Childcare, and Safe Communities."
+ExploreContent.append(intro)
+
 const state = {
     pillar: null,
     recommendation: null,
@@ -25,7 +30,7 @@ async function render(){
     }
 
     Array.from(ExploreContent.children).forEach(c => {
-        if(!c.classList.contains('PageTitle')){
+        if(c.classList.contains('ExploreLevel') || c.classList.contains('ExploreNav')){
             c.remove()
         }
     })
@@ -100,13 +105,13 @@ function renderPrompt(){
     const prompt = document.createElement('p')
     prompt.classList.add('ExplorePrompt')
     if(!state.pillar){
-        prompt.textContent = 'Choose a pillar to explore.'
+        prompt.textContent = 'Choose a focus area to explore.'
     } else if(!state.recommendation){
-        prompt.textContent = 'Choose a policy recommendation.'
+        prompt.textContent = 'Choose an objective.'
     } else if(!state.policyType){
-        prompt.textContent = 'Choose a policy type.'
+        prompt.textContent = 'Choose a strategy.'
     } else {
-        prompt.textContent = 'Policy actions'
+        prompt.textContent = 'Policy solutions'
     }
     return prompt
 }
