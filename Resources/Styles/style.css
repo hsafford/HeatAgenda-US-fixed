@@ -932,6 +932,14 @@ main.ExploreContent{
   gap: 1.5rem;
 }
 
+main.ExploreContent > .ExploreLevel,
+main.ExploreContent > .ExploreNav{
+  margin-left: 0;
+  margin-right: 0;
+  width: auto;
+  align-self: stretch;
+}
+
 .ExploreNav{
   display: flex;
   align-items: center;
@@ -993,6 +1001,7 @@ main.ExploreContent{
   color: var(--Accent100);
   margin: 0;
   max-width: none;
+  text-align: center;
 }
 
 .ExploreLevel{
@@ -1024,13 +1033,16 @@ main.ExploreContent{
 }
 
 .ExploreButtonGrid > .ExploreDrillBtn{
-  flex: 0 1 240px;
+  flex: 0 1 280px;
 }
 
 .ExploreButtonGrid--pillars{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+  align-self: center;
 }
 
 @media (max-width: 600px){
