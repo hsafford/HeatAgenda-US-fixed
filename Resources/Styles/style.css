@@ -271,7 +271,9 @@ header{
   &>nav.navbar{
     display: flex;
     justify-content: center;
-    padding-top: var(--Spc-Small);
+    background-color: var(--Accent100);
+    padding: 0.5rem var(--Spc-Small);
+    margin-top: var(--Spc-Small);
 
     &>.navItems{
       display: flex;
@@ -284,7 +286,7 @@ header{
         position:relative;
         margin:0px 0.5rem;
         padding-left: 0.5rem;
-        color:#000000;
+        color:#ffffff;
         font-weight: 500;
 
         &::before{
@@ -296,7 +298,7 @@ header{
           top:0px;
           bottom: 0px;
           display:inline-block;
-          background-color:var(--Accent100);
+          background-color:#ffffff;
         }
 
         &.navItemActive{
