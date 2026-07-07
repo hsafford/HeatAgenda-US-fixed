@@ -226,8 +226,18 @@ header{
 
   &>.headerMain{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
+    align-items: center;
     gap: var(--Spc-Small);
+    padding-bottom: var(--Spc-Small);
+    border-bottom: 1px solid var(--Accent100);
+
+    &>.navBtn{
+      font-weight: bold;
+      padding: 0.5rem 0.75rem;
+      color:#ffffff;
+      background-color: var(--Accent100);
+    }
 
     &>.HeaderInfo{
       display: flex;
@@ -256,62 +266,46 @@ header{
     }
 
 
-    &>.navbar{
+  }
 
-      display:flex;
-      flex-wrap: nowrap;
-      gap:var(--Spc-Small);
-      align-items:stretch;
+  &>nav.navbar{
+    display: flex;
+    justify-content: center;
+    padding-top: var(--Spc-Small);
+
+    &>.navItems{
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
+      gap: 0.25rem 0.5rem;
 
-      &>a{
-        text-decoration: none;
-        display: block;
-        margin:0;
-      }
+      &>.navItem{
+        position:relative;
+        margin:0px 0.5rem;
+        padding-left: 0.5rem;
+        color:#000000;
+        font-weight: 500;
 
-      &>.navItems{
-        align-items: center;
+        &::before{
+          content:'';
+          margin-right: 0.5rem;
+          width:2px;
+          position: absolute;
+          left: 0px;
+          top:0px;
+          bottom: 0px;
+          display:inline-block;
+          background-color:var(--Accent100);
+        }
 
-        &>.navItem{
-            position:relative;
-            margin:0px 0.5rem;
-            padding-left: 0.5rem;
-            color:#000000;
-            font-weight: 500;
+        &.navItemActive{
+          font-weight: 700;
 
-            &::before{
-              content:'';
-              margin-right: 0.5rem;
-              width:2px;
-              position: absolute;
-              left: 0px;
-              top:0px;
-              bottom: 0px;
-              display:inline-block;
-              background-color:var(--Accent100);
-            }
-
-            &.navItemActive{
-              font-weight: 700;
-
-              &::before{
-                width:4px
-              }
-            }
+          &::before{
+            width:4px
           }
         }
-
-        &>.navToggle{
-          display: none;
-        }
-      
-
-      &>.navBtn{
-        font-weight: bold;
-        padding: 0.75rem;
-        color:#ffffff;
-        background-color: var(--Accent100);
       }
     }
   }
@@ -1184,15 +1178,11 @@ ul.signitoryList{
 
       }
 
-      & nav.navbar{
-        gap: var(--Spc-Small);
+    }
 
-        &>.navItems{
-          flex-wrap: wrap;
-          gap: 0.25rem 0.5rem;
-        }
-      }
-
+    &>nav.navbar>.navItems{
+      flex-wrap: wrap;
+      gap: 0.25rem 0.5rem;
     }
   }
 
