@@ -76,8 +76,10 @@ const HeaderInfo=()=>{
     HeaderInfo.classList.add('HeaderInfo', 'Container',  'FlexContainer', 'ContainerGap-Mini')
 
     HeaderInfo.innerHTML = `
-        <img class="Logo Logo-Desktop" src="./Resources/Assets/Graphics/FAS-Logo-Primary-Blue.svg"/>
-        <img class="Logo Logo-Mobile" src="./Resources/Assets/Graphics/FAS-Logo-Secondary-Blue.svg"/>
+        <a class="LogoLink" href="https://fas.org" target="_blank" rel="noopener" aria-label="Federation of American Scientists">
+            <img class="Logo Logo-Desktop" src="./Resources/Assets/Graphics/FAS-Logo-Primary-Blue.svg"/>
+            <img class="Logo Logo-Mobile" src="./Resources/Assets/Graphics/FAS-Logo-Secondary-Blue.svg"/>
+        </a>
         <h1 class="site-title">Heat Policy Agenda</h1>
     `
     return HeaderInfo
