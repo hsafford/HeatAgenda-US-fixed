@@ -874,6 +874,100 @@ li.pill{
 }
 
 /* Explore */
+
+/* Implementation Guide drill-down */
+main.ExploreContent{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ExploreNav{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ExploreBackBtn{
+  padding: 0.5rem 1rem;
+  background-color: var(--Accent100);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.ExploreBackBtn:hover{
+  background-color: var(--Accent050);
+}
+
+.ExploreBreadcrumb{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  color: var(--Accent100);
+  font-size: var(--FontSize-Reg);
+}
+
+.ExploreBreadcrumbItem{
+  background: none;
+  border: none;
+  color: var(--Accent100);
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+  text-decoration: underline;
+}
+
+.ExploreBreadcrumbSep{
+  color: var(--Accent100);
+}
+
+.ExploreBreadcrumbCurrent{
+  font-weight: 700;
+  color: var(--Accent100);
+}
+
+.ExplorePrompt{
+  font-size: var(--FontSize-Med);
+  font-weight: 600;
+  color: var(--Accent100);
+  margin: 0;
+  max-width: none;
+}
+
+.ExploreButtonGrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.ExploreDrillBtn{
+  padding: 1.5rem 1rem;
+  background-color: var(--Accent100);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--FontSize-Med);
+  font-weight: 700;
+  text-align: center;
+  min-height: 6rem;
+  line-height: 1.2;
+}
+
+.ExploreDrillBtn:hover{
+  background-color: var(--Accent050);
+}
+
+.ExploreActionList{
+  list-style: none;
+}
+
+/* Legacy accordion styling (kept for reference) */
 .ExploreElement{
   & input{
     display: none;
