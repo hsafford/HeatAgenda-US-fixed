@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="./Resources/Styles/style.css">
 </head>
 <body>
-    <header data-pagename="Policy in Action"></header>
-    <main>
-        <div class="Container FlexContainer FlexRow ContainerGap-Small">
-            <span id="map-title">
-                <h2>How</h2>
-                <h2 id="MapSelection">The US</h2>
-                <h2>is acting on heat policy</h2>
-            </span>
-            <div class="ExpandRuleBox mapContainer">
-                <div class="BoxContent mapSelect">
-
-                </div>
+    <header data-pagename="State Explorer"></header>
+    <main class="StateExplorerContent">
+        <div class="StateMapSection">
+            <p class="StateMapPrompt">
+                Click a state to see how it's acting on heat policy. Currently viewing:
+                <strong id="MapSelection">All states</strong>.
+            </p>
+            <div class="mapContainer">
+                <div class="mapSelect"></div>
             </div>
+            <button type="button" class="StateMap-Reset" hidden>Show all states</button>
         </div>
-        <div class="DrillDownFilter"></div>
+        <div class="CaseStudiesMeta">
+            <p class="CaseStudiesCount"></p>
+        </div>
         <div class="ContentContainer" id="CaseStudies"></div>
     </main>
     <footer></footer>

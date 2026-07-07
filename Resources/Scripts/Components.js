@@ -368,21 +368,20 @@ export const caseStudyItem =({
     PType="Policy Type"
 }={})=>{
 
-    const CaseStudyItem = ExpandRuleBox()
+    const CaseStudyItem = document.createElement('li')
     CaseStudyItem.classList.add('CaseStudyItem')
     CaseStudyItem.dataset.pillar = Pillar
 
     const CaseStudyInfo = document.createElement('div')
     CaseStudyInfo.classList.add('CaseStudyInfo')
-    
+
+    const StateBadges = document.createElement('div')
+    StateBadges.classList.add('CaseStudyStates')
+    LocationPills.forEach(pill => StateBadges.append(pill))
+
     const CaseStudyTitle = document.createElement('h4')
     CaseStudyTitle.classList.add('CaseStudyTitle')
     CaseStudyTitle.textContent = Title
-
-    const LocationPillsContainer = pillBox()
-    LocationPills.forEach((pill) => {
-        LocationPillsContainer.appendChild(pill)
-    })
 
     const Taxonomy = document.createElement('div')
     Taxonomy.classList.add('Taxonomy');
@@ -399,30 +398,34 @@ export const caseStudyItem =({
     MoreInfo.classList.add('MoreInfo')
 
     const Description = document.createElement('p')
+    Description.classList.add('CaseStudyDescription')
     Description.textContent = DescriptionText
     MoreInfo.append(Description)
 
     const SourcesList = document.createElement('div')
     SourcesList.classList.add('Sources')
-    const SourcesTitle = document.createElement('h4')
-    SourcesTitle.textContent = 'Sources'
+    if(Sources.length){
+        const SourcesTitle = document.createElement('div')
+        SourcesTitle.classList.add('SourcesLabel')
+        SourcesTitle.textContent = 'Sources'
+        SourcesList.append(SourcesTitle)
+        const list = document.createElement('ul')
+        list.classList.add('SourcesLinks')
+        Sources.forEach(source => {
+            const li = document.createElement('li')
+            const a = document.createElement('a')
+            a.textContent = source.Title
+            a.href = source.Url
+            a.target = '_blank'
+            a.rel = 'noopener'
+            li.append(a)
+            list.append(li)
+        })
+        SourcesList.append(list)
+    }
 
-    SourcesList.append(SourcesTitle)
-    Sources.forEach((source) => {
-        const SourceItem = document.createElement('a')
-        SourceItem.textContent = source.Title
-        SourceItem.href = source.Url
-        SourceItem.target = "_blank"
-        SourcesList.appendChild(SourceItem)
-    })
-    MoreInfo.append(SourcesList)
-
-    CaseStudyInfo.appendChild(CaseStudyTitle)
-    CaseStudyInfo.appendChild(LocationPillsContainer)
-    CaseStudyInfo.appendChild(Taxonomy)
-
-    addContent(CaseStudyItem, CaseStudyInfo)
-    addContent(CaseStudyItem, MoreInfo)
+    CaseStudyInfo.append(StateBadges, CaseStudyTitle, Taxonomy, MoreInfo, SourcesList)
+    CaseStudyItem.append(CaseStudyInfo)
     return CaseStudyItem
 }
 

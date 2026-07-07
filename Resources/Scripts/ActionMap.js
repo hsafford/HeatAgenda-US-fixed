@@ -265,74 +265,76 @@ const statesLayout = [
 ]
 
 const mapSelect = document.querySelector('.mapSelect');
-statesLayout.forEach((state, i)=>{
-    mapSelect.append( Cmpnt.StateBox(statesLayout[i]) )
-  
-})
-mapSelect.addEventListener('change', (e) => {
-  if(!e.target.classList.contains('filterValue')) return;
-
-  const selectedState = e.target.value;
-  updateContentStates(selectedState);
-  updateMapSelectionTitle(selectedState);
+statesLayout.forEach((state)=>{
+    const box = Cmpnt.StateBox(state)
+    box.setAttribute('title', state.State)
+    box.dataset.state = state.State
+    mapSelect.append(box)
 })
 
-const mapTitle = document.querySelector('#map-title');
-const mapTitleSelection = mapTitle.querySelector('#MapSelection');
-function updateMapSelectionTitle(newSelection){
-  mapTitleSelection.textContent = newSelection;
-}
-
-const mapContainer = document.querySelector('.mapContainer')
-mapContainer.prepend(Cmpnt.ExpandRule({Expanded: true}))
-
+const selectionLabel = document.querySelector('#MapSelection')
+const resetBtn = document.querySelector('.StateMap-Reset')
+const countLabel = document.querySelector('.CaseStudiesCount')
 const ContentContainer = document.querySelector('#CaseStudies')
+
 Parser.Data.CaseStudies.forEach((study) => {
-    
-    const AssociatedStatesArr = study.State.split(', ');
-    
-    const LocationPills = [];
-    AssociatedStatesArr.forEach((state) => {
-        const pill = Cmpnt.locationPill({ State: state })
-        LocationPills.push(pill);
-    });
+    const AssociatedStatesArr = (study.State || '').split(',').map(s => s.trim()).filter(Boolean)
 
-    const SourceTitles = study['Link Title'] ? study['Link Title'].split(', ') : [];
-    const SourceUrls = study['Link Url'] ? study['Link Url'].split(', ') : [];
+    const LocationPills = AssociatedStatesArr.map(state => Cmpnt.locationPill({ State: state }))
 
+    const SourceTitles = study['Link Title'] ? study['Link Title'].split(',').map(s => s.trim()) : []
+    const SourceUrls = study['Link URL'] ? study['Link URL'].split(',').map(s => s.trim()) : []
     const Sources = SourceTitles.map((title, index) => ({
         Title: title,
         Url: SourceUrls[index] || ''
-    }));
+    }))
 
     const item = Cmpnt.caseStudyItem({
         Title: study['Case Study Title'],
-        LocationPills: LocationPills,
+        LocationPills,
         DescriptionText: study['Description'],
-        Sources: Sources,
+        Sources,
         Pillar: study['Pillar'],
         Recc: study['Recommendation'],
         PType: study['Policy Type']
     })
-
-
+    item.dataset.states = AssociatedStatesArr.join('|')
     ContentContainer.appendChild(item)
 })
-function updateContentStates(State){
-    const filterIn = ContentContainer.querySelectorAll(':scope > *:has([data-state="' + State + '"])')
-    const filterOut = ContentContainer.querySelectorAll(':scope > *:not(:has([data-state="' + State + '"]))')
-    if (filterOut) {
-        filterOut.forEach((element) => {
-            element.style.display = "none"
-        });
-    }
-    if(filterIn){
-        filterIn.forEach((element) => {
-            element.style.display = ""
-        });
-    }
+
+const totalCount = ContentContainer.children.length
+setCountLabel(totalCount, null)
+
+mapSelect.addEventListener('change', (e) => {
+    if(!e.target.classList.contains('filterValue')) return
+    const selectedState = e.target.value
+    applyStateFilter(selectedState)
+})
+
+resetBtn.addEventListener('click', () => {
+    const checked = mapSelect.querySelector('input.filterValue:checked')
+    if(checked) checked.checked = false
+    applyStateFilter(null)
+})
+
+function applyStateFilter(state){
+    let shown = 0
+    Array.from(ContentContainer.children).forEach(el => {
+        const states = (el.dataset.states || '').split('|').filter(Boolean)
+        const match = !state || states.includes(state)
+        el.style.display = match ? '' : 'none'
+        if(match) shown++
+    })
+    selectionLabel.textContent = state || 'All states'
+    resetBtn.hidden = !state
+    setCountLabel(shown, state)
 }
 
-//
-const DrillDownFilter = document.querySelector('.DrillDownFilter')
-Cmpnt.processDrillDownFilter({FilterContainer: DrillDownFilter, ContentContainer:ContentContainer})
+function setCountLabel(shown, state){
+    if(!countLabel) return
+    if(state){
+        countLabel.textContent = `${shown} case ${shown === 1 ? 'study' : 'studies'} in ${state}`
+    } else {
+        countLabel.textContent = `Showing all ${shown} case studies`
+    }
+}
