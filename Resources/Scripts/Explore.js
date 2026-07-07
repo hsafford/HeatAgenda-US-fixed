@@ -24,7 +24,11 @@ async function render(){
         delete ExploreContent.dataset.pillar
     }
 
-    ExploreContent.innerHTML = ''
+    Array.from(ExploreContent.children).forEach(c => {
+        if(!c.classList.contains('PageTitle')){
+            c.remove()
+        }
+    })
 
     if(state.pillar){
         ExploreContent.append(renderNav())

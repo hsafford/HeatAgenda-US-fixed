@@ -1132,9 +1132,8 @@ main.ExploreContent{
   margin: 0.5rem 0px;
 }
 
-/* Center the main page title */
-main > .PageTitle[data-pagename="The State and Local Heat Policy Agenda"] > h1,
-body:has(header[data-pagename="The State and Local Heat Policy Agenda"]) main > .PageTitle > h1{
+/* Center the page title */
+main > .PageTitle > h1{
   text-align: center;
 }
 
