@@ -966,6 +966,28 @@ main.ExploreContent{
   gap: 1rem;
 }
 
+.ExploreButtonGrid--pillars{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 600px){
+  .ExploreButtonGrid--pillars{
+    grid-template-columns: 1fr;
+  }
+}
+
+.ExploreDrillBtn--pillar{
+  min-height: 12rem;
+  font-size: var(--FontSize-Lrg);
+  padding: 2rem 1.5rem;
+  background-image: var(--heroImage);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+}
+
 .ExploreDrillBtn{
   padding: 1.5rem 1rem;
   background-color: var(--Accent100);

@@ -144,10 +144,21 @@ function makeGrid(values, onSelect){
 }
 
 function renderPillarButtons(){
-    return makeGrid(Parser.List.Pillars, pillar => {
-        state.pillar = pillar
-        render()
+    const grid = document.createElement('div')
+    grid.classList.add('ExploreButtonGrid', 'ExploreButtonGrid--pillars')
+    Parser.List.Pillars.forEach((pillar, i) => {
+        const btn = document.createElement('button')
+        btn.classList.add('ExploreDrillBtn', 'ExploreDrillBtn--pillar')
+        btn.dataset.pillar = pillar
+        btn.style.setProperty('--i', i)
+        btn.textContent = pillar
+        btn.addEventListener('click', () => {
+            state.pillar = pillar
+            render()
+        })
+        grid.append(btn)
     })
+    return grid
 }
 
 function renderRecommendationButtons(){
