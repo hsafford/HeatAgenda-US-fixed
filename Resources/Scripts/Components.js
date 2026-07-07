@@ -375,24 +375,40 @@ export const caseStudyItem =({
     const CaseStudyInfo = document.createElement('div')
     CaseStudyInfo.classList.add('CaseStudyInfo')
 
-    const StateBadges = document.createElement('div')
-    StateBadges.classList.add('CaseStudyStates')
-    LocationPills.forEach(pill => StateBadges.append(pill))
+    const Flag = document.createElement('div')
+    Flag.classList.add('CaseStudyFlag')
+    const stateNames = LocationPills
+        .map(pill => pill?.dataset?.state)
+        .filter(Boolean)
+    const StateNode = document.createElement('span')
+    StateNode.classList.add('CaseStudyFlag-State')
+    StateNode.textContent = stateNames.length ? stateNames.join(', ') : '—'
+    const ArrowNode = document.createElement('span')
+    ArrowNode.classList.add('CaseStudyFlag-Arrow')
+    ArrowNode.setAttribute('aria-hidden', 'true')
+    ArrowNode.textContent = '→'
+    const PillarNode = document.createElement('span')
+    PillarNode.classList.add('CaseStudyFlag-Pillar')
+    PillarNode.textContent = Pillar
+    Flag.append(StateNode, ArrowNode, PillarNode)
 
     const CaseStudyTitle = document.createElement('h4')
     CaseStudyTitle.classList.add('CaseStudyTitle')
     CaseStudyTitle.textContent = Title
 
     const Taxonomy = document.createElement('div')
-    Taxonomy.classList.add('Taxonomy');
-
-    const PillarBox = caseStudyItemTaxonomyItem({ TaxonomyName: "Pillar", Value: Pillar });
-    const ReccBox = caseStudyItemTaxonomyItem({ TaxonomyName: "Policy Recommendation", Value: Recc });
-    const PolicyTypeBox = caseStudyItemTaxonomyItem({ TaxonomyName: "Policy Type", Value: PType });
-
-    Taxonomy.appendChild(PillarBox);
-    Taxonomy.appendChild(ReccBox);
-    Taxonomy.appendChild(PolicyTypeBox);
+    Taxonomy.classList.add('CaseStudyTaxonomy');
+    const ReccNode = document.createElement('span')
+    ReccNode.classList.add('CaseStudyTaxonomy-Recc')
+    ReccNode.textContent = Recc
+    const TaxonomyArrow = document.createElement('span')
+    TaxonomyArrow.classList.add('CaseStudyTaxonomy-Arrow')
+    TaxonomyArrow.setAttribute('aria-hidden', 'true')
+    TaxonomyArrow.textContent = '→'
+    const PTypeNode = document.createElement('span')
+    PTypeNode.classList.add('CaseStudyTaxonomy-PType')
+    PTypeNode.textContent = PType
+    Taxonomy.append(ReccNode, TaxonomyArrow, PTypeNode)
 
     const MoreInfo = document.createElement('div')
     MoreInfo.classList.add('MoreInfo')
@@ -424,7 +440,7 @@ export const caseStudyItem =({
         SourcesList.append(list)
     }
 
-    CaseStudyInfo.append(StateBadges, CaseStudyTitle, Taxonomy, MoreInfo, SourcesList)
+    CaseStudyInfo.append(Flag, CaseStudyTitle, Taxonomy, MoreInfo, SourcesList)
     CaseStudyItem.append(CaseStudyInfo)
     return CaseStudyItem
 }

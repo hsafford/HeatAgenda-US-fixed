@@ -678,6 +678,7 @@ li.pill{
   padding: 0;
   cursor: pointer;
   grid-row-start:var(--RowStart);
+  transition: transform 150ms ease, color 150ms ease, box-shadow 150ms ease;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -713,15 +714,30 @@ li.pill{
     position:absolute;
     inset:2px;
     border:var(--BorderWeight) solid var(--ColorMain);
+    background-color: transparent;
+    transition: background-color 150ms ease, border-width 150ms ease, inset 150ms ease;
     z-index:0;
   }
   &:has(>input:checked)::after{
-    background-color:var(--ColorMain)
+    background-color:var(--ColorMain);
+  }
+  &:hover{
+    transform: translateY(-2px);
+    color: var(--ColorMain);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
   }
   &:hover::after{
-    inset:5px;
+    background-color: color-mix(in srgb, var(--ColorMain) 12%, transparent);
+    border-width: 2px;
   }
-  
+  &:has(>input:checked):hover{
+    transform: translateY(-2px);
+    color: #ffffff;
+  }
+  &:has(>input:checked):hover::after{
+    background-color: var(--ColorMain);
+    border-width: 2px;
+  }
 }
 
 #map-title{
@@ -818,23 +834,34 @@ main.StateExplorerContent > *{
   gap: 0.5rem;
 }
 
-.CaseStudyStates{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-}
-
-.CaseStudyStates .pill{
+.CaseStudyFlag{
   align-self: flex-start;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 0.25rem 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   background-color: var(--Accent100);
   color: #ffffff;
-  list-style: none;
-  margin: 0;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.CaseStudyFlag-State{
+  text-transform: uppercase;
+}
+
+.CaseStudyFlag-Arrow{
+  opacity: 0.75;
+  font-size: 0.9em;
+}
+
+.CaseStudyFlag-Pillar{
+  text-transform: none;
+  font-weight: 600;
 }
 
 .CaseStudyItem .CaseStudyTitle{
@@ -849,23 +876,24 @@ main.StateExplorerContent > *{
   max-width: none;
 }
 
-.CaseStudyItem .Taxonomy{
+.CaseStudyTaxonomy{
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem;
-  font-size: 0.75rem;
+  align-items: baseline;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.72);
+  line-height: 1.35;
 }
 
-.CaseStudyItem .Taxonomy .TaxonomyItem{
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  padding: 0.2rem 0.4rem;
-  color: rgba(0, 0, 0, 0.7);
+.CaseStudyTaxonomy-Recc,
+.CaseStudyTaxonomy-PType{
+  font-weight: 600;
 }
 
-.CaseStudyItem .Taxonomy .TaxonomyItem p{
-  margin: 0;
-  font-size: inherit;
-  max-width: none;
+.CaseStudyTaxonomy-Arrow{
+  color: var(--Accent100);
+  font-weight: 700;
 }
 
 .CaseStudyItem .Sources{
@@ -892,7 +920,9 @@ main.StateExplorerContent > *{
 .SourcesLinks > li{
   margin-bottom: 0.25rem;
   list-style: disc outside;
-  text-wrap: balance;
+  text-wrap: pretty;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .SourcesLinks > li::marker{
