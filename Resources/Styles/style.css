@@ -943,22 +943,9 @@ main.ExploreContent > .ExploreNav{
 .ExploreNav{
   display: flex;
   align-items: center;
-  gap: 1rem;
   flex-wrap: wrap;
-}
-
-.ExploreBackBtn{
-  padding: 0.5rem 1rem;
-  background-color: var(--Accent100);
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  font: inherit;
-  font-weight: 700;
-}
-
-.ExploreBackBtn:hover{
-  background-color: var(--Accent050);
+  margin-top: -0.75rem;
+  margin-bottom: -0.75rem;
 }
 
 .ExploreBreadcrumb{
@@ -1026,14 +1013,29 @@ main.ExploreContent > .ExploreNav{
 }
 
 .ExploreButtonGrid{
+  --gap: 1rem;
+  --cols: 3;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: var(--gap);
 }
 
 .ExploreButtonGrid > .ExploreDrillBtn{
-  flex: 0 1 280px;
+  flex: 0 0 calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols));
+  max-width: 100%;
+}
+
+@media (max-width: 800px){
+  .ExploreButtonGrid{
+    --cols: 2 !important;
+  }
+}
+
+@media (max-width: 480px){
+  .ExploreButtonGrid{
+    --cols: 1 !important;
+  }
 }
 
 .ExploreButtonGrid--pillars{

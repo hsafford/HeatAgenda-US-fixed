@@ -60,18 +60,11 @@ function renderNav(){
     const nav = document.createElement('div')
     nav.classList.add('ExploreNav')
 
-    const back = document.createElement('button')
-    back.classList.add('ExploreBackBtn')
-    back.setAttribute('aria-label', 'Back')
-    back.innerHTML = '&larr; Back'
-    back.addEventListener('click', goBack)
-    nav.append(back)
-
     const crumbs = document.createElement('div')
     crumbs.classList.add('ExploreBreadcrumb')
 
     const trail = []
-    trail.push({label: 'All Pillars', target: 'root'})
+    trail.push({label: 'All Focus Areas', target: 'root'})
     if(state.pillar) trail.push({label: state.pillar, target: 'pillar'})
     if(state.recommendation) trail.push({label: state.recommendation, target: 'recommendation'})
     if(state.policyType) trail.push({label: state.policyType, target: 'policyType'})
@@ -134,9 +127,21 @@ function jumpTo(target){
     render()
 }
 
+function bestColumnsFor(n){
+    if(n <= 3) return n
+    if(n === 4) return 4
+    if(n === 5) return 3
+    if(n === 6) return 3
+    if(n === 7) return 4
+    if(n === 8) return 4
+    if(n === 9) return 3
+    return 4
+}
+
 function makeGrid(values, onSelect){
     const grid = document.createElement('div')
     grid.classList.add('ExploreButtonGrid')
+    grid.style.setProperty('--cols', bestColumnsFor(values.length))
     values.forEach((value, i) => {
         const btn = document.createElement('button')
         btn.classList.add('ExploreDrillBtn')
