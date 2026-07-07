@@ -84,8 +84,7 @@ const HeaderInfo=()=>{
 }
 
 const PageTitle=(Name)=>{
-    const PageTitleContainer = container({classes:[
-        'PageTitle', 'BorderContainer', 'BorderTop']})
+    const PageTitleContainer = container({classes:['PageTitle']})
     PageTitleContainer.dataset.pagename = Name
     const PageTitle = document.createElement('h1')
     PageTitle.textContent = Name
