@@ -1183,70 +1183,15 @@ ul.signitoryList{
       }
 
       & nav.navbar{
+        gap: var(--Spc-Small);
 
-        gap:0;
-
-        &>.navToggle{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          gap:8px;
-          padding:10px;
-          aspect-ratio: 1/1;
-          background-color: var(--Accent050);
-
-          &::before,&::after{
-            content:'';
-            display: block;
-            height: 2px;
-            background-color: #ffffff;
-          }
-
-
-          &:has(input:checked){
-
-            gap:0px;
-
-            &::before{
-              transform: rotate(45deg);
-              margin-bottom: -1px;
-            }
-            &::after{
-              transform: rotate(-45deg);
-              margin-top: -1px;
-            }
-          }
-        }
-        
         &>.navItems{
-          position: absolute;
-          left: 0px;
-          right: 0px;
-          top:100%;
-          background-color: var(--OffWhite);
-          border-top:var(--BorderMedium) solid var(--Accent100);
-          padding: var(--Spc-Small) 0px;
           flex-wrap: wrap;
-          gap:10px 0px;
+          gap: 0.25rem 0.5rem;
         }
-        &:not(:has(input:checked))>.navItems{
-          display: none;
-        }
-
-        &>a.navBtn{
-          flex-grow: 1;
-        }
-
       }
 
     }
-
-    &>.PageTitle{
-      header:has(.headerMain .navToggle>input:checked)>&{
-        visibility: hidden;
-      }
-    }
-
   }
 
 }

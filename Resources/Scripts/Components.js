@@ -66,7 +66,7 @@ const navBar =(items=[])=>{
         navItems.appendChild(newNavItem);
     })
 
-    navbar.append(navItems, navToggle(), navButton('Sign The Agenda', 'https://forms.gle/Y6ZPdVvURpHEfUaQ8'))
+    navbar.append(navItems, navButton('Sign The Agenda', 'https://forms.gle/Y6ZPdVvURpHEfUaQ8'))
 
     return navbar;
 }
@@ -104,9 +104,9 @@ export function ProcessHeader(){
 
     headerMain.append(navBar([
         { name: 'The Agenda', href: './index.html' },
-        { name: 'Explore', href: './explore.html' },
+        { name: 'Implementation Guide', href: './explore.html' },
         { name: 'Database', href: './Database.html' },
-        { name: 'Policy in Action', href: './map.html' }
+        { name: 'State Explorer', href: './map.html' }
     ]));
 
 
