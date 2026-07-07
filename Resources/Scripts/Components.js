@@ -107,7 +107,6 @@ export function ProcessHeader(){
     const nav = navBar([
         { name: 'The Agenda', href: './index.html' },
         { name: 'Implementation Guide', href: './explore.html' },
-        { name: 'Database', href: './Database.html' },
         { name: 'State Explorer', href: './map.html' }
     ])
 
@@ -221,16 +220,21 @@ function getActionExampleLinks(ActionItemData, type){
     label.textContent = type
     wrapper.append(label)
 
+    const URLS = Parser.parseListString(ActionItemData[`${type} Link URL`]) || []
+    const pairs = LinkTitles.map((Title, i) => ({
+        title: Title.trim(),
+        url: URLS[i] || '#'
+    }))
+    pairs.sort((a, b) => a.title.localeCompare(b.title, undefined, {sensitivity: 'base'}))
+
     const list = document.createElement('ul')
     list.classList.add('ActionExamplesLinks')
-    const URLS = Parser.parseListString(ActionItemData[`${type} Link URL`])
-    LinkTitles.forEach((Title, i)=>{
+    pairs.forEach(({title, url}) => {
         const li = document.createElement('li')
         const ExampleLink = document.createElement('a')
         ExampleLink.target = '_blank'
         ExampleLink.rel = 'noopener'
-        ExampleLink.innerText = Title
-        const url = URLS && URLS[i] ? URLS[i] : '#'
+        ExampleLink.innerText = title
         ExampleLink.href = url
         li.append(ExampleLink)
         list.append(li)
