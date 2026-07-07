@@ -3,16 +3,16 @@ import * as Cmpnt from './Components.js'
 
 const PillarIntros = {
     "Safe Homes":`
-        <p>Home is where families raise children, work, spend time with and care for loved ones, and relax. Yet <a href="https://www.census.gov/library/stories/2025/09/heat-risks-cooling-problems.html" target="blank">13 million households</a> report being too hot at home and at least <a href="https://powerlines.org/wp-content/uploads/2025/04/PowerLines_Utility-Bills-Are-Rising_2025-1.pdf" target="blank">80 million people</a> struggle to pay their electricity bills today. A cool home is the best strategy to keep people from getting sick.<p>
+        <p>Home is where families raise children, work, spend time with and care for loved ones, and relax. Yet <a href="https://www.census.gov/library/stories/2025/09/heat-risks-cooling-problems.html" target="_blank">13 million households</a> report being too hot at home and at least <a href="https://powerlines.org/wp-content/uploads/2025/04/PowerLines_Utility-Bills-Are-Rising_2025-1.pdf" target="_blank">80 million people</a> struggle to pay their electricity bills today. A cool home is the best strategy to keep people from getting sick.<p>
     `,
     "Safe Workplaces":`
-        <p>Every year, an estimated <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12498468/" target="blank">28,000 workers</a> are injured on the job during high heat days, and <a hred="https://www.dol.gov/newsroom/releases/osha/osha20230727" target="blank">dozens</a> lose their lives. Workplace heat protections are both a moral imperative and a common-sense win-win: they <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12498468/" target="blank">prevent injuries and deaths</a>, reduce <a href="https://www.wcrinet.org/reports/impact-of-californias-heat-standard-on-workers-compensation-outcomes" target="blank">workers’ compensation claims</a>, decrease <a href="https://equitablegrowth.org/wp-content/uploads/2020/12/122120-turnover-costs-ib.pdf" target="blank">employee turnover</a>, and even <a href="https://equitablegrowth.org/wp-content/uploads/2020/12/122120-turnover-costs-ib.pdf" target="blank>increase productivity</a>, boosting bottom lines.</p>
+        <p>Every year, an estimated <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12498468/" target="_blank">28,000 workers</a> are injured on the job during high heat days, and <a href="https://www.dol.gov/newsroom/releases/osha/osha20230727" target="_blank">dozens</a> lose their lives. Workplace heat protections are both a moral imperative and a common-sense win-win: they <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12498468/" target="_blank">prevent injuries and deaths</a>, reduce <a href="https://www.wcrinet.org/reports/impact-of-californias-heat-standard-on-workers-compensation-outcomes" target="_blank">workers’ compensation claims</a>, decrease <a href="https://equitablegrowth.org/wp-content/uploads/2020/12/122120-turnover-costs-ib.pdf" target="_blank">employee turnover</a>, and even <a href="https://academic.oup.com/annweh/article/68/4/366/7609938?login=false" target="_blank">increase productivity</a>, boosting bottom lines.</p>
     `,
     "Safe Schools and Childcare":`
-        <p>Heat <a href="https://fas.org/publication/extreme-heat-childrens-health/" target="blank">harms</a> our children’s health, development, activity, mood, sleep, and ability to focus. Yet <a href="https://www.gao.gov/products/gao-20-494" target="blank">1 in 3 schools</a> don’t have adequate cooling and <a href="https://www.liifund.org/app/uploads/2025/04/Building-Child-Care-Resiliency-in-the-Face-of-a-Changing-Climate-April-2025.pdf" target="blank">45% of childcare facilities</a> have been physically or financially strained by extreme weather. Kids deserve safe, cool spaces to learn and play.</p>
+        <p>Heat <a href="https://fas.org/publication/extreme-heat-childrens-health/" target="_blank">harms</a> our children’s health, development, activity, mood, sleep, and ability to focus. Yet <a href="https://www.gao.gov/products/gao-20-494" target="_blank">1 in 3 schools</a> don’t have adequate cooling and <a href="https://www.liifund.org/app/uploads/2025/04/Building-Child-Care-Resiliency-in-the-Face-of-a-Changing-Climate-April-2025.pdf" target="_blank">45% of childcare facilities</a> have been physically or financially strained by extreme weather. Kids deserve safe, cool spaces to learn and play.</p>
     `,
     "Safe Communities":`
-        <p>Dangerous heat is <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.washingtonpost.com/weather/2026/03/12/record-heat-west-drought-california-utah-arizona/&ved=2ahUKEwjwpvyJyKSTAxWjtokEHbNUCsYQFnoECDoQAQ&usg=AOvVaw2NbgNFBa-q6un7wAErLN_D" target="blank">happening earlier in the year</a> and <a href="https://www.nature.com/articles/s41561-025-01737-w" target="blank">lasting longer</a>, while <a href="https://www.climatecentral.org/climate-matters/fastest-warming-seasons-2025" target="blank">average temperatures across seasons</a> are on the rise, affecting everything from snowpack to crops. Recognizing our new heat reality and preparing accordingly <a href="https://www.phoenix.gov/newsroom/heat-news/city-of-phoenix-unveils-robust-2026-heat-response-plan.html" target="blank">prevents deaths</a> and avoids <a href="https://insidelines.pjm.com/maintaining-grid-reliability-through-highest-peaks-in-a-decade/" target="blank">infrastructure failures</a> and <a href="https://www.dallasfed.org/research/swe/2023/swe2309" target="blank">economic losses, while creating places where people want to build their lives and families.</p>
+        <p>Dangerous heat is <a href="https://www.washingtonpost.com/weather/2026/03/12/record-heat-west-drought-california-utah-arizona/" target="_blank">happening earlier in the year</a> and <a href="https://www.nature.com/articles/s41561-025-01737-w" target="_blank">lasting longer</a>, while <a href="https://www.climatecentral.org/climate-matters/fastest-warming-seasons-2025" target="_blank">average temperatures across seasons</a> are on the rise, affecting everything from snowpack to crops. Recognizing our new heat reality and preparing accordingly <a href="https://www.phoenix.gov/newsroom/heat-news/city-of-phoenix-unveils-robust-2026-heat-response-plan.html" target="_blank">prevents deaths</a> and avoids <a href="https://insidelines.pjm.com/maintaining-grid-reliability-through-highest-peaks-in-a-decade/" target="_blank">infrastructure failures</a> and <a href="https://www.dallasfed.org/research/swe/2023/swe2309" target="_blank">economic losses</a>, while creating places where people want to build their lives and families.</p>
     `
 }
 
@@ -43,7 +43,7 @@ const ReccsGroup =(Pillar)=>{
     const ReccsGroup = Cmpnt.container({classes:["ReccsGroup"]})
     const ReccOverview = ReccOverviews[Pillar]
     ReccsGroup.innerHTML = `
-        <p class="bodyLarge ReccsGroupIntro"><strong>${ReccOverview[0]} </strong><br>${ReccOverview[1]}</p>
+        <p class="bodyLarge ReccsGroupIntro"><strong>${ReccOverview[0]}</strong> ${ReccOverview[1]}</p>
     `
     const ReccsList = document.createElement('ul')
     ReccsList.classList.add('ReccsList', 'gridList')
@@ -96,8 +96,9 @@ Parser.List.Pillars.forEach(pillar => {
         classes:['PillarTitleCard']
     })
 
-    const PillarTitleWords = pillar.split(' ')
-    const PillarTitleLineBreak = PillarTitleWords.join('<br>')
+    const PillarTitleLineBreak = pillar === 'Safe Schools and Childcare'
+        ? 'Safe Schools<br>and Childcare'
+        : pillar
     PillarTitleCard.innerHTML = `
         <h2>${PillarTitleLineBreak}</h2>
         <span class="ImageBlock"></span>
@@ -106,7 +107,6 @@ Parser.List.Pillars.forEach(pillar => {
     const Description = document.createElement('span')
     Description.classList.add('Description', 'bodyLarge')
     Description.innerHTML = PillarIntros[pillar]
-        console.log(Description.innerHTML)
 
     const StatsSection = Cmpnt.container({
         classes:['StatsSection'],

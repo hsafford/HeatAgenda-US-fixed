@@ -36,6 +36,8 @@ const navButton =(name, href)=>{
     navBtn.classList.add('navBtn')
     navBtn.textContent = name
     navBtn.href = href
+    navBtn.target = '_blank'
+    navBtn.rel = 'noopener'
     return navBtn
 }
 
@@ -64,7 +66,7 @@ const navBar =(items=[])=>{
         navItems.appendChild(newNavItem);
     })
 
-    navbar.append(navItems, navToggle(), navButton('Sign Your Name', '#'))
+    navbar.append(navItems, navToggle(), navButton('Sign The Agenda', 'https://forms.gle/Y6ZPdVvURpHEfUaQ8'))
 
     return navbar;
 }
@@ -84,13 +86,14 @@ const HeaderInfo=()=>{
 const PageTitle=(Name)=>{
     const PageTitleContainer = container({classes:[
         'PageTitle', 'BorderContainer', 'BorderTop']})
+    PageTitleContainer.dataset.pagename = Name
     const PageTitle = document.createElement('h1')
     PageTitle.textContent = Name
 
 
     PageTitleContainer.appendChild(PageTitle)
     return PageTitleContainer
-    
+
 }
 
 export function ProcessHeader(){
@@ -102,13 +105,18 @@ export function ProcessHeader(){
     headerMain.append(navBar([
         { name: 'The Agenda', href: './index.html' },
         { name: 'Explore', href: './explore.html' },
-        { name: 'Database', href: './database.html' },
+        { name: 'Database', href: './Database.html' },
         { name: 'Policy in Action', href: './map.html' }
     ]));
 
 
-    header.append(headerMain, PageTitle(header.dataset.pagename))
-    
+    header.append(headerMain)
+
+    const main = document.querySelector('main')
+    if(main){
+      main.prepend(PageTitle(header.dataset.pagename))
+    }
+
 }
 
 export function ProcessFooter(){
@@ -759,7 +767,6 @@ function ResetTaxonomySection(e){
 function SetChildrenVis(e){
     const value = e.target.value
     const section = e.target.closest('.TaxonomySection')
-    console.log(section)
     const children = section.querySelectorAll(':scope>.TaxonomySection>.TaxItems .TaxonomyItem')
     children.forEach((child)=>{
         const displayValue = child.dataset.controller === value ? '' : 'none'

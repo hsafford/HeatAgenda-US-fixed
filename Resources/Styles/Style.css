@@ -43,7 +43,7 @@
   --width-max:1200px;
   --margin-body-sides:2rem;
 
-  --FontSize-Reg: clamp(0.875rem, 1.5vw, 1rem);
+  --FontSize-Reg: clamp(1rem, 1.6vw, 1.125rem);
   --FontSize-Med: clamp(1rem, 1.8vw, 1.25rem);
   --FontSize-Lrg: clamp(1.125rem, 2.1vw, 1.5rem);
   --FontSize-XL: clamp(1.5rem, 2.5vw, 2rem);
@@ -208,7 +208,7 @@ footer{
 }
 
 main>*{
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 footer{
@@ -232,7 +232,7 @@ header{
       display: flex;
       align-items: center;
       color:var(--Accent100);
-      font-size: var(--FontSize-Reg);
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
       & img.Logo{
         height: 1em;
 
@@ -242,12 +242,15 @@ header{
       }
 
       & h1.site-title{
-        font-size: 1.2em;
-        display:inline-block;
+        font-size: 0.85em;
+        line-height: 1;
+        display:inline-flex;
+        align-items: center;
         padding-left: var(--Spc-Mini);
         border-left: 1px solid currentColor;
         font-weight: bold;
         margin:0px;
+        align-self: center;
       }
     }
 
@@ -312,9 +315,7 @@ header{
   }
 
   &>.PageTitle{
-    & h1{
-      margin: 0.5rem 0px;
-    }
+    /* Legacy: PageTitle now lives inside main, styling below */
   }
 
   
@@ -965,20 +966,78 @@ li.pill{
 
 /* Agenda Page */
 
+:root{
+  --header-h: 3rem;
+}
+
+.PageTitle > h1{
+  font-size: clamp(1.875rem, 3vw, 2.5rem);
+  margin: 0.5rem 0px;
+}
+
+/* Center the main page title */
+main > .PageTitle[data-pagename="The State and Local Heat Policy Agenda"] > h1,
+body:has(header[data-pagename="The State and Local Heat Policy Agenda"]) main > .PageTitle > h1{
+  text-align: center;
+}
+
+/* Sticky banners: each replaces the previous as you scroll */
+.PillarGroup > .PillarTitleCard{
+  position: sticky;
+  top: var(--header-h);
+  z-index: 90;
+}
+
+#Signitories > .SignitoriesHeader{
+  position: sticky;
+  top: var(--header-h);
+  z-index: 90;
+  background-color: var(--OffWhite);
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+#PillarsOverview{
+  margin-top: 4rem;
+  margin-bottom: 0;
+  gap: 0;
+}
+
+#SignitoriesSection{
+  gap: 0;
+  margin-top: 0;
+}
+#SignitoriesSection > hr{
+  margin: 0;
+}
+#Signitories hgroup .btn{
+  margin-top: 1rem;
+}
+#Signitories > h4{
+  margin-top: 1rem;
+}
+
 #Introduction{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
 
-  &>p{
+  &>*{
     grid-column: span 2;
+  }
+
+  &>#Intro-Large{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
 
 .PillarGroup{
   display: grid;
-  gap:2rem;
+  gap:1rem;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 2rem;
+  padding-bottom: 4rem;
 
   & .PillarTitleCard{
     grid-column:span 2;
@@ -986,13 +1045,27 @@ li.pill{
     margin-left: -1rem;
   }
 
+  & .Description{
+    grid-column:span 2;
+  }
+
   & .ReccsGroup{
     grid-column:span 2;
+    margin-top: -0.3125rem;
   }
 
   & .Description>p:not(:first-child){
     display: none;
   }
+}
+
+.StatsSection{ display: none; }
+
+#Introduction p,
+#SignitoriesSection p,
+.PillarGroup .Description p,
+.PillarGroup .ReccsGroupIntro{
+  max-width: none;
 }
 
 .PillarTitleCard{
@@ -1002,7 +1075,7 @@ li.pill{
   color:#ffffff;
 
   & h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 0.5em
   }
 }
@@ -1035,7 +1108,7 @@ ul.signitoryList{
   
   &>li{
     list-style-position: inside;
-    font-size: 0.75em;
+    font-size: 1em;
     padding:0.5rem;
     font-weight: 500;
     background-color: #ffffff;

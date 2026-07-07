@@ -29,13 +29,13 @@ const statesLayout = [
   },
   
   {
-    State:'Indiana',
+    State:'Idaho',
     Abbreviation:'ID',
     Pos:[2,3]
   },
   {
-    State:'Hawaii',
-    Abbreviation:'HI',
+    State:'Utah',
+    Abbreviation:'UT',
     Pos:[2,4]
   },
   {
@@ -71,12 +71,12 @@ const statesLayout = [
   },
   
   {
-    State:'North Dekota',
+    State:'North Dakota',
     Abbreviation:'ND',
     Pos:[4,3]
   },
   {
-    State:'South Dekota',
+    State:'South Dakota',
     Abbreviation:'SD',
     Pos:[4,4]
   },
@@ -102,7 +102,7 @@ const statesLayout = [
     Pos:[5,3]
   },
   {
-    State:'Indianapolis',
+    State:'Iowa',
     Abbreviation:'IA',
     Pos:[5,4]
   },
@@ -117,7 +117,7 @@ const statesLayout = [
     Pos:[5,6]
   },
   {
-    State:'Luisiana',
+    State:'Louisiana',
     Abbreviation:'LA',
     Pos:[5,7]
   },
@@ -169,7 +169,7 @@ const statesLayout = [
     Pos:[7,6]
   },
   {
-    State:'Alababama',
+    State:'Alabama',
     Abbreviation:'AL',
     Pos:[7,7]
   },
@@ -242,7 +242,7 @@ const statesLayout = [
     Pos:[10,4]
   },
   {
-    State:'Deleware',
+    State:'Delaware',
     Abbreviation:'DE',
     Pos:[10,5]
   },
