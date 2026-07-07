@@ -209,23 +209,35 @@ export function ActionCard({Action="Action", DataControl="NA"}={}){
 
 
 function getActionExampleLinks(ActionItemData, type){
-    const ExamplesContainer = container({classes:['ActionExamplesList'], datasets:[['type', type]]})
+    const wrapper = document.createElement('div')
+    wrapper.classList.add('ActionExamplesList')
+    wrapper.dataset.type = type
+
     const LinkTitles = Parser.parseListString(ActionItemData[`${type} Link Title`])
-    if(LinkTitles){
-        const URLS = Parser.parseListString(ActionItemData[`${type} Link URL`])
-        LinkTitles.forEach((Title, i)=>{
-            const ExampleLink = document.createElement('a')
-            ExampleLink.target = 'blank'
-            ExampleLink.innerText = Title
-            const url = URLS && URLS[i] ? URLS[i] : '#'
-            ExampleLink.href = url
+    if(!LinkTitles) return wrapper
 
-            ExamplesContainer.append(ExampleLink)
-        })
-    }
+    const label = document.createElement('div')
+    label.classList.add('ActionExamplesLabel')
+    label.textContent = type
+    wrapper.append(label)
 
+    const list = document.createElement('ul')
+    list.classList.add('ActionExamplesLinks')
+    const URLS = Parser.parseListString(ActionItemData[`${type} Link URL`])
+    LinkTitles.forEach((Title, i)=>{
+        const li = document.createElement('li')
+        const ExampleLink = document.createElement('a')
+        ExampleLink.target = '_blank'
+        ExampleLink.rel = 'noopener'
+        ExampleLink.innerText = Title
+        const url = URLS && URLS[i] ? URLS[i] : '#'
+        ExampleLink.href = url
+        li.append(ExampleLink)
+        list.append(li)
+    })
+    wrapper.append(list)
 
-    return ExamplesContainer
+    return wrapper
 }
 
 const ActionCardExamples =(ActionItemData)=>{
