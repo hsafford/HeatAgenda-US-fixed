@@ -911,6 +911,7 @@ main.StateExplorerContent > *{
 }
 
 .CaseStudyItem .Sources{
+  display: none;
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   padding-top: 0.5rem;
   margin-top: 0.25rem;
