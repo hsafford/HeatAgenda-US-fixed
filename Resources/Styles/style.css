@@ -1650,27 +1650,59 @@ ul.signitoryList{
   header{
 
     &>.headerMain{
-      grid-template-columns: 1fr;
-      gap:var(--Spc-Mini);
+      grid-template-columns: 1fr auto;
+      gap: var(--Spc-Mini);
+      align-items: center;
 
-      &>.navbar{
-        display: grid;
-        grid-template-columns: auto 1fr;
-
-
-        &>a.navBtn{
-          padding: var(--Spc-Mini);
-        }
-      }
-
-    }
-
-    &>.PageTitle{
-      &>h1{
-        font-size: var(--FontSize-XL);
+      &>.navBtn{
+        padding: 0.4rem 0.6rem;
+        font-size: 0.85rem;
+        white-space: nowrap;
+        justify-self: end;
+        align-self: center;
       }
     }
+  }
 
+  ul.gridList{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  main > .PageTitle > h1{
+    font-size: var(--FontSize-XL);
+  }
+
+  #Introduction{
+    grid-template-columns: 1fr;
+  }
+
+  .PillarGroup{
+    grid-template-columns: 1fr;
+
+    & .PillarTitleCard{
+      margin-left: -0.5rem;
+      margin-right: -0.5rem;
+    }
+  }
+
+  header > nav.navbar{
+    width: 100%;
+    max-width: 100%;
+    padding: 0.4rem 0.75rem;
+  }
+
+  header > nav.navbar > .navItems{
+    flex-direction: column !important;
+    gap: 0.3rem 0 !important;
+  }
+
+  header > nav.navbar > .navItems > .navItem{
+    padding: 0 !important;
+  }
+
+  header > nav.navbar > .navItems > .navItem::before{
+    display: none !important;
   }
 
   .ExploreElement{
