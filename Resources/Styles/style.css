@@ -211,6 +211,11 @@ main>*{
   margin: 1rem auto;
 }
 
+.SignatoryHighlight{
+  color: var(--Accent100);
+  font-weight: 700;
+}
+
 footer{
     border-top:var(--BorderMedium) solid var(--Accent100);
     padding:1rem 0px;

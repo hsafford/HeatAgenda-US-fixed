@@ -134,3 +134,8 @@ const signitoryLists = document.querySelectorAll('#Signitories .signitoryList')
 signitoryLists.forEach((list)=>{
     signitoryList(list)
 })
+
+const signatoryCountEls = document.querySelectorAll('.SignatoryCount')
+signatoryCountEls.forEach((el)=>{
+    el.textContent = Parser.Data.Signitories.length
+})
