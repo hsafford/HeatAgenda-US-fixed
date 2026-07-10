@@ -83,14 +83,14 @@
     --Accent100:#A77AD7;
     --Accent050:#A77AD7;
     --Accent025:#A77AD7;
-    --heroImage:url('../Assets/Images/pexels-shehab-al-qadhi-472755071-20858565_.png')
+    --heroImage:url('../Assets/Images/pexels-shehab-al-qadhi-472755071-20858565_r.png')
 }
 [data-pillar="Safe Communities"],
 [value="Safe Communities"]{
     --Accent100:#36BD96;
     --Accent050:#36BD96;
     --Accent025:#36BD96;
-    --heroImage:url('../Assets/Images/pexels-brett-sayles-937485_.png')
+    --heroImage:url('../Assets/Images/pexels-brett-sayles-937485_r.png')
 }
 [data-pillar="Safe Schools and Childcare"],
 [value="Safe Schools and Childcare"]{
