@@ -76,28 +76,28 @@
     --Accent100:#eb4c33;
     --Accent050:#eb4c33;
     --Accent025:#eb4c33;
-    --heroImage:url('../Assets/Images/pexels-fung0818-18568174.jpg')
+    --heroImage:url('../Assets/Images/pexels-fung0818-18568174_r.png')
 }
 [data-pillar="Safe Homes"],
 [value="Safe Homes"]{
     --Accent100:#A77AD7;
     --Accent050:#A77AD7;
     --Accent025:#A77AD7;
-    --heroImage:url('../Assets/Images/pexels-shehab-al-qadhi-472755071-20858565.jpg')
+    --heroImage:url('../Assets/Images/pexels-shehab-al-qadhi-472755071-20858565_.png')
 }
 [data-pillar="Safe Communities"],
 [value="Safe Communities"]{
     --Accent100:#36BD96;
     --Accent050:#36BD96;
     --Accent025:#36BD96;
-    --heroImage:url('../Assets/Images/pexels-brett-sayles-937485.jpg')
+    --heroImage:url('../Assets/Images/pexels-brett-sayles-937485_.png')
 }
 [data-pillar="Safe Schools and Childcare"],
 [value="Safe Schools and Childcare"]{
     --Accent100:#45A6FF;
     --Accent050:#45A6FF;
     --Accent025:#45A6FF;
-    --heroImage:url('../Assets/Images/pexels-oliver-hung-265548590-30281236.jpg')
+    --heroImage:url('../Assets/Images/pexels-oliver-hung-265548590-30281236_r.png')
 }
 
 
