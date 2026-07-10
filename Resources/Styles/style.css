@@ -136,6 +136,7 @@ h4{
 }
 p, a{
   font-size: var(--FontSize-Reg);
+    font-weight: 10;
   letter-spacing: 2%;
   max-width: 600px;
   &.Display,
