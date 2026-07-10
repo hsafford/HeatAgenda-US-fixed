@@ -80,23 +80,23 @@
 }
 [data-pillar="Safe Homes"],
 [value="Safe Homes"]{
-    --Accent100:#E56A22;
-    --Accent050:#C55712;
-    --Accent025:#A64500;
+    --Accent100:#A77AD7;
+    --Accent050:#A77AD7;
+    --Accent025:#A77AD7;
     --heroImage:url('../Assets/Images/pexels-shehab-al-qadhi-472755071-20858565.jpg')
 }
 [data-pillar="Safe Communities"],
 [value="Safe Communities"]{
-    --Accent100:#30C73C;
-    --Accent050:#29A833;
-    --Accent025:#1B7022;
+    --Accent100:#36BD96;
+    --Accent050:#36BD96;
+    --Accent025:#36BD96;
     --heroImage:url('../Assets/Images/pexels-brett-sayles-937485.jpg')
 }
 [data-pillar="Safe Schools and Childcare"],
 [value="Safe Schools and Childcare"]{
-    --Accent100:#329AFB;
-    --Accent050:#1875CC;
-    --Accent025:#0057A8;
+    --Accent100:#45A6FF;
+    --Accent050:#45A6FF;
+    --Accent025:#45A6FF;
     --heroImage:url('../Assets/Images/pexels-oliver-hung-265548590-30281236.jpg')
 }
 
@@ -136,7 +136,7 @@ h4{
 }
 p, a{
   font-size: var(--FontSize-Reg);
-    font-weight: 100;
+font-weight: 100;
   letter-spacing: 2%;
   max-width: 600px;
   &.Display,
