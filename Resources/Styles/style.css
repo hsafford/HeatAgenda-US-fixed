@@ -1079,6 +1079,42 @@ main.StateExplorerContent > *{
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
+
+    &>.ActionExamplesNone{
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.5);
+      text-transform: none;
+      letter-spacing: normal;
+      font-style: italic;
+    }
+  }
+
+  & .ActionCardNote{
+    background-color: var(--OffWhite);
+    border-left: 3px solid var(--Accent100);
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+
+    & p{
+      margin: 0;
+    }
+  }
+
+  & .ActionCardNoteLabel{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--Accent100);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  & .ActionCardNoteText{
+    font-size: 0.85rem;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.7);
   }
 }
 
@@ -1309,6 +1345,352 @@ main.ExploreContent > .ExploreNav{
 
 .ExploreActionList{
   list-style: none;
+}
+
+/* Implementation Guide: search section (offered below the pillar tiles as an alternate path) */
+.ExploreSearchSection{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.ExploreSearchDivider{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.ExploreSearchDivider::before,
+.ExploreSearchDivider::after{
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.ExploreSearchHeading{
+  font-size: var(--FontSize-Med);
+  font-weight: 700;
+  color: var(--Accent100);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ExploreSearchBox{
+  position: relative;
+  max-width: 40rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.ExploreSearchInput{
+  font: inherit;
+  font-size: var(--FontSize-Reg);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+}
+
+.ExploreSearchInput:focus{
+  outline: 2px solid var(--Accent100);
+  outline-offset: 1px;
+}
+
+.ExploreSearchResults{
+  display: none;
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  right: 0;
+  max-height: 22rem;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  list-style: none;
+  padding: 0.25rem;
+  margin: 0;
+}
+
+.ExploreSearchResults.is-open{
+  display: block;
+}
+
+.ExploreSearchResult{
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.6rem 0.75rem;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.ExploreSearchResult:last-child{
+  border-bottom: none;
+}
+
+.ExploreSearchResult:hover{
+  background-color: var(--OffWhite);
+}
+
+.ExploreSearchResultCaption{
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--Accent100);
+}
+
+.ExploreSearchResultTitle{
+  font-size: 0.9rem;
+  color: #1a1a1a;
+}
+
+.ExploreSearchResultLocation{
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.ExploreSearchEmpty{
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.ExploreSearchShowMore{
+  padding: 0.6rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--Accent100);
+  cursor: pointer;
+  text-align: center;
+}
+
+.ExploreSearchShowMore:hover{
+  background-color: var(--OffWhite);
+}
+
+/* Policy Explorer: search + filter bar (shared by accordion and flat-search variants) */
+.PolicyFilterBar{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 3px solid var(--Accent100);
+  padding: 1rem;
+}
+
+.PolicySearchInput{
+  font: inherit;
+  font-size: var(--FontSize-Reg);
+  padding: 0.6rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.PolicySearchInput:focus{
+  outline: 2px solid var(--Accent100);
+  outline-offset: 1px;
+}
+
+.PolicyFilterChipsRow{
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.PolicyFilterDropdown{
+  position: relative;
+
+  & > summary{
+    cursor: pointer;
+    list-style: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--Accent100);
+    border: 1px solid var(--Accent100);
+    padding: 0.4rem 0.85rem;
+    display: inline-block;
+
+    &::-webkit-details-marker{
+      display: none;
+    }
+
+    &::after{
+      content: ' ▾';
+    }
+  }
+
+  &[open] > summary::after{
+    content: ' ▴';
+  }
+}
+
+.PolicyFilterMenu{
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 12rem;
+  max-height: 16rem;
+  overflow-y: auto;
+}
+
+.PolicyFilterOption{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  padding: 0.15rem 0.25rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.PolicyJurisChips{
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.PolicyChip{
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: var(--Accent100);
+  border: 1px solid var(--Accent100);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  cursor: pointer;
+}
+
+.PolicyChip.is-active{
+  background-color: var(--Accent100);
+  color: #ffffff;
+}
+
+.PolicyFilterStatusRow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.PolicyResultCount{
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.PolicyExpandAllBtn{
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background-color: var(--Accent100);
+  color: #ffffff;
+  border: none;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+}
+
+.PolicyExpandAllBtn:hover{
+  background-color: var(--Accent050);
+}
+
+/* Policy Explorer: accordion variant */
+.PolicyAccordion{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.PolicyObjective{
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.PolicyObjectiveSummary{
+  cursor: pointer;
+  list-style: none;
+  padding: 0.85rem 1.1rem;
+  font-size: var(--FontSize-Med);
+  font-weight: 700;
+  color: var(--Accent100);
+
+  &::-webkit-details-marker{
+    display: none;
+  }
+}
+
+.PolicyObjectiveBody{
+  padding: 0 0.85rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.PolicyStrategy{
+  background-color: var(--OffWhite);
+  border-left: 3px solid var(--Accent100);
+}
+
+.PolicyStrategySummary{
+  cursor: pointer;
+  list-style: none;
+  padding: 0.6rem 0.85rem;
+  font-size: var(--FontSize-Reg);
+  font-weight: 700;
+  color: #1a1a1a;
+
+  &::-webkit-details-marker{
+    display: none;
+  }
+}
+
+.PolicyCount{
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.PolicySolutionList{
+  padding: 0 0.85rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Policy Explorer: flat search-only variant */
+.PolicyFlatList{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.PolicyCardCaption{
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: rgba(0, 0, 0, 0.5);
+  order: -1;
 }
 
 /* Legacy accordion styling (kept for reference) */
@@ -1639,6 +2021,10 @@ ul.signitoryList{
     }
   }
 
+  ul.signitoryList{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
 
 /* Screen Size 700px */
@@ -1684,6 +2070,10 @@ ul.signitoryList{
       margin-left: -0.5rem;
       margin-right: -0.5rem;
     }
+  }
+
+  ul.signitoryList{
+    grid-template-columns: repeat(2, 1fr);
   }
 
   header > nav.navbar{
@@ -1733,4 +2123,10 @@ ul.signitoryList{
 
   }
 
+/* Screen Size 480px */
+@media screen and (max-width:480px) {
+  ul.signitoryList{
+    grid-template-columns: 1fr;
+  }
+}
 

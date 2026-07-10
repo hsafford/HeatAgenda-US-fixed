@@ -45,6 +45,7 @@ async function render(){
 
     if(!state.pillar){
         level.append(renderPillarButtons())
+        level.append(renderSearchSection())
     } else if(!state.recommendation){
         level.append(renderRecommendationButtons())
     } else if(!state.policyType){
@@ -92,6 +93,148 @@ function renderNav(){
 
     nav.append(crumbs)
     return nav
+}
+
+function renderSearchSection(){
+    const section = document.createElement('div')
+    section.classList.add('ExploreSearchSection')
+
+    const divider = document.createElement('div')
+    divider.classList.add('ExploreSearchDivider')
+    divider.innerHTML = '<span>or</span>'
+    section.append(divider)
+
+    const heading = document.createElement('p')
+    heading.classList.add('ExploreSearchHeading')
+    heading.textContent = 'Looking for something specific? Search directly.'
+    section.append(heading)
+
+    section.append(renderSearchBox())
+
+    return section
+}
+
+const SEARCH_RESULTS_LIMIT = 20
+
+function escapeRegExp(string){
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
+function renderSearchBox(){
+    const wrap = document.createElement('div')
+    wrap.classList.add('ExploreSearchBox')
+
+    const input = document.createElement('input')
+    input.type = 'text'
+    input.classList.add('ExploreSearchInput')
+    input.placeholder = 'Search strategies, solutions, states, or cities… try "cooling" or "Georgia"'
+    wrap.append(input)
+
+    const results = document.createElement('ul')
+    results.classList.add('ExploreSearchResults')
+    wrap.append(results)
+
+    let showAll = false
+
+    function closeResults(){
+        results.classList.remove('is-open')
+        results.innerHTML = ''
+        showAll = false
+    }
+
+    function renderResultItem(row){
+        const li = document.createElement('li')
+        li.classList.add('ExploreSearchResult')
+
+        const caption = document.createElement('span')
+        caption.classList.add('ExploreSearchResultCaption')
+        caption.textContent = `${row.Pillar} › ${row.Recommendation} › ${row['Policy Type']}`
+
+        const title = document.createElement('span')
+        title.classList.add('ExploreSearchResultTitle')
+        title.textContent = row['Policy Action']
+
+        li.append(caption, title)
+
+        const location = [
+            row['State Link Title'] && `State: ${row['State Link Title']}`,
+            row['Local Link Title'] && `Local: ${row['Local Link Title']}`
+        ].filter(Boolean).join(' · ')
+        if(location){
+            const locationEl = document.createElement('span')
+            locationEl.classList.add('ExploreSearchResultLocation')
+            locationEl.textContent = location
+            li.append(locationEl)
+        }
+        li.addEventListener('click', (e) => {
+            e.stopPropagation()
+            state.pillar = row.Pillar
+            state.recommendation = row.Recommendation
+            state.policyType = row['Policy Type']
+            input.value = ''
+            closeResults()
+            render()
+        })
+        return li
+    }
+
+    function runSearch(){
+        const query = input.value.trim()
+        results.innerHTML = ''
+
+        if(!query){
+            results.classList.remove('is-open')
+            return
+        }
+
+        const pattern = new RegExp('\\b' + escapeRegExp(query), 'i')
+        const seen = new Set()
+        const matches = []
+        for(const row of Parser.Data.PolicyDataBase){
+            const key = `${row.Pillar}|${row.Recommendation}|${row['Policy Type']}|${row['Policy Action']}`
+            if(seen.has(key)) continue
+            const haystack = `${row.Pillar} ${row.Recommendation} ${row['Policy Type']} ${row['Policy Action']} ${row.Description} ${row['State Link Title']} ${row['Local Link Title']}`
+            if(pattern.test(haystack)){
+                seen.add(key)
+                matches.push(row)
+            }
+        }
+
+        if(matches.length === 0){
+            const li = document.createElement('li')
+            li.classList.add('ExploreSearchEmpty')
+            li.textContent = 'No matches found.'
+            results.append(li)
+        } else {
+            const visible = showAll ? matches : matches.slice(0, SEARCH_RESULTS_LIMIT)
+            visible.forEach(row => results.append(renderResultItem(row)))
+
+            if(!showAll && matches.length > SEARCH_RESULTS_LIMIT){
+                const more = document.createElement('li')
+                more.classList.add('ExploreSearchShowMore')
+                more.textContent = `Show all ${matches.length} results`
+                more.addEventListener('click', (e) => {
+                    e.stopPropagation()
+                    showAll = true
+                    runSearch()
+                })
+                results.append(more)
+            }
+        }
+
+        results.classList.add('is-open')
+    }
+
+    input.addEventListener('input', () => {
+        showAll = false
+        runSearch()
+    })
+
+    document.addEventListener('click', (e) => {
+        if(!wrap.contains(e.target)) closeResults()
+    })
+
+    return wrap
 }
 
 function renderPrompt(){

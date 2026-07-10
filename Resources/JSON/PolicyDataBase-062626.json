@@ -79,9 +79,9 @@
     "Policy Lever": "regulatory, ordinance",
     "Description": "States: Alaska, California, Colorado, Connecticut, District of Columbia, Florida, Hawaii, Kansas, Maine, Massachusetts, Missouri, New Jersey, New York, Oregon, Pennsylvania, South Dakota, Vermont, Washington Local: Austin, Texas",
     "State Link Title": "Alaska, California, Colorado, Connecticut, District of Columbia, Florida, Hawaii, Kansas, Maine, Massachusetts, Missouri, New Jersey, New York, Oregon, Pennsylvania, South Dakota, Vermont, Washington",
-    "State Link URL": "https://database.aceee.org/state/building-energy-disclosure, https://austinenergy.com/energy-efficiency/ecad-ordinance/ecad-for-residential-customers",
+    "State Link URL": "https://database.aceee.org/state/building-energy-disclosure",
     "Local Link Title": "Austin, Texas",
-    "Local Link URL": ""
+    "Local Link URL": "https://austinenergy.com/energy-efficiency/ecad-ordinance/ecad-for-residential-customers"
   },
   {
     "Pillar": "Safe Homes",
@@ -90,7 +90,7 @@
     "Policy Action": "Require that landlords disclose that cooling systems cannot maintain safe indoor temperatures before lease",
     "Policy Lever": "regulatory",
     "Description": "No example yet. Wisconsin requires this for heating, setting a minimum standard systems should meet.",
-    "State Link Title": "requires this for heating",
+    "State Link Title": "Wisconsin",
     "State Link URL": "https://docs.legis.wisconsin.gov/code/admin_code/atcp/090/134/04?view=section",
     "Local Link Title": "",
     "Local Link URL": ""
@@ -811,9 +811,9 @@
     "Policy Lever": "funding",
     "Description": "States: California, New York, Massachusetts, Maine, Vermont, Oregon, Washington, Colorado, Minnesota Local: Los Angeles, California",
     "State Link Title": "California, New York, Massachusetts, Maine, Vermont, Oregon, Washington, Colorado, Minnesota",
-    "State Link URL": "https://www.goodheatglobal.com/State-by-State-Heat-Pump-Incentives-in-the-US-2025-Updated-Guide-id43826006.html, https://ladwpnews.com/demand-heats-up-for-ladwps-cool-la-225-air-conditioner-rebates/",
+    "State Link URL": "https://www.goodheatglobal.com/State-by-State-Heat-Pump-Incentives-in-the-US-2025-Updated-Guide-id43826006.html",
     "Local Link Title": "Los Angeles, California",
-    "Local Link URL": ""
+    "Local Link URL": "https://ladwpnews.com/demand-heats-up-for-ladwps-cool-la-225-air-conditioner-rebates/"
   },
   {
     "Pillar": "Safe Homes",
@@ -2046,8 +2046,8 @@
     "Policy Action": "Create an innovation accelerator for technologies to protect workers",
     "Policy Lever": "funding, data, procurement",
     "Description": "Private sector only: La Isla Network and National Safety Council's Work to Zero",
-    "State Link Title": "La Isla Network, National Safety Council's Work to Zero",
-    "State Link URL": "https://laislanetwork.org/independent-validation-for-heat-stress-adaptation-technologies/, https://www.ehstoday.com/health/news/55296193/nsc-funds-innovative-solutions-to-protect-workers-from-heat-hazards",
+    "State Link Title": "",
+    "State Link URL": "",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -2513,11 +2513,11 @@
     "Policy Type": "Create funding resources for improvements to buildings, schoolyards, and outdoor play spaces",
     "Policy Action": "Utilize bond funding to upgrade school facilities to make them more heat resilient",
     "Policy Lever": "funding, Ballot Measure",
-    "Description": "State: California Local: Austin, Houston, Fort Bend, Hidalgo, Elk Grove Unified School District, California",
+    "Description": "State: California Local: Austin, Texas, Houston, Texas, Fort Bend, Texas, Hidalgo, Texas, Elk Grove Unified School District, California",
     "State Link Title": "California",
-    "State Link URL": "https://ballotpedia.org/California_Proposition_2",
-    "Local Link Title": "Austin, Houston, Fort Bend, Hidalgo, Elk Grove Unified School District, California",
-    "Local Link URL": "_Public_Education_Facilities_Bond_Measure_(2024), https://www.usgbc.org/articles/public-funding-helps-texas-schools-advance-climate-resilience, https://www.capradio.org/articles/2024/10/07/whats-on-the-ballot-a-look-at-2024-sacramento-county-and-city-ballot-measures/"
+    "State Link URL": "https://ballotpedia.org/California_Proposition_2,_Public_Education_Facilities_Bond_Measure_(2024)",
+    "Local Link Title": "Austin, Texas, Houston, Texas, Fort Bend, Texas, Hidalgo, Texas, Elk Grove Unified School District, California",
+    "Local Link URL": "https://www.usgbc.org/articles/public-funding-helps-texas-schools-advance-climate-resilience, https://www.usgbc.org/articles/public-funding-helps-texas-schools-advance-climate-resilience, https://www.usgbc.org/articles/public-funding-helps-texas-schools-advance-climate-resilience, https://www.usgbc.org/articles/public-funding-helps-texas-schools-advance-climate-resilience, https://www.capradio.org/articles/2024/10/07/whats-on-the-ballot-a-look-at-2024-sacramento-county-and-city-ballot-measures/"
   },
   {
     "Pillar": "Safe Schools and Childcare",
@@ -3271,9 +3271,9 @@
     "Policy Lever": "governance",
     "Description": "State: Maryland, Colorado, Oregon, North Carolina, New Jersey, Louisiana, Arizona Local: Hennepin County, Minnesota, Boston, Massachusetts, New York City, New York, Jacksonville, Florida, Houston, Texas, Tucson, Arizona, Honolulu, Hawaii, Philadelphia, Pennsylvania, San Francisco, California",
     "State Link Title": "Maryland, Colorado, Oregon, North Carolina, New Jersey, Louisiana, Arizona",
-    "State Link URL": "https://news.maryland.gov/mdem/2024/09/05/governor-wes-moore-issues-executive-order-to-strengthen-marylands-resilience-strategy/, https://coresiliency.colorado.gov/about-the-cro, https://www.oregon.gov/gov/policies/pages/pro.aspx, https://www.deq.nc.gov/energy-climate/resiliency, https://dep.nj.gov/climatechange/resilience/nj-extreme-heat-resilience-action-plan/, https://resilience.la.gov/, https://beheardhennepin.org/extreme-heat",
+    "State Link URL": "https://news.maryland.gov/mdem/2024/09/05/governor-wes-moore-issues-executive-order-to-strengthen-marylands-resilience-strategy/, https://coresiliency.colorado.gov/about-the-cro, https://www.oregon.gov/gov/policies/pages/pro.aspx, https://www.deq.nc.gov/energy-climate/resiliency, https://dep.nj.gov/climatechange/resilience/nj-extreme-heat-resilience-action-plan/, https://resilience.la.gov/, https://azgovernor.gov/office-arizona-governor/news/2024/03/governor-hobbs-announces-extreme-heat-preparedness-plan",
     "Local Link Title": "Hennepin County, Minnesota, Boston, Massachusetts, New York City, New York, Jacksonville, Florida, Houston, Texas, Tucson, Arizona, Honolulu, Hawaii, Philadelphia, Pennsylvania, San Francisco, California",
-    "Local Link URL": "https://www.boston.gov/news/boston-revamps-environment-energy-and-open-space-cabinet-dedicated-climate-resilience-focus, https://www.nyc.gov/site/orr/index.page, https://www.jacksonville.gov/resilience, https://www.houstontx.gov/council//committees/resilience/20240507/Resilience-Sustainability-Overview.pdf, https://climateaction.tucsonaz.gov/, https://www.honolulu.gov/dpr/dpr-news/02-29-24-city-council-adopts-climate-ready-oahu/, https://www.phila.gov/2021-01-15-city-commits-to-carbon-neutrality-by-2050-releases-climate-action-playbook-and-hires-first-chief-resilience-officer/, https://www.sf.gov/news--san-francisco-releases-plan-prepare-extreme-heat-and-air-quality-events"
+    "Local Link URL": "https://beheardhennepin.org/extreme-heat, https://www.boston.gov/news/boston-revamps-environment-energy-and-open-space-cabinet-dedicated-climate-resilience-focus, https://www.nyc.gov/site/orr/index.page, https://www.jacksonville.gov/resilience, https://www.houstontx.gov/council//committees/resilience/20240507/Resilience-Sustainability-Overview.pdf, https://climateaction.tucsonaz.gov/, https://www.honolulu.gov/dpr/dpr-news/02-29-24-city-council-adopts-climate-ready-oahu/, https://www.phila.gov/2021-01-15-city-commits-to-carbon-neutrality-by-2050-releases-climate-action-playbook-and-hires-first-chief-resilience-officer/, https://www.sf.gov/news--san-francisco-releases-plan-prepare-extreme-heat-and-air-quality-events"
   },
   {
     "Pillar": "Safe Communities",
@@ -3749,10 +3749,10 @@
     "Policy Type": "Identify heat-vulnerable populations and systems",
     "Policy Action": "Conduct a study on the impacts of extreme heat events to health, social services, and public safety",
     "Policy Lever": "data",
-    "Description": "Local: Los Angeles County, Los Angeles",
+    "Description": "Local: Los Angeles County, California",
     "State Link Title": "",
     "State Link URL": "",
-    "Local Link Title": "Los Angeles County, Los Angeles",
+    "Local Link Title": "Los Angeles County, California",
     "Local Link URL": "https://www.rand.org/pubs/research_reports/RRA3406-1.html"
   },
   {
@@ -3895,9 +3895,9 @@
     "Policy Lever": "executive order",
     "Description": "States: Oregon, Arizona, California, Louisiana  Locals: Boston, Massachusetts, New Orleans, Louisiana, Multnomah County, Oregon",
     "State Link Title": "Oregon, Arizona, California, Louisiana",
-    "State Link URL": "https://apps.oregon.gov/oregon-newsroom/OR/GOV/Posts/Post/governor-kotek-declares-extreme-heat-emergency, https://resilient.az.gov/news/governor-katie-hobbs-declares-heat-state-emergency#:~:text=Phoenix%2C%20AZ%2C%20Aug%2011th%2C, support%20local%20heat%20relief%20efforts., https://www.gov.ca.gov/wp-content/uploads/2022/08/8.31.22-Heat-Proclamation.pdf?emrc=78e3fc",
+    "State Link URL": "https://apps.oregon.gov/oregon-newsroom/OR/GOV/Posts/Post/governor-kotek-declares-extreme-heat-emergency, https://resilient.az.gov/news/governor-katie-hobbs-declares-heat-state-emergency#:~:text=Phoenix%2C%20AZ%2C%20Aug%2011th%2C, support%20local%20heat%20relief%20efforts., https://www.gov.ca.gov/wp-content/uploads/2022/08/8.31.22-Heat-Proclamation.pdf?emrc=78e3fc, https://www.doa.la.gov/media/qvzpv0j2/jml-24-169-renewal-of-state-of-emergency-heat-related-emergencies.pdf",
     "Local Link Title": "Boston, Massachusetts, New Orleans, Louisiana, Multnomah County, Oregon",
-    "Local Link URL": "https://www.doa.la.gov/media/qvzpv0j2/jml-24-169-renewal-of-state-of-emergency-heat-related-emergencies.pdf, https://www.boston.gov/news/mayor-wu-declares-heat-emergency-july-16-through-july-18, https://nola.gov/next/mayors-office/news/articles/2023/august-2023/2023-08-08-emergency-declaration-for-excessive-heat/, https://multco.us/info/declarations-emergency-due-extreme-heat"
+    "Local Link URL": "https://www.boston.gov/news/mayor-wu-declares-heat-emergency-july-16-through-july-18, https://nola.gov/next/mayors-office/news/articles/2023/august-2023/2023-08-08-emergency-declaration-for-excessive-heat/, https://multco.us/info/declarations-emergency-due-extreme-heat"
   },
   {
     "Pillar": "Safe Communities",
@@ -4470,8 +4470,8 @@
     "Policy Action": "Assess the cost of new infrastructure projects on a whole lifecycle basis to choose the option with the lowest life cycle cost.",
     "Policy Lever": "regulatory",
     "Description": "No one has enacted this policy yet. Model language is here",
-    "State Link Title": "Model language is here",
-    "State Link URL": "https://docs.google.com/document/d/1lW2CaHx3-0SfUIFOc_FT1dk4Lz2zCLLZ/edit?usp=sharing&ouid=115050290873221068165&rtpof=true&sd=true",
+    "State Link Title": "",
+    "State Link URL": "",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -4854,8 +4854,8 @@
     "Policy Action": "Set clean back-up power requirements for health care facilities",
     "Policy Lever": "regulatory",
     "Description": "No example yet. Health care facilities can procure microgrids to provide backup power per Centers for Medicare and Medicaid regulations",
-    "State Link Title": "Centers for Medicare and Medicaid regulations",
-    "State Link URL": "https://www.cms.gov/files/document/qso-23-11-lsc.pdf",
+    "State Link Title": "",
+    "State Link URL": "",
     "Local Link Title": "",
     "Local Link URL": ""
   },
