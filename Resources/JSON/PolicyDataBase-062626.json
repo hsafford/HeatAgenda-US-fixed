@@ -3653,11 +3653,11 @@
     "Policy Type": "Identify heat-vulnerable populations and systems",
     "Policy Action": "Conduct a study on the impacts of power outages to heat-vulnerable populations",
     "Policy Lever": "data",
-    "Description": "State: New York City, New York",
-    "State Link Title": "New York City, New York",
-    "State Link URL": "https://www.sciencedirect.com/science/article/pii/S2210670723005437",
-    "Local Link Title": "",
-    "Local Link URL": ""
+    "Description": "Local: New York City, New York",
+    "State Link Title": "",
+    "State Link URL": "",
+    "Local Link Title": "New York City, New York",
+    "Local Link URL": "https://www.sciencedirect.com/science/article/pii/S2210670723005437"
   },
   {
     "Pillar": "Safe Communities",
