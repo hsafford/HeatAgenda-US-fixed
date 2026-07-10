@@ -2118,10 +2118,10 @@
     "Policy Action": "Assess heat risk at school bus stops",
     "Policy Lever": "data",
     "Description": "No example yet. Has been recognized as a problem in news reporting.",
-    "State Link Title": "recognized as a problem",
-    "State Link URL": "https://wpde.com/news/local/parents-say-children-suffer-heat-exhaustion-on-long-bus-rides-amid-driver-shortage",
-    "Local Link Title": "",
-    "Local Link URL": ""
+    "State Link Title": "",
+    "State Link URL": "",
+    "Local Link Title": "Local example of heat risk at bus stops",
+    "Local Link URL": "https://wpde.com/news/local/parents-say-children-suffer-heat-exhaustion-on-long-bus-rides-amid-driver-shortage"
   },
   {
     "Pillar": "Safe Schools and Childcare",
