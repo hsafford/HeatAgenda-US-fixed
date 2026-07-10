@@ -81,6 +81,10 @@
   },
   {
     "Type": "Organization",
+    "Name": "BLKHLTH (GA)"
+  },
+  {
+    "Type": "Organization",
     "Name": "Boys & Girls Clubs of Ada County (ID)"
   },
   {
@@ -126,6 +130,10 @@
   {
     "Type": "Organization",
     "Name": "Children’s Environmental Health Network (National)"
+  },
+  {
+    "Type": "Organization",
+    "Name": "Clarion Call Capital (NY)"
   },
   {
     "Type": "Organization",
@@ -453,6 +461,10 @@
   },
   {
     "Type": "Organization",
+    "Name": "Public Citizen (National)"
+  },
+  {
+    "Type": "Organization",
     "Name": "Resilient US (National)"
   },
   {
@@ -529,6 +541,10 @@
   },
   {
     "Type": "Organization",
+    "Name": "Urban Ocean Lab (National)"
+  },
+  {
+    "Type": "Organization",
     "Name": "Urban Sustainability Directors Network (National)"
   },
   {
@@ -550,6 +566,10 @@
   {
     "Type": "Organization",
     "Name": "WE ACT for Environmental Justice (NY)"
+  },
+  {
+    "Type": "Organization",
+    "Name": "Whole Health Consortium at Virginia Tech (VA)"
   },
   {
     "Type": "Organization",

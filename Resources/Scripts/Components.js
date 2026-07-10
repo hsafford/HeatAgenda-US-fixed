@@ -203,9 +203,33 @@ export function ActionCard({Action="Action", DataControl="NA"}={}){
     const Title = document.createElement('p');
     Title.textContent = Action;
 
-    ActionCard.append(Lever, Title, ActionCardExamples(ActionItemData));
+    const children = [Lever, Title]
+
+    const note = Parser.getDescriptionNote(ActionItemData)
+    if(note){
+        children.push(ActionCardNote(note))
+    }
+
+    ActionCard.append(...children, ActionCardExamples(ActionItemData));
 
     return ActionCard;
+}
+
+const ActionCardNote = (note) => {
+    const wrap = document.createElement('div')
+    wrap.classList.add('ActionCardNote')
+
+    const label = document.createElement('p')
+    label.classList.add('ActionCardNoteLabel')
+    label.textContent = 'Note'
+    wrap.append(label)
+
+    const text = document.createElement('p')
+    text.classList.add('ActionCardNoteText')
+    text.textContent = note
+    wrap.append(text)
+
+    return wrap
 }
 
 
@@ -214,7 +238,9 @@ function getActionExampleLinks(ActionItemData, type){
     wrapper.classList.add('ActionExamplesList')
     wrapper.dataset.type = type
 
-    const LinkTitles = Parser.parseListString(ActionItemData[`${type} Link Title`])
+    const LinkTitles = type === 'Local'
+        ? Parser.parsePlaceList(ActionItemData[`${type} Link Title`])
+        : Parser.parseListString(ActionItemData[`${type} Link Title`])
     if(!LinkTitles) return wrapper
 
     const label = document.createElement('div')
@@ -222,10 +248,10 @@ function getActionExampleLinks(ActionItemData, type){
     label.textContent = type
     wrapper.append(label)
 
-    const URLS = Parser.parseListString(ActionItemData[`${type} Link URL`]) || []
+    const URLS = Parser.parseUrlList(ActionItemData[`${type} Link URL`]) || []
     const pairs = LinkTitles.map((Title, i) => ({
         title: Title.trim(),
-        url: URLS[i] || '#'
+        url: URLS[i] || (URLS.length === 1 ? URLS[0] : '#')
     }))
     pairs.sort((a, b) => a.title.localeCompare(b.title, undefined, {sensitivity: 'base'}))
 
@@ -253,9 +279,20 @@ const ActionCardExamples =(ActionItemData)=>{
         <p>Policy in action</p>
     `
 
+    const hasState = Boolean(Parser.parseListString(ActionItemData['State Link Title']))
+    const hasLocal = Boolean(Parser.parseListString(ActionItemData['Local Link Title']))
+
+    if(!hasState && !hasLocal){
+        const none = document.createElement('p')
+        none.classList.add('ActionExamplesNone')
+        none.textContent = 'Not applicable'
+        ExamplesContainer.append(none)
+        return ExamplesContainer
+    }
+
     const Local = getActionExampleLinks(ActionItemData, "Local")
     const State = getActionExampleLinks(ActionItemData, "State")
-    
+
     ExamplesContainer.append(State, Local)
 
     return ExamplesContainer
