@@ -324,6 +324,13 @@ function applyStateFilter(state){
         const match = !state || states.includes(state)
         el.style.display = match ? '' : 'none'
         if(match) shown++
+
+        const flagState = el.querySelector('.CaseStudyFlag-State')
+        if(flagState){
+            flagState.textContent = (state && states.includes(state))
+                ? state
+                : (flagState.dataset.defaultState || '—')
+        }
     })
     selectionLabel.textContent = state || 'All states'
     resetBtn.hidden = !state

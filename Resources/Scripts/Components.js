@@ -443,6 +443,7 @@ export const caseStudyItem =({
     const StateNode = document.createElement('span')
     StateNode.classList.add('CaseStudyFlag-State')
     StateNode.textContent = primaryState || '—'
+    StateNode.dataset.defaultState = primaryState || ''
     const ArrowNode = document.createElement('span')
     ArrowNode.classList.add('CaseStudyFlag-Arrow')
     ArrowNode.setAttribute('aria-hidden', 'true')
