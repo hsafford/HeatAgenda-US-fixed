@@ -17,6 +17,14 @@
   },
   {
     "Type": "Organization",
+    "Name": "African Youth & Community Organization (OR)"
+  },
+  {
+    "Type": "Organization",
+    "Name": "Air Club (National)"
+  },
+  {
+    "Type": "Organization",
     "Name": "Alliance of Nurses for Healthy Environments (National)"
   },
   {
@@ -69,6 +77,10 @@
   },
   {
     "Type": "Organization",
+    "Name": "Arizonans for Community Choice (AZ)"
+  },
+  {
+    "Type": "Organization",
     "Name": "Association of State and Territorial Health Officials (National)"
   },
   {
@@ -90,6 +102,10 @@
   {
     "Type": "Organization",
     "Name": "Building Performance Institute (National)"
+  },
+  {
+    "Type": "Organization",
+    "Name": "C & A Safety Consultants (CA)"
   },
   {
     "Type": "Organization",
@@ -138,6 +154,10 @@
   {
     "Type": "Organization",
     "Name": "Clean Air Allies (CA)"
+  },
+  {
+    "Type": "Organization",
+    "Name": "CleanAIRE NC (NC)"
   },
   {
     "Type": "Organization",
@@ -257,6 +277,10 @@
   },
   {
     "Type": "Organization",
+    "Name": "Groundswell (DE)"
+  },
+  {
+    "Type": "Organization",
     "Name": "Groundwork USA (National)"
   },
   {
@@ -298,6 +322,10 @@
   {
     "Type": "Organization",
     "Name": "Healthy Schools Network (National)"
+  },
+  {
+    "Type": "Organization",
+    "Name": "Home Forward (OR)"
   },
   {
     "Type": "Organization",
@@ -381,6 +409,10 @@
   },
   {
     "Type": "Organization",
+    "Name": "Miracles Club (OR)"
+  },
+  {
+    "Type": "Organization",
     "Name": "Mississippi Rising Coalition (MS)"
   },
   {
@@ -433,6 +465,10 @@
   },
   {
     "Type": "Organization",
+    "Name": "NeighborWorks Umpqua (OR)"
+  },
+  {
+    "Type": "Organization",
     "Name": "Nevada Clinicians for Climate Action (NV)"
   },
   {
@@ -442,6 +478,10 @@
   {
     "Type": "Organization",
     "Name": "New Buildings Institute (National)"
+  },
+  {
+    "Type": "Organization",
+    "Name": "Oregon Public Health Association (OR)"
   },
   {
     "Type": "Organization",
@@ -465,6 +505,10 @@
   },
   {
     "Type": "Organization",
+    "Name": "Qlatinx"
+  },
+  {
+    "Type": "Organization",
     "Name": "Resilient US (National)"
   },
   {
@@ -477,6 +521,10 @@
   },
   {
     "Type": "Organization",
+    "Name": "Seeds for the Sol (OR)"
+  },
+  {
+    "Type": "Organization",
     "Name": "Service Employees International Union (SEIU) (National)"
   },
   {
@@ -486,6 +534,10 @@
   {
     "Type": "Organization",
     "Name": "Smart Surfaces Coalition (National)"
+  },
+  {
+    "Type": "Organization",
+    "Name": "Somali American Council Of Oregon (OR)"
   },
   {
     "Type": "Organization",
@@ -502,6 +554,10 @@
   {
     "Type": "Organization",
     "Name": "The Passive House Network (National)"
+  },
+  {
+    "Type": "Organization",
+    "Name": "The Whole Community Alliance for Disability Equity (NH)"
   },
   {
     "Type": "Organization",
@@ -553,6 +609,10 @@
   },
   {
     "Type": "Organization",
+    "Name": "Verde (OR)"
+  },
+  {
+    "Type": "Organization",
     "Name": "Vermont Climate and Health Alliance (VT)"
   },
   {
@@ -570,6 +630,10 @@
   {
     "Type": "Organization",
     "Name": "Whole Health Consortium at Virginia Tech (VA)"
+  },
+  {
+    "Type": "Organization",
+    "Name": "Wonder Labs (CA)"
   },
   {
     "Type": "Organization",
@@ -618,5 +682,9 @@
   {
     "Type": "Government",
     "Name": "Pima County Health Department, AZ"
+  }
+  {
+    "Type": "Government",
+    "Name": "City of San Antonio, Department of Resilence and Sustainability, TX"
   }
 ]
