@@ -1484,6 +1484,104 @@ main.ExploreContent > .ExploreNav{
   background-color: var(--OffWhite);
 }
 
+/* Implementation Guide: pillar / recommendation / strategy context panel */
+.ExploreContextPanel{
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 3px solid var(--Accent100);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  animation: explore-in 260ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.ExploreContextEyebrow{
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--Accent100);
+  margin: 0;
+}
+
+.ExploreContextLead{
+  font-size: var(--FontSize-Med);
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.ExploreContextFields{
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.ExploreInfoField{
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.ExploreInfoFieldLabel{
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.ExploreInfoFieldText{
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.75);
+  margin: 0;
+}
+
+.ExploreInfoFieldList{
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.ExploreInfoFieldList > li{
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.ExploreInfoFieldList > li::marker{
+  color: var(--Accent100);
+}
+
+.ExploreInfoTagList{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.ExploreInfoTag{
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  background-color: var(--OffWhite);
+  color: var(--Accent100);
+  border: 1px solid var(--Accent100);
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+}
+
 /* Policy Explorer: search + filter bar (shared by accordion and flat-search variants) */
 .PolicyFilterBar{
   display: flex;

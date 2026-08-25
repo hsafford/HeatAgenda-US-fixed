@@ -36,6 +36,15 @@ export function MatchDescription(Name){
     return Item.Description
 }
 
+export function getDescriptionEntry(Name){
+    return Descriptions.find(item => item.Name === Name) || null
+}
+
+export function splitOnDelimiter(text, delimiter){
+    if(!text) return []
+    return text.split(delimiter).map(s => s.trim()).filter(Boolean)
+}
+
 export function parseListString(ListString){
     if(ListString && ListString !== '#'){
         return ListString.split(',')

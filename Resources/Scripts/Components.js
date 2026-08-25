@@ -892,3 +892,125 @@ export const statBlock =(value, description)=>{
     return statBlock
 }
 
+const ExploreInfoField =(label)=>{
+    const field = document.createElement('div')
+    field.classList.add('ExploreInfoField')
+
+    const heading = document.createElement('p')
+    heading.classList.add('ExploreInfoFieldLabel')
+    heading.textContent = label
+    field.append(heading)
+
+    return field
+}
+
+const ExploreInfoParagraph =(label, text)=>{
+    if(!text) return null
+    const field = ExploreInfoField(label)
+    const p = document.createElement('p')
+    p.classList.add('ExploreInfoFieldText')
+    p.textContent = text
+    field.append(p)
+    return field
+}
+
+const ExploreInfoList =(label, text, delimiter=';')=>{
+    const items = Parser.splitOnDelimiter(text, delimiter)
+    if(items.length === 0) return null
+    const field = ExploreInfoField(label)
+    const list = document.createElement('ul')
+    list.classList.add('ExploreInfoFieldList')
+    items.forEach(item => {
+        const li = document.createElement('li')
+        li.textContent = item.replace(/\.$/, '')
+        list.append(li)
+    })
+    field.append(list)
+    return field
+}
+
+const ExploreInfoTags =(label, text, delimiter=';')=>{
+    const items = Parser.splitOnDelimiter(text, delimiter)
+    if(items.length === 0) return null
+    const field = ExploreInfoField(label)
+    const tags = document.createElement('ul')
+    tags.classList.add('ExploreInfoTagList')
+    items.forEach(item => {
+        const li = document.createElement('li')
+        li.classList.add('ExploreInfoTag')
+        li.textContent = item.replace(/\.$/, '')
+        tags.append(li)
+    })
+    field.append(tags)
+    return field
+}
+
+const ExploreContextPanel =({eyebrow, lead, fields}={})=>{
+    const panel = document.createElement('div')
+    panel.classList.add('ExploreContextPanel')
+
+    if(eyebrow){
+        const eyebrowEl = document.createElement('p')
+        eyebrowEl.classList.add('ExploreContextEyebrow')
+        eyebrowEl.textContent = eyebrow
+        panel.append(eyebrowEl)
+    }
+
+    if(lead){
+        const leadEl = document.createElement('p')
+        leadEl.classList.add('ExploreContextLead')
+        leadEl.textContent = lead
+        panel.append(leadEl)
+    }
+
+    const fieldsWrap = document.createElement('div')
+    fieldsWrap.classList.add('ExploreContextFields')
+    fields.filter(Boolean).forEach(field => fieldsWrap.append(field))
+
+    if(fieldsWrap.children.length > 0){
+        panel.append(fieldsWrap)
+    }
+
+    return panel
+}
+
+export const PillarContextPanel =(PillarName)=>{
+    const Entry = Parser.getDescriptionEntry(PillarName)
+    if(!Entry) return null
+
+    return ExploreContextPanel({
+        lead: Entry.Description,
+        fields: [
+            ExploreInfoTags('Aligns with public priorities', Entry.AreasOfAlignment),
+            ExploreInfoParagraph('Key stakeholders', Entry.KeyStakeholders)
+        ]
+    })
+}
+
+export const RecommendationContextPanel =(RecommendationName)=>{
+    const Entry = Parser.getDescriptionEntry(RecommendationName)
+    if(!Entry) return null
+
+    return ExploreContextPanel({
+        lead: Entry.Description,
+        fields: [
+            ExploreInfoParagraph('What success looks like', Entry.AlignmentWithPillar),
+            ExploreInfoList('Ways to measure progress', Entry.WaysToMeasureProgress)
+        ]
+    })
+}
+
+export const StrategyContextPanel =(PolicyTypeName)=>{
+    const Entry = Parser.getDescriptionEntry(PolicyTypeName)
+    if(!Entry) return null
+
+    return ExploreContextPanel({
+        lead: Entry.Description,
+        fields: [
+            ExploreInfoParagraph('Existing legal landscape', Entry.ExistingLegalLandscape),
+            ExploreInfoParagraph('Authorities by level of government', Entry.AuthoritiesByLevel),
+            ExploreInfoParagraph('Connections to other recommendations', Entry.ConnectionsToOtherRecommendations)
+        ]
+    })
+}
+
