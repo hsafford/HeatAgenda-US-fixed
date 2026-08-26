@@ -45,6 +45,10 @@
   },
   {
     "Type": "Organization",
+    "Name": "American Federation of Teachers - AFT (National)"
+  },
+  {
+    "Type": "Organization",
     "Name": "American Forests (National)"
   },
   {
@@ -161,6 +165,10 @@
   },
   {
     "Type": "Organization",
+    "Name": "Climate Adaptation Partners (National)"
+  },
+  {
+    "Type": "Organization",
     "Name": "Climate Change and Health Working Group (HI)"
   },
   {
@@ -250,6 +258,10 @@
   {
     "Type": "Organization",
     "Name": "Geos Institute (National)"
+  },
+  {
+    "Type": "Organization",
+    "Name": "Go Green Initiative (National)"
   },
   {
     "Type": "Organization",
@@ -485,6 +497,10 @@
   },
   {
     "Type": "Organization",
+    "Name": "Palo Alto Student Climate Coalition (CA)"
+  },
+  {
+    "Type": "Organization",
     "Name": "Physicians for Social Responsibility Maine (ME)"
   },
   {
@@ -494,6 +510,10 @@
   {
     "Type": "Organization",
     "Name": "Physicians for Social Responsibility Texas (TX)"
+  },
+  {
+    "Type": "Organization",
+    "Name": "Point A Studio (NC)"
   },
   {
     "Type": "Organization",
@@ -590,6 +610,10 @@
   {
     "Type": "Organization",
     "Name": "Urban and Community Forestry Society (National)"
+  },
+  {
+    "Type": "Organization",
+    "Name": "Urban Cooling Institute (OR)"
   },
   {
     "Type": "Organization",
