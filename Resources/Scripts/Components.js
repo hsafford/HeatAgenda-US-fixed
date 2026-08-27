@@ -109,7 +109,8 @@ export function ProcessHeader(){
     const nav = navBar([
         { name: 'The Agenda', href: './index.html' },
         { name: 'Implementation Guide', href: './explore.html' },
-        { name: 'State Explorer', href: './map.html' }
+        { name: 'State Explorer', href: './map.html' },
+        { name: 'Newsroom', href: './media-option-c.html' }
     ])
 
     header.append(headerMain, nav)
