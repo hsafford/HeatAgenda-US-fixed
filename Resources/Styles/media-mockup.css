@@ -1,0 +1,678 @@
+/* Media page mockup styles — prototype only, not wired into main style.css */
+
+.MediaIntro{
+  max-width: 85ch;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.MediaIntro p{
+  max-width: none;
+}
+
+/* As Seen In logo strip */
+.MediaLogoStrip{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.MediaLogoStripLabel{
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.MediaLogoRow{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 2.5rem;
+}
+
+.MediaLogoRow > span{
+  font-family: 'FraktionMono';
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.55);
+  white-space: nowrap;
+}
+
+/* Section headers */
+.MediaSectionHead{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  grid-column: 1 / -1;
+}
+
+.MediaSectionHead > h2{
+  color: var(--Accent100);
+}
+
+.MediaSectionCount{
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+/* Shared card chrome (mirrors .CaseStudyItem / .ActionCard) */
+.MediaCard{
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 3px solid var(--Accent100);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin: 0;
+}
+
+.MediaCardTag{
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: var(--Accent100);
+  color: #ffffff;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.MediaCardMeta{
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.MediaCardTitle{
+  margin: 0;
+  font-size: var(--FontSize-Med);
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.MediaCardBody{
+  margin: 0;
+  max-width: none;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.MediaCardLink{
+  font-weight: 700;
+  color: var(--Accent100);
+  text-decoration: underline;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* Option A: Press + Social split, two grids */
+.PressGrid,
+.SocialGrid{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.SocialCard .MediaCardTag{
+  background-color: var(--Accent050);
+}
+
+.SocialCardStats{
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.55);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding-top: 0.5rem;
+}
+
+.SocialCardStats strong{
+  color: var(--Accent100);
+}
+
+.MediaKitBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  background-color: var(--Accent100);
+  color: #ffffff;
+  padding: 2rem;
+  grid-column: 1 / -1;
+}
+
+.MediaKitBox h3{
+  margin: 0 0 0.25rem;
+  color: #ffffff;
+}
+
+.MediaKitBox p{
+  margin: 0;
+  max-width: 40rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.MediaKitBox .btn{
+  background-color: #ffffff;
+  color: var(--Accent100);
+}
+
+.MediaKitToolkitList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.MediaKitBox .MediaKitToolkitItem{
+  white-space: nowrap;
+  padding: 0.6rem 1.1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.MediaKitToolkitItem--pending{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Option B: unified filterable hub */
+.MediaFilterBar{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 3px solid var(--Accent100);
+  padding: 1rem;
+}
+
+.MediaSearchInput{
+  font: inherit;
+  font-size: var(--FontSize-Reg);
+  padding: 0.6rem 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.MediaFilterChipsRow{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.MediaChip{
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: var(--Accent100);
+  border: 1px solid var(--Accent100);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  cursor: pointer;
+}
+
+.MediaChip.is-active{
+  background-color: var(--Accent100);
+  color: #ffffff;
+}
+
+.MediaGrid{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.MediaGrid .MediaCard[data-type="Social"]{
+  border-left-color: var(--Accent050);
+}
+.MediaGrid .MediaCard[data-type="Social"] .MediaCardTag{
+  background-color: var(--Accent050);
+}
+
+.MediaGrid .MediaCard[data-type="Video"]{
+  border-left-color: var(--Accent025);
+}
+.MediaGrid .MediaCard[data-type="Video"] .MediaCardTag{
+  background-color: var(--Accent025);
+}
+
+.MediaCard--embed{
+  padding: 1rem 1rem 0;
+  border-left-color: var(--Accent025);
+}
+
+.MediaCard--embed .MediaCardTag{
+  background-color: var(--Accent025);
+  margin-bottom: 0.25rem;
+}
+
+.MediaCard--embed .tiktok-embed{
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+
+.MediaThumb{
+  aspect-ratio: 16 / 9;
+  background-color: var(--Accent100);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: luminosity;
+  margin: -1rem -1rem 0;
+}
+
+
+/* Option C: magazine feature layout */
+.MediaHero{
+  position: relative;
+  overflow: hidden;
+  min-height: 26rem;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  grid-column: 1 / -1;
+}
+
+.MediaHero::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(13, 30, 43, 0.92) 0%, rgba(13, 30, 43, 0.55) 45%, rgba(13, 30, 43, 0.15) 100%);
+}
+
+.MediaHeroContent{
+  position: relative;
+  z-index: 1;
+  padding: 2.5rem;
+  max-width: 42rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.MediaHeroTag{
+  align-self: flex-start;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.MediaHeroTitle{
+  margin: 0;
+  font-size: var(--FontSize-Dspl);
+  color: #ffffff;
+  text-wrap: balance;
+}
+
+.MediaHeroExcerpt{
+  margin: 0;
+  max-width: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: var(--FontSize-Med);
+}
+
+.MediaHeroMeta{
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.MediaHeroLink{
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  background-color: #ffffff;
+  color: var(--Accent100);
+}
+
+/* Two-column editorial + sidebar */
+.MediaFeatureLayout{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  grid-column: 1 / -1;
+}
+
+.MediaEditorialList{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.MediaEditorialItem{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 3px solid var(--Accent100);
+}
+
+@media screen and (max-width: 700px){
+  .MediaEditorialList{
+    grid-template-columns: 1fr;
+  }
+}
+
+.MediaEditorialNum{
+  font-family: 'FraktionMono';
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--Accent100);
+  opacity: 0.3;
+}
+
+.MediaEditorialBody{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.MediaEditorialTitle{
+  margin: 0;
+  font-size: var(--FontSize-Med);
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.MediaEditorialExcerpt{
+  margin: 0;
+  max-width: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Sidebar */
+.MediaSidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: sticky;
+  top: calc(var(--header-h, 3rem) + 1rem);
+}
+
+.MediaSidebarBox{
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 3px solid var(--Accent100);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.MediaSidebarHead{
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--Accent100);
+}
+
+.MediaSidebarSocialItem{
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.MediaSidebarSocialItem:last-child{
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.MediaSidebarSocialItem:first-of-type{
+  padding-top: 0;
+}
+
+.MediaSidebarSocialMeta{
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  gap: 0.4rem;
+}
+
+.MediaSidebarSocialText{
+  margin: 0;
+  font-size: 0.85rem;
+  max-width: none;
+}
+
+.MediaSidebarLogos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.MediaSidebarLogos span{
+  font-family: 'FraktionMono';
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.MediaSidebarKit{
+  background-color: var(--Accent100);
+  border-left: none;
+  color: #ffffff;
+}
+
+.MediaSidebarKit .MediaSidebarHead{
+  color: #ffffff;
+}
+
+.MediaSidebarKit p{
+  margin: 0;
+  max-width: none;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.MediaSidebarKit .btn{
+  background-color: #ffffff;
+  color: var(--Accent100);
+  text-align: center;
+}
+
+@media screen and (max-width: 900px){
+  .MediaFeatureLayout{
+    grid-template-columns: 1fr;
+  }
+
+  .MediaSidebar{
+    position: static;
+  }
+
+  .MediaHeroTitle{
+    font-size: var(--FontSize-XXL);
+  }
+}
+
+/* Social Highlights: full-width embed row (Option C variant) */
+.MediaSocialSection{
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 3px solid var(--Accent100);
+  padding: 1.5rem;
+}
+
+.MediaSocialGrid{
+  display: flex;
+  align-items: flex-start;
+  justify-content: safe center;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.75rem;
+  scroll-snap-type: x proximity;
+  min-width: 0;
+}
+
+.MediaSocialCard{
+  flex: 0 0 320px;
+  scroll-snap-align: start;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-left: 3px solid var(--Accent100);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.MediaSocialCard .tiktok-embed,
+.MediaSocialCard .instagram-media{
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+
+/* Watch (video) sidebar box + lightbox facade */
+.MediaWatchThumb{
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  max-height: 20rem;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: var(--Accent025);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: luminosity;
+}
+
+.MediaWatchPlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MediaWatchPlay::before{
+  content: '';
+  display: block;
+  width: 0.9rem;
+  aspect-ratio: 1 / 1;
+  margin-left: 0.2rem;
+  background-color: var(--Accent100);
+  clip-path: var(--ArrowRight);
+}
+
+.MediaWatchThumb:hover .MediaWatchPlay{
+  background-color: #ffffff;
+}
+
+.MediaLightbox{
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MediaLightbox[hidden]{
+  display: none;
+}
+
+.MediaLightboxBackdrop{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(13, 30, 43, 0.85);
+}
+
+.MediaLightboxContent{
+  position: relative;
+  z-index: 1;
+  width: 22.5rem;
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 2rem);
+}
+
+.MediaLightboxPlayer{
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  background-color: #000000;
+}
+
+.MediaLightboxPlayer iframe{
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.MediaLightboxClose{
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.MediaLightboxClose:hover{
+  background-color: rgba(255, 255, 255, 0.3);
+}
