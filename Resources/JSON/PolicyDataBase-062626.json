@@ -128,8 +128,8 @@
     "Description": "States: Maryland, Virginia (proposed) Local: Los Angeles, California, Montgomery County Maryland, Prince George County, Maryland, Phoenix, Arizona, Dallas, Texas",
     "State Link Title": "Maryland, Virginia (proposed)",
     "State Link URL": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/SB0012?ys=2026RS, https://legiscan.com/VA/bill/HB1475/2024",
-    "Local Link Title": "Los Angeles, California, Montgomery County Maryland, Prince George County, Maryland, Phoenix, Arizona, Dallas, Texas",
-    "Local Link URL": "https://file.lacounty.gov/SDSInter/bos/supdocs/193869.pdf, https://mgaleg.maryland.gov/pubs/LegisLegal/County-Legislation/2021-Montgomery-County-24-19.pdf, https://www.peoples-law.org/prince-georges-county-housing-code-laws, https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/6-3-22%20Cooling%20Ordinance%20Flyer%20English%20and%20Spanish_-combined.pdf, https://dallascityhall.com/departments/codecompliance/DCH%20documents/docs/Chapter%2027%20Reference%20Manual%20(2)%20(003).pdf"
+    "Local Link Title": "Los Angeles County, California, Montgomery County Maryland, Prince George County, Maryland, Phoenix, Arizona, Dallas, Texas, Houston, Texas, New Orleans, Louisiana, North Las Vegas, Nevada, Palm Springs, California",
+    "Local Link URL": "https://file.lacounty.gov/SDSInter/bos/supdocs/193869.pdf, https://mgaleg.maryland.gov/pubs/LegisLegal/County-Legislation/2021-Montgomery-County-24-19.pdf, https://www.peoples-law.org/prince-georges-county-housing-code-laws, https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/6-3-22%20Cooling%20Ordinance%20Flyer%20English%20and%20Spanish_-combined.pdf, https://dallascityhall.com/departments/codecompliance/DCH%20documents/docs/Chapter%2027%20Reference%20Manual%20(2)%20(003).pdf, https://www.houstontx.gov/council/committees/proposition-a.html, https://nola.gov/next/healthy-homes/home/, https://library.municode.com/nv/north_las_vegas/codes/code_of_ordinances?nodeId=TIT15BUCO_CH15.20UNHOCO_15.20.030CH7SE701AM, https://publicportal.palmspringsca.gov/WebLink/DocView.aspx?id=1372744&dbid=0&repo=CityHall-Primary&cr=1"
   },
   {
     "Pillar": "Safe Homes",
@@ -140,8 +140,8 @@
     "Description": "State: Maryland Local: Albuquerque, New Mexico, Phoenix, Arizona, New York City, New York",
     "State Link Title": "Maryland",
     "State Link URL": "https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/SB0012?ys=2026RS",
-    "Local Link Title": "Albuquerque, New Mexico, Phoenix, Arizona, New York City, New York",
-    "Local Link URL": "https://www.cabq.gov/clerk/documents/o-2024-047.pdf, https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/6-3-22%20Cooling%20Ordinance%20Flyer%20English%20and%20Spanish_-combined.pdf, https://www.brickunderground.com/rent/guide-ac-air-conditioning-law-cool-homes-for-all-rentals-nyc"
+    "Local Link Title": "Albuquerque, New Mexico, Phoenix, Arizona, New York City, New York, Spokane, Washington",
+    "Local Link URL": "https://www.cabq.gov/clerk/documents/o-2024-047.pdf, https://www.phoenix.gov/content/dam/phoenix/heatsite/documents/6-3-22%20Cooling%20Ordinance%20Flyer%20English%20and%20Spanish_-combined.pdf, https://www.brickunderground.com/rent/guide-ac-air-conditioning-law-cool-homes-for-all-rentals-nyc, https://assets.noviams.com/novi-file-uploads/rhawa/Advocacy/cooling_final.pdf"
   },
   {
     "Pillar": "Safe Homes",
@@ -210,8 +210,8 @@
     "Policy Action": "Establish an income-based electricity discount program that correctly reflects the level of need for low-income ratepayers",
     "Policy Lever": "legislation",
     "Description": "States: California, Arizona",
-    "State Link Title": "California, Arizona",
-    "State Link URL": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/energy-division/documents/demand-response/demand-flexibility-oir/ab205_factsheet_050824.pdf, https://www.aps.com/en/Residential/Account/Assistance-Programs/Energy-Support-Program",
+    "State Link Title": "California, Arizona, Maryland",
+    "State Link URL": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/energy-division/documents/demand-response/demand-flexibility-oir/ab205_factsheet_050824.pdf, https://www.aps.com/en/Residential/Account/Assistance-Programs/Energy-Support-Program, https://mgaleg.maryland.gov/2026RS/bills/hb/hb1532e.pdf",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -450,8 +450,8 @@
     "Policy Action": "Establish a \"Percentage-of-income payment plans\" to cap energy bills so they do not exceed a set affordability threshold (e.g. 4% of household income)",
     "Policy Lever": "regulatory",
     "Description": "States: Nevada, Colorado, North Dakota, Illinois, Ohio, Virginia, New Jersey, Maine",
-    "State Link Title": "Nevada, Colorado, North Dakota, Illinois, Ohio, Virginia, New Jersey, Maine",
-    "State Link URL": "https://affordability-toolkit.rmi.org/policies/percentage-of-income-payment-plans",
+    "State Link Title": "Nevada, Colorado, North Dakota, Illinois, Ohio, Virginia, New Jersey, Maine, Maryland",
+    "State Link URL": "https://affordability-toolkit.rmi.org/policies/percentage-of-income-payment-plans, https://mgaleg.maryland.gov/mgawebsite/Legislation/Details/hb1532",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -462,8 +462,8 @@
     "Policy Action": "Set a goal for reducing or eradicating energy debt",
     "Policy Lever": "executive order",
     "Description": "State: New York Local: Los Angeles County, California",
-    "State Link Title": "New York",
-    "State Link URL": "https://dps.ny.gov/news/psc-expands-energy-affordability-policy-low-moderate-income-customers",
+    "State Link Title": "New York, Michigan",
+    "State Link URL": "https://dps.ny.gov/news/psc-expands-energy-affordability-policy-low-moderate-income-customers, https://www.michigan.gov/mpsc/commission/news-releases/2026/08/24/mpsc-launches-webpage-showing-how-it-reduces-energy-costs",
     "Local Link Title": "Los Angeles County, California",
     "Local Link URL": "https://cso.lacounty.gov/ourcounty-plan/cso-current-initiatives/county-heat-action-plan/"
   },
@@ -507,11 +507,11 @@
     "Pillar": "Safe Homes",
     "Recommendation": "Protect energy access during hot weather",
     "Policy Type": "Expand programs for energy bill assistance",
-    "Policy Action": "Create state‑administered public benefits funds collected via utility rates or special surcharges to cover non‑heating electric costs, crisis assistance, and energy burdens beyond federal LIHEAP benefits.",
+    "Policy Action": "Create state‑administered fund to cover electricity costs, crisis assistance, and energy burdens beyond federal LIHEAP benefits.",
     "Policy Lever": "legislation, funding",
     "Description": "States: Wisconsin, Arizona",
-    "State Link Title": "Wisconsin, Arizona",
-    "State Link URL": "https://docs.legis.wisconsin.gov/1999/related/acts/9, https://des.az.gov/liheap",
+    "State Link Title": "Wisconsin, Arizona, Indiana, Maryland",
+    "State Link URL": "https://docs.legis.wisconsin.gov/1999/related/acts/9, https://des.az.gov/liheap, https://iga.in.gov/pdf-documents/124/2026/house/bills/HB1002/HB1002.06.ENRS.pdf, https://mgaleg.maryland.gov/2026RS/bills/hb/hb1532e.pdf",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -522,8 +522,8 @@
     "Policy Action": "States should provide one-time universal bill credits to all residential ratepayers through their public utility regulatory boards during high-demand or high-cost periods",
     "Policy Lever": "Board Order",
     "Description": "State: New Jersey",
-    "State Link Title": "New Jersey",
-    "State Link URL": "https://www.nj.gov/bpu/pdf/boardorders/2025/20250813/8F%20ORDER%20Residential%20Universal%20Bill%20Credit.pdf?utm_source=chatgpt.com",
+    "State Link Title": "New Jersey, Maryland",
+    "State Link URL": "https://www.nj.gov/governor/news/2026/20260707a.shtml, https://mgaleg.maryland.gov/2026RS/bills/hb/hb1532e.pdf",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -570,8 +570,8 @@
     "Policy Action": "Establish water shut off protections during high temperature days",
     "Policy Lever": "regulatory",
     "Description": "Local: Jackson, Mississippi",
-    "State Link Title": "",
-    "State Link URL": "",
+    "State Link Title": "New York",
+    "State Link URL": "https://dps.ny.gov/news/psc-announces-extreme-heat-protections-consumers",
     "Local Link Title": "Jackson, Mississippi",
     "Local Link URL": "https://jacksonfreepress.media.clients.ellingtoncms.com/news/documents/2018/10/08/City_council_bill_of_rights.pdf"
   },
@@ -582,8 +582,8 @@
     "Policy Action": "Establish disconnection policies that prevents terminations for nonpayment during high temperature days",
     "Policy Lever": "legislation",
     "Description": "States: Arizona, Washington, DC, California, Colorado, Arkansas, Delaware, Illinois, Maryland, Missouri, Nevada, New Jersey, Oklahoma, Virginia",
-    "State Link Title": "Arizona, Washington, DC, California, Colorado, Arkansas, Delaware, Illinois, Maryland, Missouri, Nevada, New Jersey, Oklahoma, Virginia",
-    "State Link URL": "https://ruco.az.gov/hot-topics/disconnection-rules, https://legiscan.com/DC/bill/B26-0177/2025, https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M340/K648/340648092.PDF, https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=244&fileName=4%20CCR%20723-3, https://apsc.arkansas.gov/consumer-services/suspension-of-service/, https://regulations.delaware.gov/AdminCode/title26/3000/3002.shtml, https://www.law.cornell.edu/regulations/illinois/Ill-Admin-Code-tit-83-SS-280.130, https://www.psc.state.md.us/frequently-asked-questions/restrictions-on-terminations-4/, https://psc.mo.gov/CMSInternetData/ConsumerInformation/Hot%20Weather%20Law.pdf, https://www.law.cornell.edu/regulations/nevada/NAC-704-3934, https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-14-3-3A-2, https://oklahoma.gov/content/dam/ok/en/occ/documents/ajls/jls-courts/rules/2020/current-rules/webreadych35fy2021-10-01-2020-searchable.pdf, https://law.lis.virginia.gov/vacode/title56/chapter10/section56-245.1:3/",
+    "State Link Title": "Arizona, Washington, DC, Colorado, Arkansas, Delaware, Illinois, Maryland, Missouri, Nevada, New Jersey, Oklahoma, Virginia, New York, Indiana",
+    "State Link URL": "https://ruco.az.gov/hot-topics/disconnection-rules, https://legiscan.com/DC/bill/B26-0177/2025, https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=244&fileName=4%20CCR%20723-3, https://apsc.arkansas.gov/consumer-services/suspension-of-service/, https://regulations.delaware.gov/AdminCode/title26/3000/3002.shtml, https://www.law.cornell.edu/regulations/illinois/Ill-Admin-Code-tit-83-SS-280.130, https://www.psc.state.md.us/frequently-asked-questions/restrictions-on-terminations-4/, https://psc.mo.gov/CMSInternetData/ConsumerInformation/Hot%20Weather%20Law.pdf, https://www.law.cornell.edu/regulations/nevada/NAC-704-3934, https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-14-3-3A-2, https://oklahoma.gov/content/dam/ok/en/occ/documents/ajls/jls-courts/rules/2020/current-rules/webreadych35fy2021-10-01-2020-searchable.pdf, https://law.lis.virginia.gov/vacode/title56/chapter10/section56-245.1:3/, https://dps.ny.gov/news/psc-announces-extreme-heat-protections-consumers, https://iga.in.gov/pdf-documents/124/2026/house/bills/HB1002/HB1002.06.ENRS.pdf",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -630,8 +630,8 @@
     "Policy Action": "Require utilities to reach out to customers prior to disconnection, offering payment plans where possible",
     "Policy Lever": "legislation",
     "Description": "State: Virginia",
-    "State Link Title": "Virginia",
-    "State Link URL": "https://legacylis.virginia.gov/cgi-bin/legp604.exe?241+sum+HB906",
+    "State Link Title": "Virginia, Indiana",
+    "State Link URL": "https://legacylis.virginia.gov/cgi-bin/legp604.exe?241+sum+HB906, https://iga.in.gov/pdf-documents/124/2026/house/bills/HB1002/HB1002.06.ENRS.pdf",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -738,8 +738,8 @@
     "Policy Action": "Utilize cap-and-invest programs as funding sources for housing upgrades for extreme heat",
     "Policy Lever": "legislation, funding",
     "Description": "States: California, Oregon, Washington, Delaware",
-    "State Link Title": "California, Oregon, Washington, Delaware",
-    "State Link URL": "https://ww2.arb.ca.gov/our-work/programs/cap-and-invest-program, https://www.oregon.gov/deq/ghgp/cpp/pages/default.aspx, https://ecology.wa.gov/air-climate/climate-commitment-act/cap-and-invest, https://documents.dnrec.delaware.gov/energy/weatherization/2021-WAP-Annual-Report.pdf",
+    "State Link Title": "California, Oregon, Washington, Delaware, Maryland",
+    "State Link URL": "https://ww2.arb.ca.gov/our-work/programs/cap-and-invest-program, https://www.oregon.gov/deq/ghgp/cpp/pages/default.aspx, https://ecology.wa.gov/air-climate/climate-commitment-act/cap-and-invest, https://documents.dnrec.delaware.gov/energy/weatherization/2021-WAP-Annual-Report.pdf, https://mgaleg.maryland.gov/2026RS/bills/hb/hb1532e.pdf",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -1074,8 +1074,8 @@
     "Policy Action": "Eliminate utility interconnection requirements for plug-in solar technology",
     "Policy Lever": "regulatory",
     "Description": "State: Utah",
-    "State Link Title": "Utah",
-    "State Link URL": "https://le.utah.gov/Session/2025/bills/introduced/HB0340.pdf",
+    "State Link Title": "Utah, Maryland, Maine, Virginia, Colorado, Connecticut, Vermont, New Hampshire",
+    "State Link URL": "https://le.utah.gov/Session/2025/bills/introduced/HB0340.pdf, https://mgaleg.maryland.gov/2026RS/bills/hb/hb1532e.pdf, https://legislature.maine.gov/bills/display_ps.asp?LD=1730&snum=132, https://lis.virginia.gov/bill-details/20261/HB395/text/CHAP1052, https://leg.colorado.gov/bills/hb26-1007, https://www.cga.ct.gov/2026/act/Pa/pdf/2026PA-00127-R00HB-05340-PA.PDF, https://legislature.vermont.gov/bill/status/2026/S.202, https://legiscan.com/NH/bill/SB540/2026",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -1407,23 +1407,11 @@
     "Pillar": "Safe Homes",
     "Recommendation": "Ensure large loads do not create affordability and reliability risks during extreme heat",
     "Policy Type": "Collect fees from large load customers to pay for household upgrades and energy bills",
-    "Policy Action": "Require data centers to fund a program in impacted communities for energy bill credits or to finance household energy technologies and weatherization",
-    "Policy Lever": "legislation",
-    "Description": "States: New York (proposed), Illinois (proposed)",
-    "State Link Title": "New York (proposed), Illinois (proposed)",
-    "State Link URL": "https://www.nysenate.gov/legislation/bills/2025/S10546, https://ilga.gov/Legislation/BillStatus?DocNum=5513&GAID=18&DocTypeID=HB&LegId=167488&SessionID=114",
-    "Local Link Title": "",
-    "Local Link URL": ""
-  },
-  {
-    "Pillar": "Safe Homes",
-    "Recommendation": "Ensure large loads do not create affordability and reliability risks during extreme heat",
-    "Policy Type": "Collect fees from large load customers to pay for household upgrades and energy bills",
     "Policy Action": "Require data centers to commit funding to low-income weatherization to receive interconnection",
     "Policy Lever": "regulatory",
     "Description": "State: Indiana",
-    "State Link Title": "Indiana",
-    "State Link URL": "https://indianacapitalchronicle.com/2024/11/26/ratepayer-advocates-hail-landmark-settlement-with-data-centers-utility-company/",
+    "State Link Title": "Indiana, Maryland",
+    "State Link URL": "https://indianacapitalchronicle.com/2024/11/26/ratepayer-advocates-hail-landmark-settlement-with-data-centers-utility-company/, https://mgaleg.maryland.gov/2026RS/bills/hb/hb1532e.pdf",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -1431,11 +1419,11 @@
     "Pillar": "Safe Homes",
     "Recommendation": "Ensure large loads do not create affordability and reliability risks during extreme heat",
     "Policy Type": "Collect fees from large load customers to pay for household upgrades and energy bills",
-    "Policy Action": "Require data centers to pay an annual fee to the state to fund households weatherization",
+    "Policy Action": "Require data centers to pay an annual fee to the state to fund households weatherization or energy technologies",
     "Policy Lever": "legislation",
-    "Description": "States: Minnesota, New York (proposed)",
-    "State Link Title": "Minnesota, New York (proposed)",
-    "State Link URL": "https://www.revisor.mn.gov/bills/94/2025/1/HF/16/versions/0/, https://www.nysenate.gov/legislation/bills/2025/S10546",
+    "Description": "State: Minnesota",
+    "State Link Title": "Minnesota, Illinois (proposed)",
+    "State Link URL": "https://www.revisor.mn.gov/bills/94/2025/1/HF/16/versions/0/, https://ilga.gov/Legislation/BillStatus?DocNum=5513&GAID=18&DocTypeID=HB&LegId=167488&SessionID=114",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -1494,8 +1482,8 @@
     "Policy Action": "Require an assessment of the costs that ratepayers will face as a result of data center buildout",
     "Policy Lever": "legislation",
     "Description": "State: California (proposed)",
-    "State Link Title": "California (proposed)",
-    "State Link URL": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=20252026SB57",
+    "State Link Title": "California",
+    "State Link URL": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB57",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -1518,8 +1506,8 @@
     "Policy Action": "Require data centers to disclose their land procurement to landowners, county commissioners, and utility regulators within a certain time period of purchase",
     "Policy Lever": "legislation",
     "Description": "State: Oklahoma",
-    "State Link Title": "Oklahoma",
-    "State Link URL": "https://www.oklegislature.gov/BillInfo.aspx?Bill=HB2992&Session=2600",
+    "State Link Title": "Oklahoma, Florida",
+    "State Link URL": "https://www.oklegislature.gov/BillInfo.aspx?Bill=HB2992&Session=2600, https://www.flsenate.gov/Session/Bill/2026/484/BillText/er/HTML",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -1554,8 +1542,8 @@
     "Policy Action": "Establish a new rate class where data centers pay full costs of energy needs (including the costs of new or upgraded grid infrastructure) so that costs do not fall on other ratepayers",
     "Policy Lever": "legislation",
     "Description": "States: Utah, Oregon, Oklahoma, Delaware (proposed)",
-    "State Link Title": "Utah, Oregon, Oklahoma, Delaware (proposed)",
-    "State Link URL": "https://le.utah.gov/~2025/bills/static/SB0132.html, https://apps.oregon.gov/oregon-newsroom/OR/GOV/Posts/Post/governor-kotek-signs-bills-to-lower-energy-costs-for-oregonians, https://www.oklegislature.gov/BillInfo.aspx?Bill=HB2992&Session=2600, https://legis.delaware.gov/BillDetail/143381",
+    "State Link Title": "Utah, Oregon, Oklahoma, Delaware, Virginia, New Jersey, Ohio, Florida, Maryland, South Dakota, Tennessee",
+    "State Link URL": "https://le.utah.gov/~2025/bills/static/SB0132.html, https://apps.oregon.gov/oregon-newsroom/OR/GOV/Posts/Post/governor-kotek-signs-bills-to-lower-energy-costs-for-oregonians, https://www.oklegislature.gov/BillInfo.aspx?Bill=HB2992&Session=2600, https://legis.delaware.gov/BillDetail?LegislationId=143381, https://www.governor.virginia.gov/newsroom/news-releases/2026/august-releases/name-1122241-en.html, https://njleg.state.nj.us/bill-search/2026/S731/bill-text?f=S1000&n=731_I1, https://puco.ohio.gov/utilities/electricity/resources/data-centers, https://www.flsenate.gov/Session/Bill/2026/484/BillText/er/HTML, https://mgaleg.maryland.gov/2026RS/bills/hb/hb1532e.pdf, https://mylrc.sdlegislature.gov/api/Documents/306610.pdf, https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1847&GA=114",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -1626,8 +1614,8 @@
     "Policy Action": "Set a heat workplace standard for all outdoor workers",
     "Policy Lever": "regulatory, legislation",
     "Description": "State: California, Oregon, Maryland, Nevada, Washington",
-    "State Link Title": "California, Oregon, Maryland, Nevada, Washington",
-    "State Link URL": "https://www.dir.ca.gov/dosh/heatillnessinfo.html, https://osha.oregon.gov/OSHAPubs/5866.pdf, https://labor.maryland.gov/labor/mosh/moshheatstress.shtml, https://dir.nv.gov/uploadedFiles/dirnvgov/content/OSHA/Guidance/2025-01-29%20(Heat%20Illness%20Prevention%20Guidance).pdf, https://www.lni.wa.gov/safety-health/safety-training-materials/workshops-events/beheatsmart",
+    "State Link Title": "California, Oregon, Maryland, Nevada, Washington, Virginia",
+    "State Link URL": "https://www.dir.ca.gov/dosh/heatillnessinfo.html, https://osha.oregon.gov/OSHAPubs/5866.pdf, https://labor.maryland.gov/labor/mosh/moshheatstress.shtml, https://dir.nv.gov/uploadedFiles/dirnvgov/content/OSHA/Guidance/2025-01-29%20(Heat%20Illness%20Prevention%20Guidance).pdf, https://www.lni.wa.gov/safety-health/safety-training-materials/workshops-events/beheatsmart, https://lis.virginia.gov/bill-details/20261/HB1092/text/HB1092",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -1638,8 +1626,8 @@
     "Policy Action": "Set a heat workplace standard for all indoor workers",
     "Policy Lever": "regulatory, legislation",
     "Description": "State: California, Oregon, Maryland, Nevada, Minnesota",
-    "State Link Title": "California, Oregon, Maryland, Nevada, Minnesota",
-    "State Link URL": "https://www.dir.ca.gov/dosh/heatillnessinfo.html, https://osha.oregon.gov/OSHAPubs/5866.pdf, https://labor.maryland.gov/labor/mosh/moshheatstress.shtml, https://dir.nv.gov/uploadedFiles/dirnvgov/content/OSHA/Guidance/2025-01-29%20(Heat%20Illness%20Prevention%20Guidance).pdf, https://www.dli.mn.gov/business/workplace-safety-and-health/mnosha-compliance-heat-stress",
+    "State Link Title": "California, Oregon, Maryland, Nevada, Minnesota, Virginia",
+    "State Link URL": "https://www.dir.ca.gov/dosh/heatillnessinfo.html, https://osha.oregon.gov/OSHAPubs/5866.pdf, https://labor.maryland.gov/labor/mosh/moshheatstress.shtml, https://dir.nv.gov/uploadedFiles/dirnvgov/content/OSHA/Guidance/2025-01-29%20(Heat%20Illness%20Prevention%20Guidance).pdf, https://www.dli.mn.gov/business/workplace-safety-and-health/mnosha-compliance-heat-stress, https://lis.virginia.gov/bill-details/20261/HB1092/text/HB1092",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -2527,7 +2515,7 @@
     "Policy Lever": "funding",
     "Description": "States: California, New York, Connecticut, Massachusetts, Maryland, Minnesota",
     "State Link Title": "California, New York, Connecticut, Massachusetts, Maryland, Minnesota",
-    "State Link URL": "https://www.energy.ca.gov/programs-and-topics/programs/california-schools-healthy-air-plumbing-and-efficiency-program, https://www.nyserda.ny.gov/About/Newsroom/2026-Announcements/2026-04-27-Governor-Hochul-Announces-Over-100-Mill-For-Clean-Energy-Upgrades-NYS-Sch, https://portal.ct.gov/governor/news/press-releases/2022/09-2022/governor-lamont-announces-150-million-to-make-additional-air-filtration-system-upgrades?language=en_US, https://www.massschoolbuildings.org/programs/Accelerated_Repair, https://energy.maryland.gov/Pages/SchoolDecarbonization.aspx, https://mn.gov/commerce/energy/consumer/energy-programs/school-hvac-grants.jsp",
+    "State Link URL": "https://www.energy.ca.gov/programs-and-topics/programs/california-schools-healthy-air-plumbing-and-efficiency-program, https://www.nyserda.ny.gov/About/Newsroom/2026-Announcements/2026-04-27-Governor-Hochul-Announces-Over-100-Mill-For-Clean-Energy-Upgrades-NYS-Sch, https://portal.ct.gov/das/press-room/press-releases/2025/das-announces-key-legislative-change-in-indoor-air-quality-for-connecticut-public-schools?language=en_US, https://www.massschoolbuildings.org/programs/Accelerated_Repair, https://energy.maryland.gov/Pages/SchoolDecarbonization.aspx, https://mn.gov/commerce/energy/consumer/energy-programs/school-hvac-grants.jsp",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -2682,10 +2670,10 @@
     "Policy Action": "Create a Heat Response Plan",
     "Policy Lever": "planning",
     "Description": "States: New Hampshire, Maryland, California Local: Lincoln-Lancaster County, Nebraska, Phoenix, Arizona, Pima County, Arizona, San Antonio, Texas",
-    "State Link Title": "New Hampshire, Maryland, California",
-    "State Link URL": "https://www.dhhs.nh.gov/sites/g/files/ehbemt476/files/documents/2021-11/nh-excessive-heat-plan-2014.pdf, https://health.maryland.gov/preparedness/docs/MDH%20Extreme%20Heat%20Emergency%20Plan%202025.pdf, https://www.caloes.ca.gov/wp-content/uploads/2023/07/Extreme-Temperature-Response-Plan-2022.pdf",
-    "Local Link Title": "Lincoln-Lancaster County, Nebraska, Phoenix, Arizona, Pima County, Arizona, San Antonio, Texas",
-    "Local Link URL": "https://www.lincoln.ne.gov/City/Departments/Health-Department/Heat/Resources/Lincoln-Lancaster-County-Heat-Response-Plan, https://www.phoenix.gov/administration/departments/heat/heat-response-programs/heat-response-plan.html, https://content.civicplus.com/api/assets/56347a24-47cf-4151-98e1-b7946b2b3eca, https://www.sanantonio.gov/Portals/0/Files/health/EmergencyManagement/MetroHealthHeatPlan2018.pdf?ver=2018-05-10-162043-003"
+    "State Link Title": "New Hampshire, Maryland, California, Connecticut",
+    "State Link URL": "https://www.dhhs.nh.gov/sites/g/files/ehbemt476/files/documents/2021-11/nh-excessive-heat-plan-2014.pdf, https://health.maryland.gov/preparedness/docs/MDH%20Extreme%20Heat%20Emergency%20Plan%202025.pdf, https://www.caloes.ca.gov/wp-content/uploads/2023/07/Extreme-Temperature-Response-Plan-2022.pdf, https://portal.ct.gov/demhs/emergency-management/resources-for-individuals/summer-weather-awareness/connecticut-extreme-heat-emergency-management-procedure?language=en_US",
+    "Local Link Title": "Lincoln-Lancaster County, Nebraska, Phoenix, Arizona, Pima County, Arizona, San Antonio, Texas, Atlanta, Georgia",
+    "Local Link URL": "https://www.lincoln.ne.gov/City/Departments/Health-Department/Heat/Resources/Lincoln-Lancaster-County-Heat-Response-Plan, https://www.phoenix.gov/administration/departments/heat/heat-response-programs/heat-response-plan.html, https://content.civicplus.com/api/assets/56347a24-47cf-4151-98e1-b7946b2b3eca, https://www.sanantonio.gov/Portals/0/Files/health/EmergencyManagement/MetroHealthHeatPlan2018.pdf?ver=2018-05-10-162043-003, https://www.cbsnews.com/atlanta/news/atlanta-city-council-approves-resolution-calling-for-expanded-cooling-centers-during-extreme-heat/"
   },
   {
     "Pillar": "Safe Communities",
@@ -3246,8 +3234,8 @@
     "Policy Action": "Create a Chief Heat Officer position",
     "Policy Lever": "governance",
     "Description": "State: Arizona, Massachusetts (no public link) Locals: Miami-Dade County, Florida (lapsed), Los Angeles, California (lapsed)",
-    "State Link Title": "Arizona, Massachusetts (no public link)",
-    "State Link URL": "https://directorsblog.health.azdhs.gov/author/eugene-livar/",
+    "State Link Title": "Arizona, Massachusetts",
+    "State Link URL": "https://directorsblog.health.azdhs.gov/author/eugene-livar/, https://www.mass.gov/news/healey-driscoll-administration-announces-first-statewide-heat-resilience-officer",
     "Local Link Title": "Miami-Dade County, Florida (lapsed), Los Angeles, California (lapsed)",
     "Local Link URL": "https://www.miamiherald.com/news/local/community/miami-dade/article300669644.html, https://www.latimes.com/environment/story/2026-05-12/la-parts-ways-with-its-first-chief-heat-officer"
   },
@@ -3799,7 +3787,7 @@
     "Policy Lever": "funding",
     "Description": "State: Arizona",
     "State Link Title": "Arizona",
-    "State Link URL": "https://azgovernor.gov/office-arizona-governor/news/2026/01/governor-katie-hobbs-releases-fy2027-executive-budget-proposal",
+    "State Link URL": "https://www.azleg.gov/legtext/57leg/2R/bills/HB4154P.pdf",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -4614,8 +4602,8 @@
     "Policy Action": "Create a state-level fund for resilience hubs and community resilience centers",
     "Policy Lever": "funding",
     "Description": "State: California",
-    "State Link Title": "California",
-    "State Link URL": "https://sgc.ca.gov/grant-programs/crc/",
+    "State Link Title": "California, New York",
+    "State Link URL": "https://sgc.ca.gov/grant-programs/crc/, https://dec.ny.gov/news/press-releases/2026/6/new-york-state-announces-affordability-investments-to-help-keep-new-yorkers-cool-during-extreme-heat",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -5022,8 +5010,8 @@
     "Policy Action": "Fund air conditioning upgrades in state-owned prisons",
     "Policy Lever": "funding",
     "Description": "State: North Carolina",
-    "State Link Title": "North Carolina",
-    "State Link URL": "https://www.dac.nc.gov/divisions-and-sections/support-services/correctional-facilities-air-conditioning-upgrades",
+    "State Link Title": "North Carolina, Texas",
+    "State Link URL": "https://www.dac.nc.gov/divisions-and-sections/support-services/correctional-facilities-air-conditioning-upgrades, https://www.tdcj.texas.gov/ac/index.html",
     "Local Link Title": "",
     "Local Link URL": ""
   },
@@ -5060,8 +5048,8 @@
     "Description": "Locals: New York City, New York, Chicago, Illinois, Washington D.C., Baltimore, Maryland, Austin, Texas, Fort Worth, Texas, San Francisco, California.",
     "State Link Title": "",
     "State Link URL": "",
-    "Local Link Title": "New York City, New York, Chicago, Illinois, Washington D.C., Baltimore, Maryland, Austin, Texas, Fort Worth, Texas, San Francisco, California.",
-    "Local Link URL": "https://www.nyc.gov/content/climate/pages/news/urban-forest-plan-pr, https://www.chicago.gov/city/en/sites/our-roots-chicago/home.html, https://doee.dc.gov/service/trees-district, https://www.treebaltimore.org/, https://www.austintexas.gov/climate/sustainable-austin-blog/city-austin-adopts-tree-equity-score-guide-future-urban-forestry, https://www.fortworthtexas.gov/departments/development-services/urbanforestry, https://sfpublicworks.org/services/urban-forest-plan"
+    "Local Link Title": "New York City, New York, Chicago, Illinois, Washington D.C., Baltimore, Maryland, Austin, Texas, Fort Worth, Texas, San Francisco, California., New Orleans, Louisiana",
+    "Local Link URL": "https://www.nyc.gov/content/climate/pages/news/urban-forest-plan-pr, https://www.chicago.gov/city/en/sites/our-roots-chicago/home.html, https://doee.dc.gov/service/trees-district, https://www.treebaltimore.org/, https://www.austintexas.gov/climate/sustainable-austin-blog/city-austin-adopts-tree-equity-score-guide-future-urban-forestry, https://www.fortworthtexas.gov/departments/development-services/urbanforestry, https://sfpublicworks.org/services/urban-forest-plan, https://nola.gov/next/sustainability/adaptation-nature-solutions/urban-reforestation/"
   },
   {
     "Pillar": "Safe Communities",
@@ -5122,5 +5110,101 @@
     "State Link URL": "",
     "Local Link Title": "Tucson, Arizona",
     "Local Link URL": "https://www.suntran.com/"
+  },
+  {
+    "Pillar": "Safe Communities",
+    "Recommendation": "Prepare for higher temperatures as an acute emergency as well as a chronic risk",
+    "Policy Type": "Develop plans for long-term risk mitigation (including compounding risk)",
+    "Policy Action": "Require recurring (e.g., triennial) updates of the heat action plan",
+    "Policy Lever": "legislative",
+    "Description": "",
+    "State Link Title": "California",
+    "State Link URL": "https://legiscan.com/CA/text/SB306/id/2813934",
+    "Local Link Title": "",
+    "Local Link URL": ""
+  },
+  {
+    "Pillar": "Safe Homes",
+    "Recommendation": "Protect energy access during hot weather",
+    "Policy Type": "Prevent utility disconnection during hot weather",
+    "Policy Action": "Establish disconnection policies that prevents terminations for nonpayment during state-defined thresholds",
+    "Policy Lever": "regulatory",
+    "Description": "",
+    "State Link Title": "California",
+    "State Link URL": "https://docs.cpuc.ca.gov/PublishedDocs/Published/G000/M610/K649/610649527.PDF",
+    "Local Link Title": "",
+    "Local Link URL": ""
+  },
+  {
+    "Pillar": "Safe Homes",
+    "Recommendation": "Establish the right to cooling",
+    "Policy Type": "Make cooling a habitability requirement",
+    "Policy Action": "Work with the Attorney General's office to enforce local heat protection ordinances",
+    "Policy Lever": "enforcement",
+    "Description": "",
+    "State Link Title": "Arizona",
+    "State Link URL": "https://www.azag.gov/press-release/attorney-general-mayes-sues-out-state-landlords-leaving-tucson-tenants-without-ac",
+    "Local Link Title": "",
+    "Local Link URL": ""
+  },
+  {
+    "Pillar": "Safe Homes",
+    "Recommendation": "Ensure large loads do not create affordability and reliability risks during extreme heat",
+    "Policy Type": "Require large load customers to participate in demand/response and energy storage programs",
+    "Policy Action": "Require data centers to fund household efficiency upgrades and distributed energy to free up grid capacity",
+    "Policy Lever": "regulatory",
+    "Description": "",
+    "State Link Title": "New York, New Jersey",
+    "State Link URL": "https://www.governor.ny.gov/news/first-statewide-moratorium-new-hyperscale-data-centers-launched-governor-kathy-hochul, https://www.njleg.state.nj.us/bill-search/2026/A796",
+    "Local Link Title": "",
+    "Local Link URL": ""
+  },
+  {
+    "Pillar": "Safe Homes",
+    "Recommendation": "Ensure large loads do not create affordability and reliability risks during extreme heat",
+    "Policy Type": "Collect fees from large load customers to pay for household upgrades and energy bills",
+    "Policy Action": "Impose an electricity consumption tax on data centers",
+    "Policy Lever": "funding",
+    "Description": "",
+    "State Link Title": "Virginia",
+    "State Link URL": "https://lis.virginia.gov/bill-details/20262/HB30",
+    "Local Link Title": "",
+    "Local Link URL": ""
+  },
+  {
+    "Pillar": "Safe Homes",
+    "Recommendation": "Protect energy access during hot weather",
+    "Policy Type": "Deliver affordable electricity rates",
+    "Policy Action": "Create affordability-informed performance incentives that shape future rate structures",
+    "Policy Lever": "regulatory",
+    "Description": "",
+    "State Link Title": "Indiana",
+    "State Link URL": "https://iga.in.gov/pdf-documents/124/2026/house/bills/HB1002/HB1002.06.ENRS.pdf",
+    "Local Link Title": "",
+    "Local Link URL": ""
+  },
+  {
+    "Pillar": "Safe Homes",
+    "Recommendation": "Protect energy access during hot weather",
+    "Policy Type": "Prevent utility disconnection during hot weather",
+    "Policy Action": "Produce reports about disconnections on a regular basis",
+    "Policy Lever": "data",
+    "Description": "",
+    "State Link Title": "Indiana",
+    "State Link URL": "https://iga.in.gov/pdf-documents/124/2026/house/bills/HB1002/HB1002.06.ENRS.pdf",
+    "Local Link Title": "",
+    "Local Link URL": ""
+  },
+  {
+    "Pillar": "Safe Homes",
+    "Recommendation": "Protect energy access during hot weather",
+    "Policy Type": "Expand programs for energy bill assistance",
+    "Policy Action": "Require utilities to place income-eligible customers on a levelized/budget billing plan to smooth seasonal bill spikes",
+    "Policy Lever": "regulatory",
+    "Description": "",
+    "State Link Title": "Indiana",
+    "State Link URL": "https://iga.in.gov/pdf-documents/124/2026/house/bills/HB1002/HB1002.06.ENRS.pdf",
+    "Local Link Title": "",
+    "Local Link URL": ""
   }
 ]
