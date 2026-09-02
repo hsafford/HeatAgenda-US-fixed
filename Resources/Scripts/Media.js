@@ -18,34 +18,69 @@ function metaRow(source, dateText){
     return row
 }
 
+const OUTLET_LOGOS = {
+    'GovTech': './Resources/Assets/Logos/govtech.png',
+    'Governing': './Resources/Assets/Logos/governing.png',
+    'The Conversation': './Resources/Assets/Logos/theconversation.png',
+    'New America': './Resources/Assets/Logos/newamerica.png',
+    'E&E News': './Resources/Assets/Logos/eenews.png',
+    'Smart Cities Dive': './Resources/Assets/Logos/smartcitiesdive.png',
+    'KSUT': './Resources/Assets/Logos/ksut.png',
+    'Forbes': './Resources/Assets/Logos/forbes.png',
+    'Heatmap News': './Resources/Assets/Logos/heatmapnews.png'
+}
+
+function outletRow(source, dateText){
+    const wrap = document.createElement('div')
+    wrap.classList.add('MediaEditorialOutlet')
+
+    const logoSrc = OUTLET_LOGOS[source]
+    if(logoSrc){
+        const logo = document.createElement('img')
+        logo.classList.add('MediaEditorialLogo')
+        logo.src = logoSrc
+        logo.alt = ''
+        wrap.append(logo)
+    }
+
+    const name = document.createElement('span')
+    name.classList.add('MediaEditorialOutletName')
+    name.textContent = source
+    wrap.append(name)
+
+    const date = document.createElement('span')
+    date.classList.add('MediaEditorialDate')
+    date.textContent = dateText
+    wrap.append(date)
+
+    return wrap
+}
+
 function renderHero(featured){
     const hero = document.querySelector('.MediaHero')
     if(!hero || !featured) return
 
-    hero.style.backgroundImage = `url('${featured.Image}')`
     hero.querySelector('.MediaHeroTitle').textContent = featured.Title
     hero.querySelector('.MediaHeroExcerpt').textContent = featured.Body
     hero.querySelector('.MediaHeroLink').href = featured['Link URL']
 
     const meta = hero.querySelector('.MediaHeroMeta')
-    meta.innerHTML = `<span>${featured.Source}</span><span>&middot;</span><span>${formatDate(featured.Date)}</span>`
+    const logoSrc = OUTLET_LOGOS[featured.Source]
+    const logoHtml = logoSrc ? `<img class="MediaHeroLogo" src="${logoSrc}" alt="">` : ''
+    meta.innerHTML = `${logoHtml}<span>${featured.Source}</span><span>&middot;</span><span>${formatDate(featured.Date)}</span>`
 }
 
 function renderEditorialList(pressItems){
     const list = document.querySelector('.MediaEditorialList')
     if(!list) return
 
-    pressItems.forEach((item, i) => {
+    pressItems.forEach(item => {
         const li = document.createElement('li')
         li.classList.add('MediaEditorialItem')
 
-        const num = document.createElement('span')
-        num.classList.add('MediaEditorialNum')
-        num.textContent = String(i + 1).padStart(2, '0')
-
         const body = document.createElement('div')
         body.classList.add('MediaEditorialBody')
-        body.append(metaRow(item.Source, formatDate(item.Date)))
+        body.append(outletRow(item.Source, formatDate(item.Date)))
 
         const title = document.createElement('h3')
         title.classList.add('MediaEditorialTitle')
@@ -65,7 +100,7 @@ function renderEditorialList(pressItems){
         link.textContent = 'Read article →'
         body.append(link)
 
-        li.append(num, body)
+        li.append(body)
         list.append(li)
     })
 }
@@ -115,6 +150,8 @@ function platformOf(item){
     return null
 }
 
+const EMBED_NATIVE_WIDTH = 340
+
 function renderSocial(embedItems){
     const section = document.querySelector('.MediaSocialSection')
     const container = document.querySelector('.MediaSocialGrid')
@@ -123,9 +160,6 @@ function renderSocial(embedItems){
         section.hidden = true
         return
     }
-
-    const countEl = document.querySelector('.MediaSocialCount')
-    if(countEl) countEl.textContent = `${embedItems.length} post${embedItems.length === 1 ? '' : 's'}`
 
     const platformsUsed = new Set()
 
@@ -136,7 +170,14 @@ function renderSocial(embedItems){
 
         const card = document.createElement('div')
         card.classList.add('MediaSocialCard')
-        card.append(buildBlockquote(item))
+
+        const scaleWrap = document.createElement('div')
+        scaleWrap.classList.add('MediaSocialEmbedScale')
+        const inner = document.createElement('div')
+        inner.classList.add('MediaSocialEmbedInner')
+        inner.append(buildBlockquote(item))
+        scaleWrap.append(inner)
+        card.append(scaleWrap)
 
         if(item.Body){
             const caption = document.createElement('p')
@@ -148,6 +189,13 @@ function renderSocial(embedItems){
         container.append(card)
         platformsUsed.add(platform)
     })
+
+    const scaleWraps = [...container.querySelectorAll('.MediaSocialEmbedScale')]
+    new ResizeObserver(() => {
+        scaleWraps.forEach(wrap => {
+            wrap.style.setProperty('--embed-scale', wrap.clientWidth / EMBED_NATIVE_WIDTH)
+        })
+    }).observe(container)
 
     platformsUsed.forEach(platform => {
         const embedScript = document.createElement('script')
