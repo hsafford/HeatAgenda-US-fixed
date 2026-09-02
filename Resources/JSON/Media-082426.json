@@ -14,7 +14,8 @@
     "Stat 1 Label": "",
     "Stat 1 Value": "",
     "Stat 2 Label": "",
-    "Stat 2 Value": ""
+    "Stat 2 Value": "",
+    "Embed URL": ""
   },
   {
     "Type": "Press",
@@ -31,7 +32,8 @@
     "Stat 1 Label": "",
     "Stat 1 Value": "",
     "Stat 2 Label": "",
-    "Stat 2 Value": ""
+    "Stat 2 Value": "",
+    "Embed URL": ""
   },
   {
     "Type": "Press",
@@ -48,7 +50,8 @@
     "Stat 1 Label": "",
     "Stat 1 Value": "",
     "Stat 2 Label": "",
-    "Stat 2 Value": ""
+    "Stat 2 Value": "",
+    "Embed URL": ""
   },
   {
     "Type": "Press",
@@ -65,7 +68,8 @@
     "Stat 1 Label": "",
     "Stat 1 Value": "",
     "Stat 2 Label": "",
-    "Stat 2 Value": ""
+    "Stat 2 Value": "",
+    "Embed URL": ""
   },
   {
     "Type": "Press",
@@ -82,7 +86,8 @@
     "Stat 1 Label": "",
     "Stat 1 Value": "",
     "Stat 2 Label": "",
-    "Stat 2 Value": ""
+    "Stat 2 Value": "",
+    "Embed URL": ""
   },
   {
     "Type": "Press",
@@ -99,7 +104,8 @@
     "Stat 1 Label": "",
     "Stat 1 Value": "",
     "Stat 2 Label": "",
-    "Stat 2 Value": ""
+    "Stat 2 Value": "",
+    "Embed URL": ""
   },
   {
     "Type": "Press",
@@ -116,7 +122,8 @@
     "Stat 1 Label": "",
     "Stat 1 Value": "",
     "Stat 2 Label": "",
-    "Stat 2 Value": ""
+    "Stat 2 Value": "",
+    "Embed URL": ""
   },
   {
     "Type": "Press",
@@ -133,7 +140,8 @@
     "Stat 1 Label": "",
     "Stat 1 Value": "",
     "Stat 2 Label": "",
-    "Stat 2 Value": ""
+    "Stat 2 Value": "",
+    "Embed URL": ""
   },
   {
     "Type": "Press",
@@ -150,7 +158,8 @@
     "Stat 1 Label": "",
     "Stat 1 Value": "",
     "Stat 2 Label": "",
-    "Stat 2 Value": ""
+    "Stat 2 Value": "",
+    "Embed URL": ""
   },
   {
     "Type": "Social",
@@ -218,7 +227,8 @@
     "Stat 1 Label": "",
     "Stat 1 Value": "",
     "Stat 2 Label": "",
-    "Stat 2 Value": ""
+    "Stat 2 Value": "",
+    "Embed URL": ""
   },
   {
     "Type": "TikTok",
@@ -235,7 +245,8 @@
     "Stat 1 Label": "",
     "Stat 1 Value": "",
     "Stat 2 Label": "",
-    "Stat 2 Value": ""
+    "Stat 2 Value": "",
+    "Embed URL": ""
   },
   {
     "Type": "Social",
@@ -252,7 +263,8 @@
     "Stat 1 Label": "",
     "Stat 1 Value": "",
     "Stat 2 Label": "",
-    "Stat 2 Value": ""
+    "Stat 2 Value": "",
+    "Embed URL": ""
   },
   {
     "Type": "Social",
@@ -265,6 +277,79 @@
     "Image": "",
     "Featured": "",
     "Embed": "Yes",
+    "Video ID": "",
+    "Stat 1 Label": "",
+    "Stat 1 Value": "",
+    "Stat 2 Label": "",
+    "Stat 2 Value": "",
+    "Embed URL": ""
+  },
+  {
+    "Type": "Podcast",
+    "Source": "Seamossgirlies",
+    "Author": "",
+    "Date": "2026-07-22",
+    "Title": "The Coldest Summer for the Rest of Our Lives with Grace Wickerson",
+    "Body": "",
+    "Link URL": "https://podcasts.apple.com/ua/podcast/the-coldest-summer-for-the-rest-of-our/id1542290237?i=1000777846237",
+    "Embed URL": "https://embed.podcasts.apple.com/ua/podcast/the-coldest-summer-for-the-rest-of-our/id1542290237?i=1000777846237",
+    "Image": "",
+    "Featured": "",
+    "Embed": "",
+    "Video ID": "",
+    "Stat 1 Label": "",
+    "Stat 1 Value": "",
+    "Stat 2 Label": "",
+    "Stat 2 Value": ""
+  },
+  {
+    "Type": "Podcast",
+    "Source": "Sustainable Futures: Designing Green Communities and Buildings",
+    "Author": "",
+    "Date": "2025-06-25",
+    "Title": "Addressing Urban Heat Islands with Grace Wickerson",
+    "Body": "",
+    "Link URL": "https://podcasts.apple.com/us/podcast/addressing-urban-heat-islands-with-grace-wickerson/id1641756508?i=1000714444465",
+    "Embed URL": "https://embed.podcasts.apple.com/us/podcast/addressing-urban-heat-islands-with-grace-wickerson/id1641756508?i=1000714444465",
+    "Image": "",
+    "Featured": "",
+    "Embed": "",
+    "Video ID": "",
+    "Stat 1 Label": "",
+    "Stat 1 Value": "",
+    "Stat 2 Label": "",
+    "Stat 2 Value": ""
+  },
+  {
+    "Type": "Podcast",
+    "Source": "Priorities Podcast",
+    "Author": "",
+    "Date": "2026-07-22",
+    "Title": "It's getting really hot. How can state and local governments mitigate the negative effects?",
+    "Body": "",
+    "Link URL": "https://podcasts.apple.com/us/podcast/its-getting-really-hot-how-can-state-and-local/id1608407581?i=1000777911257&l=ko",
+    "Embed URL": "https://embed.podcasts.apple.com/us/podcast/its-getting-really-hot-how-can-state-and-local/id1608407581?i=1000777911257",
+    "Image": "",
+    "Featured": "",
+    "Embed": "",
+    "Video ID": "",
+    "Stat 1 Label": "",
+    "Stat 1 Value": "",
+    "Stat 2 Label": "",
+    "Stat 2 Value": ""
+  },
+  {
+    "Type": "Podcast",
+    "Source": "Healthy Climate America",
+    "Author": "",
+    "Date": "2026-05-21",
+    "Title": "Cooling Our Communities: A Policy Playbook for Extreme Heat",
+    "Body": "",
+    "Link URL": "https://podcasts.apple.com/us/podcast/cooling-our-communities-a-policy-playbook-for-extreme-heat/id1775930773?i=1000768867662",
+    "Embed URL": "https://embed.podcasts.apple.com/us/podcast/cooling-our-communities-a-policy-playbook-for-extreme-heat/id1775930773?i=1000768867662",
+    "Image": "",
+    "Featured": "",
+    "Embed": "",
     "Video ID": "",
     "Stat 1 Label": "",
     "Stat 1 Value": "",

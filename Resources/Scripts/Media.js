@@ -205,13 +205,40 @@ function renderSocial(embedItems){
     })
 }
 
+function renderPodcasts(podcastItems){
+    const section = document.querySelector('.MediaPodcastSection')
+    const container = document.querySelector('.MediaPodcastGrid')
+    if(!section || !container) return
+    if(podcastItems.length === 0){
+        section.hidden = true
+        return
+    }
+
+    podcastItems.forEach(item => {
+        const card = document.createElement('div')
+        card.classList.add('MediaPodcastCard')
+
+        const iframe = document.createElement('iframe')
+        iframe.src = item['Embed URL']
+        iframe.height = 175
+        iframe.setAttribute('frameborder', '0')
+        iframe.setAttribute('allow', 'autoplay *; encrypted-media *; fullscreen *; clipboard-write')
+        iframe.setAttribute('sandbox', 'allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation')
+        card.append(iframe)
+
+        container.append(card)
+    })
+}
+
 const byDateDesc = (a, b) => new Date(b.Date) - new Date(a.Date)
 
 const pressItems = MediaItems.filter(m => m.Type === 'Press').sort(byDateDesc)
 const featured = pressItems.find(m => m.Featured === 'Yes')
 const editorialItems = pressItems.filter(m => m !== featured)
 const embedItems = MediaItems.filter(m => m.Type === 'TikTok' || m.Embed === 'Yes')
+const podcastItems = MediaItems.filter(m => m.Type === 'Podcast')
 
 renderHero(featured)
 renderEditorialList(editorialItems)
 renderSocial(embedItems)
+renderPodcasts(podcastItems)

@@ -1,10 +1,23 @@
 /* Media page mockup styles — prototype only, not wired into main style.css */
 
-.MediaSectionDivider{
+.MediaLabeledDivider{
   grid-column: 1 / -1;
-  border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
-  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--Accent100);
+}
+
+.MediaLabeledDivider::before,
+.MediaLabeledDivider::after{
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: var(--Accent100);
 }
 
 .MediaIntro{
@@ -390,6 +403,7 @@
 }
 
 .MediaEditorialItem{
+  min-height: 145px;
   padding: 1.25rem;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -431,6 +445,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  height: 100%;
+  min-width: 0;
 }
 
 .MediaEditorialTitle{
@@ -717,4 +733,31 @@
 
 .MediaLightboxClose:hover{
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Podcasts */
+.MediaPodcastSection{
+  grid-column: 1 / -1;
+}
+
+.MediaPodcastGrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media screen and (max-width: 700px){
+  .MediaPodcastGrid{
+    grid-template-columns: 1fr;
+  }
+}
+
+.MediaPodcastCard{
+  min-width: 0;
+}
+
+.MediaPodcastCard iframe{
+  width: 100%;
+  display: block;
+  border-radius: 10px;
 }
