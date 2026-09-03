@@ -236,7 +236,7 @@ const pressItems = MediaItems.filter(m => m.Type === 'Press').sort(byDateDesc)
 const featured = pressItems.find(m => m.Featured === 'Yes')
 const editorialItems = pressItems.filter(m => m !== featured)
 const embedItems = MediaItems.filter(m => m.Type === 'TikTok' || m.Embed === 'Yes')
-const podcastItems = MediaItems.filter(m => m.Type === 'Podcast')
+const podcastItems = MediaItems.filter(m => m.Type === 'Podcast').sort(byDateDesc)
 
 renderHero(featured)
 renderEditorialList(editorialItems)

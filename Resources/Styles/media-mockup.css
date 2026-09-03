@@ -1,5 +1,18 @@
 /* Media page mockup styles — prototype only, not wired into main style.css */
 
+main > .Container.GridContainer.ContainerGap-Medium{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+main > .Container.GridContainer.ContainerGap-Medium:has(.MediaLabeledDivider){
+  margin-bottom: 0.75rem;
+}
+
+main > .Container.GridContainer.ContainerGap-Medium:has(.MediaLabeledDivider) + .Container.GridContainer.ContainerGap-Medium{
+  margin-top: 0.75rem;
+}
+
 .MediaLabeledDivider{
   grid-column: 1 / -1;
   display: flex;
