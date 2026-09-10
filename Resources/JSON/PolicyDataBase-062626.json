@@ -5018,6 +5018,18 @@
   {
     "Pillar": "Safe Communities",
     "Recommendation": "Shape and finance heat-resilient infrastructure",
+    "Policy Type": "Make critical infrastructure systems heat resilient",
+    "Policy Action": "Create a pilot program to improve the resilience of licensed care homes",
+    "Policy Lever": "legislation, funding",
+    "Description": "State: Hawaii",
+    "State Link Title": "Hawaii",
+    "State Link URL": "https://www.capitol.hawaii.gov/sessions/session2026/bills/HB2498_CD1_.HTM",
+    "Local Link Title": "",
+    "Local Link URL": ""
+  },
+  {
+    "Pillar": "Safe Communities",
+    "Recommendation": "Shape and finance heat-resilient infrastructure",
     "Policy Type": "Treat heat mitigation infrastructure as critical infrastructure",
     "Policy Action": "Create an urban forestry management and maintenance plan, with authority to implement via an agency like Public Works",
     "Policy Lever": "planning",
@@ -5069,9 +5081,9 @@
     "Policy Type": "Treat heat mitigation infrastructure as critical infrastructure",
     "Policy Action": "Create a standing resilience hub network",
     "Policy Lever": "funding, communication",
-    "Description": "State: Louisiana Local: Detroit, Michigan",
-    "State Link Title": "Louisiana",
-    "State Link URL": "https://lailluminator.com/briefs/resilience-hubs/",
+    "Description": "State: Louisiana, Oregon Local: Detroit, Michigan",
+    "State Link Title": "Louisiana, Oregon",
+    "State Link URL": "https://lailluminator.com/briefs/resilience-hubs/, https://olis.oregonlegislature.gov/liz/2026R1/Downloads/MeasureDocument/HB4121/Enrolled",
     "Local Link Title": "Detroit, Michigan",
     "Local Link URL": "https://detroitmi.gov/government/mayors-office/office-sustainability/resilience-and-adaptation/resilience-hubs-detroit"
   },
