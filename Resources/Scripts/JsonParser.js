@@ -37,6 +37,22 @@ export function MatchDescription(Name){
     return Item.Description
 }
 
+export function getDescriptionEntry(Name){
+    return Descriptions.find(item => item.Name === Name) || null
+}
+
+export function splitOnDelimiter(text, delimiter){
+    if(!text) return []
+    return text.split(delimiter).map(s => s.trim()).filter(Boolean)
+}
+
+export function joinAsProse(text, delimiter=';'){
+    const items = splitOnDelimiter(text, delimiter).map(s => s.replace(/\.$/, ''))
+    if(items.length === 0) return null
+    if(items.length === 1) return items[0] + '.'
+    return items.slice(0, -1).join(', ') + ', and ' + items[items.length - 1] + '.'
+}
+
 export function parseListString(ListString){
     if(ListString && ListString !== '#'){
         return ListString.split(',')

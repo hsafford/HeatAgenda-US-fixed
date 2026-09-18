@@ -1057,7 +1057,7 @@ main.StateExplorerContent > *{
   &> .PolicyLeverFlag{
     align-self: flex-start;
     font-family: inherit;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -1065,6 +1065,11 @@ main.StateExplorerContent > *{
     background-color: var(--Accent100);
     color: #ffffff;
     border: none;
+  }
+
+  &> .ActionCardTitle{
+    font-size: 1rem;
+    line-height: 1.4;
   }
 
   & .ActionExamples{
@@ -1078,7 +1083,7 @@ main.StateExplorerContent > *{
     gap: 0.5rem;
 
     &>p{
-      font-size: 0.75rem;
+      font-size: 0.8rem;
       font-weight: 700;
       margin: 0;
       color: var(--Accent100);
@@ -1110,7 +1115,7 @@ main.StateExplorerContent > *{
   }
 
   & .ActionCardNoteLabel{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 700;
     color: var(--Accent100);
     text-transform: uppercase;
@@ -1118,7 +1123,7 @@ main.StateExplorerContent > *{
   }
 
   & .ActionCardNoteText{
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-style: italic;
     color: rgba(0, 0, 0, 0.7);
   }
@@ -1130,7 +1135,7 @@ main.StateExplorerContent > *{
 
 .ActionExamplesLabel{
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: var(--Accent100);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -1482,6 +1487,96 @@ main.ExploreContent > .ExploreNav{
 
 .ExploreSearchShowMore:hover{
   background-color: var(--OffWhite);
+}
+
+/* Implementation Guide: pillar / recommendation / strategy context panel */
+.PanelTable{
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  animation: explore-in 260ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.PanelTableHead{
+  padding: 1.25rem 1.5rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.PanelTableHead .ExploreContextLead{
+  margin: 0;
+}
+
+.ExploreContextLead{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.4;
+  max-width: none;
+}
+
+.PanelTableRows{
+  display: grid;
+  grid-template-columns: 180px 1fr;
+}
+
+.PanelTableRow{
+  display: contents;
+}
+
+.PanelTableRow > .PanelTableKey{
+  padding: 0.9rem 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--Accent100);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.PanelTableRow > .PanelTableVal{
+  padding: 0.75rem 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+}
+
+.PanelTableVal p,
+.PanelTableVal ul{
+  margin: 0;
+}
+
+.PanelTableVal p,
+.PanelTableVal li{
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: none;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.PanelTableVal ul{
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.PanelTableVal li::marker{
+  color: var(--Accent100);
+}
+
+@media (max-width: 600px){
+  .PanelTableRows{
+    grid-template-columns: 1fr;
+  }
+
+  .PanelTableRow > .PanelTableKey{
+    padding-bottom: 0.25rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .PanelTableRow > .PanelTableVal{
+    padding-top: 0;
+    border-top: none;
+  }
 }
 
 /* Policy Explorer: search + filter bar (shared by accordion and flat-search variants) */

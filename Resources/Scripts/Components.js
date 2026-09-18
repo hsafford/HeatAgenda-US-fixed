@@ -202,6 +202,7 @@ export function ActionCard({Action="Action", DataControl="NA"}={}){
     Lever.classList.add('PolicyLeverFlag')
 
     const Title = document.createElement('p');
+    Title.classList.add('ActionCardTitle')
     Title.textContent = Action;
 
     const children = [Lever, Title]
@@ -891,5 +892,110 @@ export const statBlock =(value, description)=>{
     <p class="statTxt">${description}</p>
     `
     return statBlock
+}
+
+const PanelTableProseRow =(label, text)=>{
+    if(!text) return null
+    const row = document.createElement('div')
+    row.classList.add('PanelTableRow')
+
+    const key = document.createElement('div')
+    key.classList.add('PanelTableKey')
+    key.textContent = label
+
+    const val = document.createElement('div')
+    val.classList.add('PanelTableVal')
+    const p = document.createElement('p')
+    p.textContent = text
+    val.append(p)
+
+    row.append(key, val)
+    return row
+}
+
+const PanelTableListRow =(label, text, delimiter=';')=>{
+    const items = Parser.splitOnDelimiter(text, delimiter)
+    if(items.length === 0) return null
+    const row = document.createElement('div')
+    row.classList.add('PanelTableRow')
+
+    const key = document.createElement('div')
+    key.classList.add('PanelTableKey')
+    key.textContent = label
+
+    const val = document.createElement('div')
+    val.classList.add('PanelTableVal')
+    const list = document.createElement('ul')
+    items.forEach(item => {
+        const li = document.createElement('li')
+        li.textContent = item.replace(/\.$/, '')
+        list.append(li)
+    })
+    val.append(list)
+
+    row.append(key, val)
+    return row
+}
+
+const PanelTable =({lead, rows}={})=>{
+    const panel = document.createElement('div')
+    panel.classList.add('PanelTable')
+
+    const head = document.createElement('div')
+    head.classList.add('PanelTableHead')
+    const leadEl = document.createElement('p')
+    leadEl.classList.add('ExploreContextLead')
+    leadEl.textContent = lead
+    head.append(leadEl)
+    panel.append(head)
+
+    const rowsWrap = document.createElement('div')
+    rowsWrap.classList.add('PanelTableRows')
+    rows.filter(Boolean).forEach(row => rowsWrap.append(row))
+
+    if(rowsWrap.children.length > 0){
+        panel.append(rowsWrap)
+    }
+
+    return panel
+}
+
+export const PillarContextPanel =(PillarName)=>{
+    const Entry = Parser.getDescriptionEntry(PillarName)
+    if(!Entry) return null
+
+    return PanelTable({
+        lead: Entry.Description,
+        rows: [
+            PanelTableProseRow('Aligns with public priorities', Parser.joinAsProse(Entry.AreasOfAlignment)),
+            PanelTableProseRow('Key stakeholders', Entry.KeyStakeholders)
+        ]
+    })
+}
+
+export const RecommendationContextPanel =(RecommendationName)=>{
+    const Entry = Parser.getDescriptionEntry(RecommendationName)
+    if(!Entry) return null
+
+    return PanelTable({
+        lead: Entry.Description,
+        rows: [
+            PanelTableProseRow('What success looks like', Entry.AlignmentWithPillar),
+            PanelTableListRow('Ways to measure progress', Entry.WaysToMeasureProgress)
+        ]
+    })
+}
+
+export const StrategyContextPanel =(PolicyTypeName)=>{
+    const Entry = Parser.getDescriptionEntry(PolicyTypeName)
+    if(!Entry) return null
+
+    return PanelTable({
+        lead: Entry.Description,
+        rows: [
+            PanelTableProseRow('Existing legal landscape', Entry.ExistingLegalLandscape),
+            PanelTableProseRow('Authorities by level of government', Entry.AuthoritiesByLevel)
+        ]
+    })
 }
 

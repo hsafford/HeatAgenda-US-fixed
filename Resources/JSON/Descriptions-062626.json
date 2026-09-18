@@ -2,346 +2,534 @@
   {
     "Element": "Pillar",
     "Name": "Safe Homes",
-    "Description": "Protect every family from dangerous heat at home."
+    "Description": "Protect every family from dangerous heat at home.",
+    "AreasOfAlignment": "Affordability; housing supply; accountability for large corporations; job access and security; economic development.",
+    "KeyStakeholders": "State legislatures, governors' offices, state housing authorities, public utility commissions, state insurance commissioners, state and county health departments, state energy offices, city councils, county boards, local housing and building departments, municipal utilities, investor-owned utilities, energy service companies, weatherization contractors, HVAC manufacturers and installers, data center operators, property developers and landlords, financial institutions, community action agencies, community-based organizations, faith organizations, legal aid organizations, health systems, and university research partners."
   },
   {
     "Element": "Pillar",
     "Name": "Safe Workplaces",
-    "Description": "Protect every worker from dangerous heat on the job."
+    "Description": "Protect every worker from dangerous heat on the job.",
+    "AreasOfAlignment": "Job access and security; affordability; public health",
+    "KeyStakeholders": "State legislatures, governors' offices, state occupational safety and health agencies, departments of labor, state workers' compensation agencies, public health departments, state departments of agriculture, insurance commissioners, procurement offices, city and county councils, local labor offices, employers in high-risk industries like construction, agriculture, roofing, firefighting, and food service, workers' compensation insurers, labor unions, health care systems, worker advocacy organizations, community-based organizations, and academic research partners."
   },
   {
     "Element": "Pillar",
     "Name": "Safe Schools and Childcare",
-    "Description": "Protect every child from dangerous heat at school and childcare."
+    "Description": "Protect every child from dangerous heat at school and childcare.",
+    "AreasOfAlignment": "Public health; affordability; access to child care; academic achievement.",
+    "KeyStakeholders": "State legislatures, governors' offices, state departments of education, state departments of public health, state energy offices, childcare licensing agencies, state emergency management agencies, school boards and districts, local public health departments, city and county capital planning offices, private energy service companies, bond issuers, HVAC vendors and contractors, university research partners, early childhood centers and family childcare providers, athletic associations, and U.S. Department of Agriculture federal nutrition program administrators."
   },
   {
     "Element": "Pillar",
     "Name": "Safe Communities",
-    "Description": "Help every community get heat-safe."
+    "Description": "Help every community get heat-safe.",
+    "AreasOfAlignment": "Disaster readiness and resilience; effective government; economic development.",
+    "KeyStakeholders": "State legislatures, governors' offices, state chief heat and resilience officers, state emergency management agencies, state public health agencies, state environmental and climate agencies, state departments of transportation, state departments of agriculture, state departments of corrections, and state energy offices, public utility commissions, city councils, mayors' offices, county boards (elected supervisors and agency staff, local emergency management departments, local public health departments, local chief heat and resilience officers, metropolitan planning organizations, regional planning organizations, investor-owned and municipal utilities, grid operators, battery storage and virtual power plant providers, data centers, insurance industry, and construction industry, agricultural sector stakeholders, hospitals and health systems, community health workers, community-based organizations, tribal health organizations, academic institutions, state and community foundations, and faith-based organizations."
   },
   {
     "Element": "Recommendation",
     "Name": "Establish the right to cooling",
-    "Description": "Every household should have guaranteed access to active and passive cooling systems that keep their home at safe, comfortable temperatures."
+    "Description": "Every household should have guaranteed access to active and passive cooling systems that keep their home at safe, comfortable temperatures.",
+    "AlignmentWithPillar": "Families will be protected from dangerous heat at home when they live in buildings with effective, operational cooling systems.",
+    "WaysToMeasureProgress": "Increase in the number of homes (rented and owned) with cooling; increase in the number of homes being kept at safe temperatures; reductions in heat-related illness and death."
   },
   {
     "Element": "Recommendation",
     "Name": "Protect energy access during hot weather",
-    "Description": "Every household should be protected from utility disconnection and during power outages in hot weather. Every household should also be able to afford the energy needed to keep homes cool."
+    "Description": "Every household should be protected from utility disconnection and during power outages in hot weather. Every household should also be able to afford the energy needed to keep homes cool.",
+    "AlignmentWithPillar": "Families will be protected from dangerous heat at home when they have continuous access to power for their cooling devices and can operate them without worrying about the financial cost.",
+    "WaysToMeasureProgress": "Reductions in energy burden even with an increased use of active cooling devices; increase in number of homes kept at safe indoor temperatures; reductions in utility disconnections; reductions in power outages; reductions in heat-related illness and death."
   },
   {
     "Element": "Recommendation",
     "Name": "Upgrade existing homes for extreme heat",
-    "Description": "Every household should be able to afford and easily implement upgrades to their homes, from heat pumps to cool roofs."
+    "Description": "Every household should be able to afford and easily implement upgrades to their homes, from heat pumps to cool roofs.",
+    "AlignmentWithPillar": "Families will be protected from dangerous heat at home when they have the upgrades that can keep their home safe during extreme temperatures.",
+    "WaysToMeasureProgress": "Uptake in active and passive cooling technologies; increase in the number of homes kept at safe indoor temperatures; increase in the number of homes with cooling devices; reductions in energy costs and burden; reductions in heat-related illness and death."
   },
   {
     "Element": "Recommendation",
     "Name": "Create a heat-resilient housing supply",
-    "Description": "Every new home should be built to stay cool during extreme temperatures, even when the power goes out."
+    "Description": "Every new home should be built to stay cool during extreme temperatures, even when the power goes out.",
+    "AlignmentWithPillar": "Families will be protected from dangerous heat at home when they live in buildings that were designed for extreme temperatures.",
+    "WaysToMeasureProgress": "Increase in the number of homes built to heat-resilient codes; increase in the affordability of homes built to heat-resilient codes."
   },
   {
     "Element": "Recommendation",
     "Name": "Ensure large loads do not create affordability and reliability risks during extreme heat",
-    "Description": "Every household should be protected from electricity price spikes and reliability issues due to large-load customer demand, like data centers, on high heat days. Households should also not subsidize energy costs and infrastructure for large-load customers."
+    "Description": "Every household should be protected from electricity price spikes and reliability issues due to large-load customer demand, like data centers, on high heat days. Households should also not subsidize energy costs and infrastructure for large-load customers.",
+    "AlignmentWithPillar": "Families will be protected from dangerous heat at home when their needs for affordable and reliable energy are not sidelined by other energy users.",
+    "WaysToMeasureProgress": "No energy bill increases as a result of large load development; no power disruptions as a result of large load development; increase in revenue available for home upgrades; data availability about large load energy and water consumption."
   },
   {
     "Element": "Recommendation",
     "Name": "Secure heat protections in all workplaces",
-    "Description": "Every worker should be guaranteed paid rest, water and shade access, heat-acclimatization periods, and, if applicable, cooling in their employer-provided housing."
+    "Description": "Every worker should be guaranteed paid rest, water and shade access, heat-acclimatization periods, and, if applicable, cooling in their employer-provided housing.",
+    "AlignmentWithPillar": "Workers will be protected from dangerous heat on the job when their workplace is required to institute protections against extreme temperatures.",
+    "WaysToMeasureProgress": "Number of workers protected from extreme heat; reductions in injuries and illness on the job; decreases in workers compensation claims; reductions in employee turnover; increases in worker productivity even on hot days."
   },
   {
     "Element": "Recommendation",
     "Name": "Create or expand paid leave and income protection for days too hot to work",
-    "Description": "Every worker should be able to stay safe from heat without financial penalty or risk to job security."
+    "Description": "Every worker should be able to stay safe from heat without financial penalty or risk to job security.",
+    "AlignmentWithPillar": "Workers will be protected from dangerous heat on the job when they can stay home from work during a day where extreme temperatures would be dangerous to their health.",
+    "WaysToMeasureProgress": "Increase in the number of workers covered under paid leave law; worker utilization of these benefits; reductions in injuries and illness on the job; decreases in workers compensation claims; reductions in employee turnover; overall increases in productivity"
   },
   {
     "Element": "Recommendation",
     "Name": "Incentivize uptake of best practices for workplace heat safety",
-    "Description": "Every government should develop strategies that encourage employers to implement protections and maintain good heat safety records, such as through workers compensation or procurement practices."
+    "Description": "Every government should develop strategies that encourage employers to implement protections and maintain good heat safety records, such as through workers compensation or procurement practices.",
+    "AlignmentWithPillar": "Workers will be protected from dangerous heat on the job when their workplaces are incentivized to implement heat protections.",
+    "WaysToMeasureProgress": "Reductions in injuries and illness on the job; decreases in workers compensation claims; increases in adoption of heat protections in workplaces."
   },
   {
     "Element": "Recommendation",
     "Name": "Keep kids safe from extreme heat at school and childcare",
-    "Description": "Every child should be guaranteed a cool environment, including classrooms, school grounds, athletic facilities, and school buses. Every school and childcare facility should have plans, training, and policies for hot weather, including school operations, recess, and for sporting and outdoor activities."
+    "Description": "Every child should be guaranteed a cool environment, including classrooms, school grounds, athletic facilities, and school buses. Every school and childcare facility should have plans, training, and policies for hot weather, including school operations, recess, and for sporting and outdoor activities.",
+    "AlignmentWithPillar": "Children will be protected from dangerous heat at school and childcare when every environment they are in is thermally-safe and appropriate action is taken when thresholds are crossed.",
+    "WaysToMeasureProgress": "Reductions in heat-related illness and death in children; improvements in performance on hot days; increases in understanding about heat risk among school and childcare staff; increases in the number of school facilities monitored for dangerous temperatures; reductions in negative impacts like school closures and lost school meals."
   },
   {
     "Element": "Recommendation",
     "Name": "Make heat resilience possible for all schools and childcare facilities",
-    "Description": "Every school and childcare provider should be able to afford to upgrade their facilities to keep children cool."
+    "Description": "Every school and childcare provider should be able to afford to upgrade their facilities to keep children cool.",
+    "AlignmentWithPillar": "Children will be protected from dangerous heat at school and childcare when these learning and play environments are built to withstand extreme heat.",
+    "WaysToMeasureProgress": "Reductions in heat-related illness and death in children; increases in the number of school buildings with effective cooling systems; increases in the number of school buildings able to keep to safe indoor temperatures; increases in the number of school buses with adequate cooling; Increases in days able to engage in age-appropriate play outside; reductions in the number of days where schools close due to extreme heat; benefits to student learning and overall performance."
   },
   {
     "Element": "Recommendation",
     "Name": "Prepare for higher temperatures as an acute emergency as well as a chronic risk",
-    "Description": "Every government should have plans for annual heat preparedness and long-term risk mitigation as well as strategies to coordinate with surrounding governments on efforts."
+    "Description": "Every government should have plans for annual heat preparedness and long-term risk mitigation as well as strategies to coordinate with surrounding governments on efforts.",
+    "AlignmentWithPillar": "Communities will be heat-safe when they create new plans or integrate extreme heat throughout existing plans and protocols.",
+    "WaysToMeasureProgress": "Number of communities planning for extreme heat; number of plans with heat-related actions; number of communities reporting progress towards heat-related objectives; reductions in heat-related illness and death; reductions in economic losses; averted infrastructure damages; increase in public trust."
   },
   {
     "Element": "Recommendation",
     "Name": "Establish a governance structure and training for extreme heat",
-    "Description": "Every government should designate a public official (either a new hire or current employee) with authority and budget to lead heat efforts, coordinate interagency and intergovernmental efforts, and form partnerships with nonprofits, health systems, and the private sector. Every government should also upskill all frontline employees in their roles for heat mitigation and response."
+    "Description": "Every government should designate a public official (either a new hire or current employee) with authority and budget to lead heat efforts, coordinate interagency and intergovernmental efforts, and form partnerships with nonprofits, health systems, and the private sector. Every government should also upskill all frontline employees in their roles for heat mitigation and response.",
+    "AlignmentWithPillar": "Communities will be heat-safe when they have leadership in place dedicated to addressing the issue and ensuring all key stakeholders are playing their part in extreme heat preparedness, response and resilience.",
+    "WaysToMeasureProgress": "Number of communities with a designated heat point person; number of partners involved in preparedness, response, and resilience; number of public employees trained to be a part of heat response; increases in budgets for heat-related activities."
   },
   {
     "Element": "Recommendation",
     "Name": "Assess heat’s impacts and costs",
-    "Description": "Every government should track heat impacts on people, infrastructure, the economy, and their budgets and set goals to reduce heat’s effects."
+    "Description": "Every government should track heat impacts on people, infrastructure, the economy, and their budgets and set goals to reduce heat’s effects.",
+    "AlignmentWithPillar": "Communities will be heat-safe when they understand the costs and impacts and use that to guide decision-making.",
+    "WaysToMeasureProgress": "Number of communities tracking heat’s impacts and costs; number of communities that have identified heat-vulnerable populations and systems; number of communities with goals to reduce heat’s impacts; shown benefits of data-informed response like reductions in heat-related illness and deaths, economic losses, and infrastructure damages."
   },
   {
     "Element": "Recommendation",
     "Name": "Declare and respond to heat as an emergency",
-    "Description": "Every government should have and deploy the resources to protect their populations, such as shelter and welfare checks. Every government should prepare for infrastructure failures like of energy and water systems."
+    "Description": "Every government should have and deploy the resources to protect their populations, such as shelter and welfare checks. Every government should prepare for infrastructure failures like of energy and water systems.",
+    "AlignmentWithPillar": "Communities will be heat-safe when they can execute response measures that save lives and prevent infrastructure damage.",
+    "WaysToMeasureProgress": "Number of communities that can initiate response activities; Averted heat-related illness and deaths due to response activities; reductions in economic impacts of high heat events; prevention of high-risk outage events."
   },
   {
     "Element": "Recommendation",
     "Name": "Shape and finance heat-resilient infrastructure",
-    "Description": "Every government should set incentives or requirements to reduce heat’s impacts on people and infrastructure and identify or create public and private funding for building and maintaining heat-resilient infrastructure like trees, shade, back up power for critical facilities, and grid upgrades."
+    "Description": "Every government should set incentives or requirements to reduce heat’s impacts on people and infrastructure and identify or create public and private funding for building and maintaining heat-resilient infrastructure like trees, shade, back up power for critical facilities, and grid upgrades.",
+    "AlignmentWithPillar": "Communities will be heat-safe when they are built for a hotter future.",
+    "WaysToMeasureProgress": "Increase in the number of critical infrastructure systems prepared for extreme temperatures; increase in the shaded area in communities; increase in the number of trees in communities; increase in the number of blue spaces available in communities; increase in maintenance budgets for heat-related infrastructure; number of communities able to develop heat-resilient infrastructure project; increase in available resourcing for heat-resilience."
   },
   {
     "Element": "Policy Type",
     "Name": "Make cooling a habitability requirement",
-    "Description": "Make cooling a legal habitability condition by either setting locally-relevant maximum indoor temperature standards, by requiring functional cooling equipment (both mechanical and passive), or both."
+    "Description": "Make cooling a legal habitability condition by either setting locally-relevant maximum indoor temperature standards, by requiring functional cooling equipment (both mechanical and passive), or both.",
+    "ExistingLegalLandscape": "Housing habitability law in the U.S. is grounded in the implied warranty of habitability, a common-law doctrine that most states have codified. Existing habitability standards typically mandate minimum heating but are silent on cooling.",
+    "AuthoritiesByLevel": "State and local governments (if not preempted) have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Upgrade existing homes for extreme heat (retrofit incentives needed to support compliance) and Protect energy access during hot weather (higher cooling demand will raise utility bills)."
   },
   {
     "Element": "Policy Type",
     "Name": "Disclose housing energy costs and cooling abilities",
-    "Description": "Require landlords or sellers to disclose energy performance data, cooling system information, or both to prospective renters or buyers to identify which housing gets dangerously hot or is prohibitively expensive to cool."
+    "Description": "Require landlords or sellers to disclose energy performance data, cooling system information, or both to prospective renters or buyers to identify which housing gets dangerously hot or is prohibitively expensive to cool.",
+    "ExistingLegalLandscape": "Some states have adopted building energy benchmark and disclosure laws for only large commercial buildings; extending these to residential rentals requires additional legislation.",
+    "AuthoritiesByLevel": "For rental disclosure requirements, state and local governments (if not preempted) have the authority to take this action.  For disclosure at the point of sale of property, state governments have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Upgrade existing homes for extreme heat (identifies households most in need)."
   },
   {
     "Element": "Policy Type",
     "Name": "Allow home alterations for cooling",
-    "Description": "Prevent landlords and homeowners associations from prohibiting installation of active and passive cooling devices as a condition of their lease, building policy, or park rules."
+    "Description": "Prevent landlords and homeowners associations from prohibiting installation of active and passive cooling devices as a condition of their lease, building policy, or park rules.",
+    "ExistingLegalLandscape": "Many standard lease agreements include clauses prohibiting alterations without landlord approval, which may be interpreted to prohibit cooling devices. These restrictions are enforceable under most state contract law unless statute overrides them. Homeowners associations operate as private, non-profit, or corporate entities and so are overseen by corporate laws as well as real estate and property laws.",
+    "AuthoritiesByLevel": "For leased properties, state and local governments (if not preempted) have the authority to create requirements. For homeowners associations, state governments have the authority to create requirements.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Upgrade existing homes for extreme heat (portable cooling rebates) and Protect energy access during hot weather (higher usage raises bills)."
   },
   {
     "Element": "Policy Type",
     "Name": "Address eviction on hot days",
-    "Description": "Protect renters from the physical act of eviction being carried out on dangerous heat days."
+    "Description": "Protect renters from the physical act of eviction being carried out on dangerous heat days.",
+    "ExistingLegalLandscape": "Several states already have cold-weather eviction moratoria, prohibiting evictions when temperatures drop below a threshold, providing a legal precedent and drafting model for heat-based protections.",
+    "AuthoritiesByLevel": "State and local governments (if not preempted) have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Declare and respond to heat as an emergency (treats extreme heat like a threat to health and safety), Expand programs for energy bill assistance (temperature thresholds for shutoffs can be adapted for eviction prevention)."
   },
   {
     "Element": "Policy Type",
     "Name": "Prevent utility disconnection during hot weather",
-    "Description": "Prohibit electric and/or water utilities from disconnecting service to residential customers during periods of dangerous heat, such as declared heat emergencies, when the National Weather Service issues excessive heat warnings, when temperatures exceed a threshold, and/or throughout the summer months."
+    "Description": "Prohibit electric and/or water utilities from disconnecting service to residential customers during periods of dangerous heat, such as declared heat emergencies, when the National Weather Service issues excessive heat warnings, when temperatures exceed a threshold, and/or throughout the summer months.",
+    "ExistingLegalLandscape": "Most states authorize public utility commissions (PUCs) to establish service termination rules; some states require legislative action to establish these rules. Municipal utilities may be exempt from PUC authority. The trigger mechanism has significant implications for breadth of protection and predictability.",
+    "AuthoritiesByLevel": "State governments have the primary authority to take this action. Local governments have the authority to require moratoriums on municipally-owned utilities.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Establish the Right to Cooling (ensures that families can access power during the hottest days of the year)."
   },
   {
     "Element": "Policy Type",
     "Name": "Expand programs for energy bill assistance",
-    "Description": "Expand energy financial assistance programs to ensure low and middle-income households can afford the energy needed to keep their homes cool."
+    "Description": "Expand energy financial assistance programs to ensure low and middle-income households can afford the energy needed to keep their homes cool.",
+    "ExistingLegalLandscape": "The Low-Income Home Energy Assistance Program (LIHEAP) provides funding for state energy assistance programs. States need to allocate LIHEAP dollars to cooling. State legislatures and public utility commissioners (PUCs) have independent authority to establish state-funded assistance programs and arrearage management plans.",
+    "AuthoritiesByLevel": "States have the authority to distribute LIHEAP funding, generate new funding resources and require investor-owned utilities to offer energy bill assistance. If they have a municipal utility, local governments have the authority to establish assistance programs.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Upgrade existing homes for extreme heat (lower existing bills through efficiency improvements)"
   },
   {
     "Element": "Policy Type",
     "Name": "Deliver affordable electricity rates",
-    "Description": "Structure electricity rates to reduce costs for low- and moderate-income households, through developing tiered rates, income-based fixed charges, and time-of-use rates with low-cost off-peak periods, and prioritizing affordability in ratemaking and energy planning processes."
+    "Description": "Structure electricity rates to reduce costs for low- and moderate-income households, through developing tiered rates, income-based fixed charges, and time-of-use rates with low-cost off-peak periods, and prioritizing affordability in ratemaking and energy planning processes.",
+    "ExistingLegalLandscape": "Electricity rate design is regulated through state public utility commissions for investor-owned utilities; cooperative and municipal utility rates are set by boards or local governments. PUCs have broad authority to approve or reject rate structures, but statutory mandates may constrain certain rate designs.",
+    "AuthoritiesByLevel": "State governments have the authority to determine rates of investor-owned utilities, state legislatures may be needed to set affordability mandates. Local governments have the authority to intervene on municipal utilities.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Upgrade existing homes for extreme heat (also brings down the cost of cooling over time) and Declare and respond to heat as an emergency (time of use rates can reduce energy consumption when most needed)."
   },
   {
     "Element": "Policy Type",
     "Name": "Ensure cooling access during planned and unplanned outages",
-    "Description": "Make sure power outages do not strand residents without cooling through backup power requirements for facilities serving vulnerable populations, proactive utility notification obligations, emergency cooling center activation protocols, and investments in community energy resilience."
+    "Description": "Make sure power outages do not strand residents without cooling through backup power requirements for facilities serving vulnerable populations, proactive utility notification obligations, emergency cooling center activation protocols, and investments in community energy resilience.",
+    "ExistingLegalLandscape": "Grid reliability and emergency preparedness are regulated through a combination of federal (Federal Energy Regulatory Commission) and state authority (Public Utility Commissions (PUCs) for distribution utilities, state emergency management for response). Some states require utilities to file grid resilience plans, mandate backup power at critical facilities, and establish customer notification protocols.",
+    "AuthoritiesByLevel": "State governments have the authority to set backup power requirements, grid resilience planning requirements, and notification requirements. Local governments have the authority to require backup power at public facilities and deploy emergency cooling.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Prepare for higher temperatures as an acute emergency as well as a chronic risk (develop strategies for emergency cooling), Declare and respond to heat as an emergency (enact strategies during a grid failure during extreme heat), and Shape and finance heat-resilient infrastructure (triggers investments in back-up power and community energy resilience)."
   },
   {
     "Element": "Policy Type",
     "Name": "Expand financial assistance for home upgrades",
-    "Description": "Expand the availability and accessibility of financial tools, like grants, rebates, tax credits, point of sale exemptions, inclusive utility investment, and low-interest loans, that help homeowners and renters upgrade their homes for heat."
+    "Description": "Expand the availability and accessibility of financial tools, like grants, rebates, tax credits, point of sale exemptions, inclusive utility investment, and low-interest loans, that help homeowners and renters upgrade their homes for heat.",
+    "ExistingLegalLandscape": "Resources for home upgrades come from federal programs (Low-Income Home Energy Assistance Program weatherization, Weatherization Assistance program), state resources, and utility demand-side management programs. Some financial tools, like inclusive utility investment, require PUC authorization in most states.",
+    "AuthoritiesByLevel": "State governments have the authority to design and fund programs as well as administer federal funds. Local governments have the authority to design programs as well as handle outreach and intake alongside community action agencies and community based organizations.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Expand programs for energy bill assistance (participants in these programs would likely need upgrades), Protect energy access during hot weather (greater efficiency means more affordable electricity bills) and Establish the right to cooling (creates the funding mechanisms necessary to implement this policy)."
   },
   {
     "Element": "Policy Type",
     "Name": "Reduce barriers to upgrading homes",
-    "Description": "Address non-financial barriers to home upgrades, including permitting complexity, multiple applications, contractor availability, lack of technology availability, and pre-weatherization requirements, that prevent home upgrades even when financially possible."
+    "Description": "Address non-financial barriers to home upgrades, including permitting complexity, multiple applications, contractor availability, lack of technology availability, and pre-weatherization requirements, that prevent home upgrades even when financially possible.",
+    "ExistingLegalLandscape": "Regulatory barriers are distributed across state permitting, building and zoning codes, utility interconnection rules, and landlord-tenant law. State and local governments also have market-shaping mechanisms, like bulk procurement, to incentivize companies to bring new technologies to market. Utilities require public utility commission direction to simplify interconnection for technologies like plug-in solar or rooftop solar, which may require new enabling legislation at the state level.",
+    "AuthoritiesByLevel": "State or local governments have the authority to streamline permitting as well as create single application portals for benefits. State governments have the authority to address pre-weatherization requirements of the Weatherization Assistance Program (WAP) with new state funds as well as simplify interconnection processes.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Create a heat-resilient housing supply (addressing barriers to permitting)."
   },
   {
     "Element": "Policy Type",
     "Name": "Offer technical assistance to homeowners and renters",
-    "Description": "Close the gap between eligibility and enrollment by creating 'one-stop shop' navigation services, offering application assistance, and arranging free or low-cost home energy assessments."
+    "Description": "Close the gap between eligibility and enrollment by creating 'one-stop shop' navigation services, offering application assistance, and arranging free or low-cost home energy assessments.",
+    "ExistingLegalLandscape": "Technical assistance programs can be established by executive action through state or local agencies, funded through state appropriations or utility programs, and delivered by community-based organizations, local government staff, or nonprofit partners. No new statutory authority is typically required.",
+    "AuthoritiesByLevel": "State and local governments have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Expand programs for energy bill assistance (participants in these programs would likely be dual eligible for technical assistance)."
   },
   {
     "Element": "Policy Type",
     "Name": "Set heat-protective building and energy codes",
-    "Description": "Update building and energy codes to require that newly constructed or substantially renovated homes are designed to stay cool during current and future extreme heat, through things like passive cooling requirements (eg insulation requirements, solar heat gain limits, cool roof requirements), back-up power requirements, thermal safety standards, passive survivability standards, overheating assessments, or heat pump mandates."
+    "Description": "Update building and energy codes to require that newly constructed or substantially renovated homes are designed to stay cool during current and future extreme heat, through things like passive cooling requirements (eg insulation requirements, solar heat gain limits, cool roof requirements), back-up power requirements, thermal safety standards, passive survivability standards, overheating assessments, or heat pump mandates.",
+    "ExistingLegalLandscape": "Building and energy codes are adopted at the state level in most states. Where there is a state-wide code, local governments can adopt codes more stringent than the state baseline (stretch codes) if not preempted from doing so. Some states do not have a state-wide building code or energy code, so local governments that want codes must identify or develop a code and then adopt their chosen code. Code reform requires navigating adoption cycles that often operate on 3-5 year timelines and involve significant stakeholder input from building and real estate industries.",
+    "AuthoritiesByLevel": "State governments have the authority to set the base code development that local governments can adopt. Local governments have the authority to develop base codes if there’s not a state code and create stretch codes where permitted.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Upgrade existing homes for extreme heat (can inform retrofit standards and expectations), Establish a right to cooling (sets the threshold that new construction will need to meet) and Shape and finance heat-resilient infrastructure (intersections between building codes and zoning codes)"
   },
   {
     "Element": "Policy Type",
     "Name": "Incentivize uptake of stretch codes for heat resilience",
-    "Description": "Create or identify stretch codes for heat resilience, like Passive House and Enterprise Green Communities, and then incentivize builders and developers to meet them through tax credits, expedited permitting, density bonuses, or access to favorable financing."
+    "Description": "Create or identify stretch codes for heat resilience, like Passive House and Enterprise Green Communities, and then incentivize builders and developers to meet them through tax credits, expedited permitting, density bonuses, or access to favorable financing.",
+    "ExistingLegalLandscape": "Stretch code programs are typically enabled by state legislation or city/county council authorities. Incentive programs to support stretch code adoption may require legislative or city/county council authority or utility program authority.",
+    "AuthoritiesByLevel": "State and local governments (if not preempted) have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Upgrade existing homes for extreme (incentives available for heat-resilient construction)"
   },
   {
     "Element": "Policy Type",
     "Name": "Address workforce capacity gaps for heat-resilient construction",
-    "Description": "Build the workforce needed to build heat-resilient homes as well as install and maintain heat-resilient technologies at the scale required to meet program demand."
+    "Description": "Build the workforce needed to build heat-resilient homes as well as install and maintain heat-resilient technologies at the scale required to meet program demand.",
+    "ExistingLegalLandscape": "Workforce development is both a state and local function, with funding available through state workforce agencies, utility programs, and federal workforce development law (Workforce Innovation and Opportunity Act).  State and local energy offices and housing agencies can set workforce development requirements as a condition of participating in available funding and incentive programs.",
+    "AuthoritiesByLevel": "State governments have the authority to generate revenue and distribute federal funds. Larger local governments may have additional revenue to braid with available state and federal funds.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Upgrade existing homes for extreme heat (workforce building new heat-resilient homes can also be employed to retrofit existing homes)."
   },
   {
     "Element": "Policy Type",
     "Name": "Prevent costs from large loads falling on household customers' energy bills",
-    "Description": "Ensure that the infrastructure costs associated with connecting large new electricity users are borne by those customers and not spread across all ratepayers."
+    "Description": "Ensure that the infrastructure costs associated with connecting large new electricity users are borne by those customers and not spread across all ratepayers.",
+    "ExistingLegalLandscape": "Cost allocation in utility regulation is set through state public utility commission (PUC) rate cases and tariff proceedings. Historically, large load customers have been able to socialize some infrastructure upgrade costs across all ratepayers through standard rate structures. States can address this through legislation directing PUCs to establish separate rate classes for large loads, or by requiring PUCs to assign full incremental infrastructure costs to the customers that trigger them.",
+    "AuthoritiesByLevel": "State governments hold this authority.",
+    "ConnectionsToOtherRecommendations": "Overlap with Protect energy access during hot weather (addressing the cost of electricity for households and could provide a revenue source for low-income discount programs) and Shape and finance heat-resilient infrastructure (creating a revenue stream for grid upgrades)"
   },
   {
     "Element": "Policy Type",
     "Name": "Require large load customers to participate in demand/response and energy storage programs",
-    "Description": "Require large electricity users to curtail their consumption or deploy on-site battery storage during periods of grid stress on hot days."
+    "Description": "Require large electricity users to curtail their consumption or deploy on-site battery storage during periods of grid stress on hot days.",
+    "ExistingLegalLandscape": "Demand response programs are regulated by state public utility commissions (PUCs) for distribution-level customers. State legislatures can mandate large load participation in demand response as a condition of favorable interconnection.",
+    "AuthoritiesByLevel": "State governments hold this authority.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Declare and respond to heat as an emergency (keeping critical energy infrastructure online during demand spikes)."
   },
   {
     "Element": "Policy Type",
     "Name": "Collect fees from large load customers to pay for household upgrades and energy bills",
-    "Description": "Require large electricity users to contribute to funds that subsidize residential energy bills and finance home upgrades for heat and energy resilience."
+    "Description": "Require large electricity users to contribute to funds that subsidize residential energy bills and finance home upgrades for heat and energy resilience.",
+    "ExistingLegalLandscape": "This fee or contribution requirement is within state legislative authority and can also be structured through public utility commission (PUC) proceedings. States can require large load customers to pay into existing programs as a condition of favorable interconnection or rate treatment.",
+    "AuthoritiesByLevel": "State governments hold this authority. Local governments could potentially generate revenue through community-benefits agreements.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Upgrade existing homes for extreme heat (creates a revenue stream for these upgrades)"
   },
   {
     "Element": "Policy Type",
     "Name": "Increase transparency around energy and water consumption of large loads",
-    "Description": "Require large electricity users to publicly disclose their energy and water consumption, grid impact, and infrastructure investment needs."
+    "Description": "Require large electricity users to publicly disclose their energy and water consumption, grid impact, and infrastructure investment needs.",
+    "ExistingLegalLandscape": "Disclosure requirements for utility customers are typically within state public utility commission (PUC) authority or can be enacted by state legislatures. Some states have begun requiring utilities to report data center energy demand as part of integrated resource planning (IRP) processes. A few local governments have used their permitting authority to require transparency.",
+    "AuthoritiesByLevel": "State governments hold the authority for disclosure requirements through the PUC. Local governments have the authority to use local permitting as well as communications and convening levers.",
+    "ConnectionsToOtherRecommendations": "Overlap with Protect energy access during hot weather (addressing the cost of electricity for households)"
   },
   {
     "Element": "Policy Type",
     "Name": "Establish workplace heat safety regulations",
-    "Description": "Enact legally enforceable heat illness prevention standards that require employers to provide workers with water, rest, shade, acclimatization periods, heat illness prevention plans, and emergency response protocols."
+    "Description": "Enact legally enforceable heat illness prevention standards that require employers to provide workers with water, rest, shade, acclimatization periods, heat illness prevention plans, and emergency response protocols.",
+    "ExistingLegalLandscape": "Workplace safety is regulated under a dual federal-state system. The federal Occupational Health and Safety Administration (OSHA) and states with OSHA-approved State Plans can regulate workplace hazards under the General Duty Clause, which requires employers to protect workers from recognized hazards. But this approach is reactive, requiring an injury or death before OSHA can cite an employer. States with OSHA-approved State Plans can develop their own heat standards independently. States without a State Plan require legislative authority to create standards and will need to identify an enforcement mechanism. State and local governments can issue protective measures for their own workforces and through procurement measures to protect contractors.",
+    "AuthoritiesByLevel": "State governments have the authority to set standards protecting all workers in the absence of a federal heat standard. Local governments have the authority to enact ordinances covering municipal employees and contractors.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Encourage uptake of best practices for workplace safety (can combine regulations with incentives)"
   },
   {
     "Element": "Policy Type",
     "Name": "Set cooling requirements for employer-provided housing",
-    "Description": "Require that housing provided by employers meets minimum temperature and cooling standards, extending heat protection from the workplace to the home for the most vulnerable workers."
+    "Description": "Require that housing provided by employers meets minimum temperature and cooling standards, extending heat protection from the workplace to the home for the most vulnerable workers.",
+    "ExistingLegalLandscape": "Employer-provided housing for workers is regulated through a combination of state agencies depending on the workplace, including state departments of agriculture and departments of labor. Local housing codes and federal standards under the Migrant and Seasonal Agricultural Worker Protection Act (MSPA) may also determine housing standards. Oregon is the first state in the country to set a threshold for employer-provided housing.",
+    "AuthoritiesByLevel": "State governments have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Establish the right to cooling (habitability requirement recommendations can be implemented in employer-provided housing)"
   },
   {
     "Element": "Policy Type",
     "Name": "Strengthen workplace heat surveillance and enforcement",
-    "Description": "Increase the capacity of state labor agencies to detect, investigate, and penalize workplace heat violations through increased inspector staffing, targeted inspection programs in high-risk industries, medical surveillance systems for heat illness, and better data collection on heat-related injuries and workers compensation claims."
+    "Description": "Increase the capacity of state labor agencies to detect, investigate, and penalize workplace heat violations through increased inspector staffing, targeted inspection programs in high-risk industries, medical surveillance systems for heat illness, and better data collection on heat-related injuries and workers compensation claims.",
+    "ExistingLegalLandscape": "Workplace safety enforcement is primarily a state function in Occupational Health and Safety Administration (OSHA) State Plan states. Federal OSHA enforces in states without approved plans, so alternative mechanisms may also be needed. Ownership does vary by the state. State legislatures fund OSHA enforcement capacity and also receive some funding from federal OSHA.. OSHA inspectors have authority to inspect workplaces for heat hazards under the General Duty Clause if there is no state standard.",
+    "AuthoritiesByLevel": "State governments have authority for enforcement in a State Plan state. All states can improve their medical and economic surveillance.",
+    "ConnectionsToOtherRecommendations": "Overlap with Encourage uptake of best practices for workplace safety (leveraging the workers’ compensation industry to incentivize uptake of heat protection practices in lieu of enforcement)"
   },
   {
     "Element": "Policy Type",
     "Name": "Establish or expand paid leave",
-    "Description": "Create or expand paid sick leave to address extreme heat, such as explicitly covering days when temperatures make work dangerous or when heat impacts the worker or their dependents (eg recovery from heat illness, school and childcare closures)."
+    "Description": "Create or expand paid sick leave to address extreme heat, such as explicitly covering days when temperatures make work dangerous or when heat impacts the worker or their dependents (eg recovery from heat illness, school and childcare closures).",
+    "ExistingLegalLandscape": "Paid sick leave is regulated through state and local law. Some states preempt local paid leave ordinances. Further, most states that have enacted paid sick leave allow workers to use leave for illness but do not explicitly address heat. So, states and cities can clarify that existing paid sick leave covers heat illness, or add heat explicitly as a qualifying reason.",
+    "AuthoritiesByLevel": "State and local governments (if not preempted) both have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Secure heat protections in all workplaces (protections extend to days that workers believe are unsafe to work)."
   },
   {
     "Element": "Policy Type",
     "Name": "Develop or update insurance policies for income protection",
-    "Description": "Develop new (eg parametric) or leverage existing (eg short-term disability, long-term disability, unemployment, workers’ compensation) insurance mechanisms to provide income protections for all workers."
+    "Description": "Develop new (eg parametric) or leverage existing (eg short-term disability, long-term disability, unemployment, workers’ compensation) insurance mechanisms to provide income protections for all workers.",
+    "ExistingLegalLandscape": "Insurance markets are regulated at the state level. Insurance for income protection due to extreme weather related impacts is an emerging policy area. While existing products may cover workers, the lack of explicit recognition of extreme heat could lead to denials. For example, “good cause” policies that allow workers to quit a job due to unsafe conditions may not consider heat hazards as qualifying. Further parametric insurance products, which trigger payouts based on a measurable metric rather than demonstrated loss, are novel in the U.S. State insurance commissioners have authority to approve new insurance products, like parametric insurance.",
+    "AuthoritiesByLevel": "State governments hold the authority for this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Secure heat protections in all workplaces (protections extend to days that workers believe are unsafe to work, creates the pathway to refuse dangerous work and still receive income support)."
   },
   {
     "Element": "Policy Type",
     "Name": "Leverage workers compensation insurance",
-    "Description": "Use the workers compensation system to create financial incentives for businesses to implement heat safety measures."
+    "Description": "Use the workers compensation system to create financial incentives for businesses to implement heat safety measures.",
+    "ExistingLegalLandscape": "Workers compensation insurance is regulated at the state level, and every state except Texas requires employers to have workers compensation insurance. Most states operate hybrid systems with private insurers alongside a state fund. State funds can develop heat safety incentive programs. State insurance commissioners can encourage or require private insurers to offer heat safety credits.",
+    "AuthoritiesByLevel": "State governments hold the authority for this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Secure heat protections in all workplaces (creates an incentive-based mechanism for uptake) and Protect incomes and jobs for workers on days when it is too risky to work (both address the workers compensation system)"
   },
   {
     "Element": "Policy Type",
     "Name": "Procure from businesses that protect their workers from heat",
-    "Description": "Use purchasing power to require or incentivize suppliers to meet workplace heat safety standards as a condition of doing business with the government."
+    "Description": "Use purchasing power to require or incentivize suppliers to meet workplace heat safety standards as a condition of doing business with the government.",
+    "ExistingLegalLandscape": "Government procurement authority is broad. Most state and local governments can set purchasing requirements as a condition of contract award, within limits set by federal and state procurement law.",
+    "AuthoritiesByLevel": "State and local governments have authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Secure heat protections in all workplaces (creates an incentive-based mechanism for uptake)"
   },
   {
     "Element": "Policy Type",
     "Name": "Offer incentives for implementing heat safety practices",
-    "Description": "Create financial benefits, tax credits, city service discounts, recognition programs, for employers to voluntarily adopt heat safety best practices beyond minimum regulatory requirements."
+    "Description": "Create financial benefits, tax credits, city service discounts, recognition programs, for employers to voluntarily adopt heat safety best practices beyond minimum regulatory requirements.",
+    "ExistingLegalLandscape": "Incentive programs can often be established by executive action without legislation or ordinance. Tax credits require legislative authority. In states with preemption laws that prohibit local governments from mandating workplace heat protections, incentive-based approaches may be the only available lever.",
+    "AuthoritiesByLevel": "State and local governments have authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Secure heat protections in all workplaces (creates an incentive-based mechanism for uptake)"
   },
   {
     "Element": "Policy Type",
     "Name": "Establish safe temperature thresholds/protocols for indoors and outdoors",
-    "Description": "Establish legally binding temperature limits and decision-making protocols for schools and childcare facilities, including maximum indoor temperatures that trigger action like early closure and outdoor thresholds for modifying or canceling athletic activities and recess."
+    "Description": "Establish legally binding temperature limits and decision-making protocols for schools and childcare facilities, including maximum indoor temperatures that trigger action like early closure and outdoor thresholds for modifying or canceling athletic activities and recess.",
+    "ExistingLegalLandscape": "School temperature and operations standards are primarily within state jurisdiction, though local school boards have additional operational authority in many states. Childcare facility standards are typically set through state licensing requirements, which condition operation on meeting health and safety standards.",
+    "AuthoritiesByLevel": "State and local governments both have authority to set these thresholds and protocols for schools. State governments have the authority to set licensing requirements for childcare facilities.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Make heat resilience upgrades possible for all school districts and childcare facilities (creates the funding that makes this policy possible)"
   },
   {
     "Element": "Policy Type",
     "Name": "Prepare students, staff and operations for heat waves and chronic heat",
-    "Description": "Build the institutional capacity of schools and childcare facilities to respond to both acute heat emergencies and the chronic heat exposure of a warming school year. Activities include heat action plans and technical assistance to develop these plans, staff training, student heat literacy curricula, and food service continuity during closures."
+    "Description": "Build the institutional capacity of schools and childcare facilities to respond to both acute heat emergencies and the chronic heat exposure of a warming school year. Activities include heat action plans and technical assistance to develop these plans, staff training, student heat literacy curricula, and food service continuity during closures.",
+    "ExistingLegalLandscape": "Heat action planning and training requirements can be established through state education agency guidance without full legislation, though legislation provides more durable authority. U.S. Department of Agriculture (USDA) waivers for non-congregate meal service require state-level applications. Student athlete heat protections are typically enacted through state athletic association rules or state legislation.",
+    "AuthoritiesByLevel": "State governments and school districts have the authority to develop heat action plans for schools. State governments hold the authority for setting requirements for schools and childcare facilities and applying to USDA for waivers for meal service. School districts have the authority to set district-wide policies. School districts and local governments are involved in operationalizing the state-wide requirements.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Make heat resilience upgrades possible for all school districts and childcare facilities (assessments of cooling capabilities can guide operational decision making)"
   },
   {
     "Element": "Policy Type",
     "Name": "Monitor heat conditions and impacts to guide decision-making",
-    "Description": "Deploy sensor networks, surveillance systems, and data tools to track indoor temperatures, outdoor temperatures, heat-related illness in schools, and the effectiveness of cooling infrastructure and use that data to make sound decisions."
+    "Description": "Deploy sensor networks, surveillance systems, and data tools to track indoor temperatures, outdoor temperatures, heat-related illness in schools, and the effectiveness of cooling infrastructure and use that data to make sound decisions.",
+    "ExistingLegalLandscape": "Monitoring programs can be established by state education agencies, agencies overseeing childcare at the state or local level, local school districts, or through university research partnerships. No special legislative authority is typically needed to deploy sensors or collect health data, though data sharing protocols and privacy considerations require attention.",
+    "AuthoritiesByLevel": "State governments have the authority to provide the necessary funding as well as collate data across districts and childcare facilities. School districts and local governments are the main implementers of data collection.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Make heat resilience upgrades possible for all school districts and childcare facilities (generates the data needed to guide investment)"
   },
   {
     "Element": "Policy Type",
     "Name": "Address extreme heat on school buses and at bus stops",
-    "Description": "Address dangerous heat conditions on school buses through air conditioning or passive cooling requirements and at bus stops where students wait without shade."
+    "Description": "Address dangerous heat conditions on school buses through air conditioning or passive cooling requirements and at bus stops where students wait without shade.",
+    "ExistingLegalLandscape": "Federal school bus safety standards do not require air conditioning. School bus standards are set through state education agency regulations, vehicle safety standards, and local school district policy. State and local governments can enact cooling requirements through legislation, ordinance or agency rulemaking. Bus stop shade infrastructure is typically within local government or school district authority.",
+    "AuthoritiesByLevel": "State and local governments both have authorities to address school bus indoor temperatures. Local governments (including school districts) have authority to address bus stop shading as well as availability.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Make heat resilience upgrades possible for all school districts and childcare facilities (creates the funding that makes this policy possible), and Secure heat protections in all workplaces (school bus workers are protected from extreme heat, cooling requirements may mandate bus cooling)."
   },
   {
     "Element": "Policy Type",
     "Name": "Assess the state of cooling capabilities to guide investment decisions",
-    "Description": "Conduct systematic inventories and assessments of cooling infrastructure across school and childcare facilities, identifying where gaps are greatest, how many children and staff are at risk, and what investments are most urgently needed."
+    "Description": "Conduct systematic inventories and assessments of cooling infrastructure across school and childcare facilities, identifying where gaps are greatest, how many children and staff are at risk, and what investments are most urgently needed.",
+    "ExistingLegalLandscape": "School facility inventories can be conducted through state education agency requirements, governor's commissions, or legislative mandates. Childcare facility data is often collected through licensing processes, but may not be aggregated for heat vulnerability. No special legislation is typically required for a state to conduct an inventory.",
+    "AuthoritiesByLevel": "State governments have the authority to initiate the data collection process. School districts and local governments support data collection.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Keep kids safe from extreme heat at school and childcare (assess which buildings may be most at risk during high heat days)"
   },
   {
     "Element": "Policy Type",
     "Name": "Create funding resources for improvements to buildings, schoolyards, and outdoor play spaces",
-    "Description": "Develop dedicated funding streams or financing tools to help school districts and childcare providers finance cooling upgrades, green schoolyards, shaded play spaces and other heat resilience investments."
+    "Description": "Develop dedicated funding streams or financing tools to help school districts and childcare providers finance cooling upgrades, green schoolyards, shaded play spaces and other heat resilience investments.",
+    "ExistingLegalLandscape": "School facility funding is primarily a state and local responsibility. State legislatures can appropriate capital grants, state bond authorities can issue school facility bonds and create credit enhancement programs to lower borrowing costs for low-rated districts.  School districts and local governments can pursue financing mechanisms like bond funding. Childcare facilities are funded in part through federal funding and state funding.",
+    "AuthoritiesByLevel": "State governments have the authority to create grant programs and credit enhancement measures. Local governments (including school districts) have the authority to issue bonds.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Keep kids safe from extreme heat at school and childcare (funding enables compliance with indoor temperature standards and outdoor protocols)"
   },
   {
     "Element": "Policy Type",
     "Name": "Develop metrics for how investments in cooling infrastructure benefit students",
-    "Description": "Establish evidence-based measures of how school and childcare cooling investments affect student attendance, learning, health, and other key measures, creating the information needed to make the case for investment and hold governments accountable for outcomes."
+    "Description": "Establish evidence-based measures of how school and childcare cooling investments affect student attendance, learning, health, and other key measures, creating the information needed to make the case for investment and hold governments accountable for outcomes.",
+    "ExistingLegalLandscape": "Metric development is primarily a research and administrative function that can be initiated by state education or public health agencies. Legislation can direct agencies to collect specific data or commission studies.",
+    "AuthoritiesByLevel": "State governments have the authority to develop and require standardized metrics. Local governments and school districts are involved in data collection.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Keep kids safe from extreme heat at school and childcare (builds the case for certain practices and policies, like indoor temperature standards) and Assess heat’s impacts and costs (educational impacts and children’s health impacts are critical to track for case-making around heat-related policy actions)"
   },
   {
     "Element": "Policy Type",
     "Name": "Develop annual response operations plans",
-    "Description": "Create heat response plans that establish clear protocols for response efforts, such as activating cooling centers, conducting wellness checks, surging social services, coordinating with utilities, and communicating with residents during heat emergencies, as well as prepare for critical infrastructure failures."
+    "Description": "Create heat response plans that establish clear protocols for response efforts, such as activating cooling centers, conducting wellness checks, surging social services, coordinating with utilities, and communicating with residents during heat emergencies, as well as prepare for critical infrastructure failures.",
+    "ExistingLegalLandscape": "Heat response planning is within the existing authority of emergency management agencies, public health departments, and mayors or governors offices. No new legislative authority is typically required, though legislation can require plans and create accountability. Formal adoption by city councils or state cabinets makes them more durable.",
+    "AuthoritiesByLevel": "State and local governments (cities and counties) have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Declare and respond to heat as an emergency (prepares agencies for the response activities necessary during the heat wave), Establish a governance structure and training for extreme heat. (principals need to be identified to lead this work, and Assess heat’s impacts and costs (identify the populations that will need the most support and most at-risk infrastructure systems)."
   },
   {
     "Element": "Policy Type",
     "Name": "Develop plans for long-term risk mitigation (including compounding risk)",
-    "Description": "Create comprehensive heat action plans or integrate heat throughout relevant planning activities (eg hazard mitigation planning, transportation planning, energy planning, and capital planning) to enable long-term risk reduction. Where relevant, these plans should account for compounding risks like combined heat and wildfire smoke events or heat-exacerbated drought."
+    "Description": "Create comprehensive heat action plans or integrate heat throughout relevant planning activities (eg hazard mitigation planning, transportation planning, energy planning, and capital planning) to enable long-term risk reduction. Where relevant, these plans should account for compounding risks like combined heat and wildfire smoke events or heat-exacerbated drought.",
+    "ExistingLegalLandscape": "Long-term heat action plans can be developed through executive action. Some states require local governments to develop resilience or hazard mitigation plans that incorporate heat or mandate comprehensive heat planning. Integration into existing planning processes is often more durable than standalone plans.",
+    "AuthoritiesByLevel": "State and local governments have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Shape and finance heat-resilient infrastructure (creates the financing tools necessary for plan implementation), Establish a governance structure and training for extreme heat. (principals need to be identified to lead this work), and Assess heat’s impacts and costs (develop an understanding of which heat-vulnerable communities and systems should be invested in first)."
   },
   {
     "Element": "Policy Type",
     "Name": "Regularly evaluate the effectiveness of plans and track implementation",
-    "Description": "Test heat plans against outcomes through after-action reviews following heat events, progress reporting against plan goals, and public accountability mechanisms."
+    "Description": "Test heat plans against outcomes through after-action reviews following heat events, progress reporting against plan goals, and public accountability mechanisms.",
+    "ExistingLegalLandscape": "Plan evaluation is an administrative function that does not require legislation, though legislation can mandate evaluation timelines and reporting requirements. After-action reviews are a standard emergency management tool.",
+    "AuthoritiesByLevel": "State and local governments have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Assess heat’s impacts and costs (need accurate and timely data on impacts, costs, and benefits to inform evaluation)"
   },
   {
     "Element": "Policy Type",
     "Name": "Offer technical assistance to smaller jurisdictions/rural communities",
-    "Description": "Provide support to local governments, including model plans, planning cohort programs, staffing assistance, and peer learning networks, to help small towns, rural counties, and tribal governments develop heat preparedness capabilities."
+    "Description": "Provide support to local governments, including model plans, planning cohort programs, staffing assistance, and peer learning networks, to help small towns, rural counties, and tribal governments develop heat preparedness capabilities.",
+    "ExistingLegalLandscape": "Technical assistance programs are within existing executive authority of state agencies and require no legislation, though legislative appropriations provide more sustainable funding. Regional planning organizations and councils of government can serve as intermediaries.",
+    "AuthoritiesByLevel": "State and regional planning agencies have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Establish a governance structure and training for extreme heat. (helps establish leadership in more communities)"
   },
   {
     "Element": "Policy Type",
     "Name": "Establish internal leadership and authorities on extreme heat",
-    "Description": "Create dedicated heat leadership within government by establishing new roles or appointing existing staff members with clear authority, resources and accountability mechanisms to steward action across agencies and with external partners."
+    "Description": "Create dedicated heat leadership within government by establishing new roles or appointing existing staff members with clear authority, resources and accountability mechanisms to steward action across agencies and with external partners.",
+    "ExistingLegalLandscape": "New roles, like heat officers and resilience officer positions, can be created by governors or mayors through executive action. Legislation or ordinance provides durability across administrations and can mandate cross-agency cooperation. Statutory backing also helps with budget protection during fiscal stress where these positions may face elimination.",
+    "AuthoritiesByLevel": "State and local governments have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Prepare for higher temperatures as an acute emergency as well as a chronic risk (identifies leader(s) who can drive these efforts)."
   },
   {
     "Element": "Policy Type",
     "Name": "Convene partners across governments and the community",
-    "Description": "Develop formal networks and councils that bring together government agencies and key partners, such as utilities, health systems, community-based organizations, and the private sector, to share information, delegate responsibilities, and coordinate response."
+    "Description": "Develop formal networks and councils that bring together government agencies and key partners, such as utilities, health systems, community-based organizations, and the private sector, to share information, delegate responsibilities, and coordinate response.",
+    "ExistingLegalLandscape": "Multi-sector networks and councils are generally within executive administrative authority and do not require legislation. New Jersey established its Interagency Council on Climate Resilience by executive order. Maricopa Association of Governments' Heat Relief Network is a regional coordination model. Tribal and rural community engagement requires dedicated effort and resources beyond standard convening.",
+    "AuthoritiesByLevel": "State and local governments have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Prepare for higher temperatures as an acute emergency as well as a chronic risk (ensures all implementers are at the table)."
   },
   {
     "Element": "Policy Type",
     "Name": "Prepare municipal employees to be a part of heat response efforts",
-    "Description": "Train frontline government employees, including social workers, police officers, parks staff, transit workers, and public health workers, to recognize heat illness, know what resources are available, and act as an extension of the heat response network."
+    "Description": "Train frontline government employees, including social workers, police officers, parks staff, transit workers, and public health workers, to recognize heat illness, know what resources are available, and act as an extension of the heat response network.",
+    "ExistingLegalLandscape": "Employee training is within executive authority at any level of government and does not require legislation. Training programs can be developed by agencies, adapted from national models. Tabletop exercises are a good starter activity for upskilling employees.",
+    "AuthoritiesByLevel": "State and local governments have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlap with Declare and respond to heat as an emergency (prepares key staff to implement these protocols)"
   },
   {
     "Element": "Policy Type",
     "Name": "Adopt standards and protocols for measuring heat’s impacts and costs",
-    "Description": "Assess what heat is actually costing communities through standardized methods for attributing heat-related and exacerbated illnesses and deaths, infrastructure impacts and damages, economic losses, and public sector spending."
+    "Description": "Assess what heat is actually costing communities through standardized methods for attributing heat-related and exacerbated illnesses and deaths, infrastructure impacts and damages, economic losses, and public sector spending.",
+    "ExistingLegalLandscape": "State and local governments can require certain measurement protocols and data-sharing requirements by statute. For example, states can set protocols for death investigation and vital statistics to inform how medical examiners and coroners operate. Another example, state public utility commissions and local governments with municipal utilities can require reporting from energy providers about heat-related impacts. Surveillance systems for things like heat-related illness are operated by state and local health departments, often supported by federal funding.",
+    "AuthoritiesByLevel": "State governments have the authority to require standardized protocols across the state and set requirements for data collecting and sharing. Local governments are one of the primary data collectors, and also have the authority to innovate in data collection in ways that inform future state action.",
+    "ConnectionsToOtherRecommendations": "Overlap with Prepare for higher temperatures as an acute emergency as well as a chronic risk (key to evaluating plan effectiveness)"
   },
   {
     "Element": "Policy Type",
     "Name": "Identify heat-vulnerable populations and systems",
-    "Description": "Map which populations and geographic areas face the greatest heat risk as well as which infrastructure systems (eg energy, water, and health care systems) are most vulnerable to failure."
+    "Description": "Map which populations and geographic areas face the greatest heat risk as well as which infrastructure systems (eg energy, water, and health care systems) are most vulnerable to failure.",
+    "ExistingLegalLandscape": "Heat vulnerability assessment is an administrative function that can be initiated by state or local public health agencies, emergency management departments, planning departments, or research institutions without legislation. Legislation can mandate vulnerability assessment as part of heat planning requirements.",
+    "AuthoritiesByLevel": "State and local governments have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Declare and respond to heat as an emergency (identifies most vulnerable populations) and Shape and finance heat-resilient infrastructure (identifies most impacted neighborhoods and systems in need of investment)."
   },
   {
     "Element": "Policy Type",
     "Name": "Create data-informed decision-support tools and thresholds",
-    "Description": "Make data actionable for decision-making through developing early warning systems, locally-calibrated response thresholds, near real-time impacts surveillance dashboards, and risk scoring systems that guide planners on where to invest."
+    "Description": "Make data actionable for decision-making through developing early warning systems, locally-calibrated response thresholds, near real-time impacts surveillance dashboards, and risk scoring systems that guide planners on where to invest.",
+    "ExistingLegalLandscape": "No legislative authority is typically needed to develop tools, though legislation can mandate their use and fund their maintenance.",
+    "AuthoritiesByLevel": "State and local governments have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Declare and respond to heat as an emergency (guides decision-making) and Shape and finance heat-resilient infrastructure (guides decision-making)."
   },
   {
     "Element": "Policy Type",
     "Name": "Enact response activities when locally-relevant thresholds are crossed",
-    "Description": "Execute standardized heat emergency response protocols, including cooling center activation, free transit, wellness checks, utility bill assistance and public communications, activated by locally-relevant thresholds If needed, use emergency declarations when impacts overwhelm local or state capacity."
+    "Description": "Execute standardized heat emergency response protocols, including cooling center activation, free transit, wellness checks, utility bill assistance and public communications, activated by locally-relevant thresholds If needed, use emergency declarations when impacts overwhelm local or state capacity.",
+    "ExistingLegalLandscape": "Emergency response protocols can be established through administrative action. Codifying them into law requires ordinance or legislation. Governors and mayors have the authority to declare states of emergency to unlock regulatory flexibilities and funding resources as well as signal to surrounding jurisdictions, higher-level jurisdictions, and the public about the threat of heat.",
+    "AuthoritiesByLevel": "State and local governments have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Prepare for higher temperatures as an acute emergency as well as a chronic risk (plans inform actions taken), Establish a governance structure and training for extreme heat. (personnel and partners are ready to execute heat response activities), and Assess heat’s impacts and costs (near real time data can inform modifications to response actions)."
   },
   {
     "Element": "Policy Type",
     "Name": "Ensure critical infrastructure systems remain online",
-    "Description": "Prioritize keeping key critical infrastructure systems, like energy, water, transportation, and healthcare, operating when heat stress is highest and deploy contingency plans if any of these systems becomes non-operational."
+    "Description": "Prioritize keeping key critical infrastructure systems, like energy, water, transportation, and healthcare, operating when heat stress is highest and deploy contingency plans if any of these systems becomes non-operational.",
+    "ExistingLegalLandscape": "Critical infrastructure protection is distributed across multiple regulatory frameworks. Electric grid resilience is regulated by the Federal Energy Regulatory Commission at the federal level and state public utility commissions (PUCs) at the distribution level. Water systems are regulated by state environmental agencies. Transportation is overseen by the state Department of Transportation. Healthcare facility backup power and emergency planning is regulated by state health departments through facility licensing. Coordination across these frameworks requires deliberate interagency governance.",
+    "AuthoritiesByLevel": "State governments hold primary authority for regulations. Local governments will be impacted first by any downtime in any of these systems, and need to be ready to respond.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Shape and finance heat-resilient infrastructure (identifies potential investment priorities to prevent future failures or down-time)."
   },
   {
     "Element": "Policy Type",
     "Name": "Create funding sources for heat response activities",
-    "Description": "Develop dedicated, pre-positioned financial resources for heat emergency response that governments can access quickly without waiting for a federal declaration."
+    "Description": "Develop dedicated, pre-positioned financial resources for heat emergency response that governments can access quickly without waiting for a federal declaration.",
+    "ExistingLegalLandscape": "While federal disaster declarations remain difficult to obtain for heat events, emergency funding for heat is primarily a state and local function. States can establish dedicated disaster relief funds through legislation. Governors can direct existing emergency management funds to heat response. Cities can budget annual line items for cooling center operations, wellness checks, and heat communications.",
+    "AuthoritiesByLevel": "State and local governments have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Assess heat’s impacts and costs (an understanding of the current cost of heat to local and state budgets can spur more proactive budgeting) and Prepare for higher temperatures as an acute emergency as well as a chronic risk (mapping all possible heat response activities can help in costing out response actions)."
   },
   {
     "Element": "Policy Type",
     "Name": "Make critical infrastructure systems heat resilient",
-    "Description": "Set resilience standards for and invest in upgrades to critical infrastructure, like the electric grid, water systems, transportation networks, and health facilities, necessary to withstand extreme heat. Where possible, also address compounding risks."
+    "Description": "Set resilience standards for and invest in upgrades to critical infrastructure, like the electric grid, water systems, transportation networks, and health facilities, necessary to withstand extreme heat. Where possible, also address compounding risks.",
+    "ExistingLegalLandscape": "Infrastructure investment is authorized through appropriations at all levels of government. Regulatory requirements (e.g. grid resilience planning, facility backup power) are typically within state agency authority. State bond measures, utility rate cases, and local capital plans are key funding vehicles.",
+    "AuthoritiesByLevel": "State governments have the authority to regulate critical infrastructure systems. Local governments are key partners in identifying needed upgrades to infrastructure and have the authority to regulate municipally-owned infrastructure.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Declare and respond to heat as an emergency (keeps critical infrastructure operational during extreme heat events)"
   },
   {
     "Element": "Policy Type",
     "Name": "Leverage land use, transportation, and capital planning policies to increase shade, blue spaces and reflective surfaces",
-    "Description": "Use land use planning, capital improvement planning, and transportation planning to systematically embed heat resilience into the built environment."
+    "Description": "Use land use planning, capital improvement planning, and transportation planning to systematically embed heat resilience into the built environment.",
+    "ExistingLegalLandscape": "Land use and zoning authority as well as capital planning is primarily a local government function, with state legislatures setting the framework. Building codes (which impact the surrounding built environment) are state-level in most states but can be locally augmented if not preempted. Transportation planning is shared between Metropolitan Planning Organizations, state Departments of Transportation, and local governments.",
+    "AuthoritiesByLevel": "Local governments hold the authority to execute land use and zoning policies, with state governments supporting. State governments and Metropolitan Planning Organizations hold the authority for transportation planning and policy.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Upgrade existing homes to protect against extreme heat and Create a heat-resilient housing supply (enables community-wide cooling that lessens the stress of building-level cooling systems)"
   },
   {
     "Element": "Policy Type",
     "Name": "Treat heat mitigation infrastructure as critical infrastructure",
-    "Description": "Keep infrastructure built to mitigate heat, like shade structures, urban trees canopies, cooling centers, and resilience hubs, functional by designating them as critical infrastructure with maintenance budgets, capital plan inclusion, and protection from encroaching development."
+    "Description": "Keep infrastructure built to mitigate heat, like shade structures, urban trees canopies, cooling centers, and resilience hubs, functional by designating them as critical infrastructure with maintenance budgets, capital plan inclusion, and protection from encroaching development.",
+    "ExistingLegalLandscape": "The designation of specific assets as critical infrastructure is primarily a policy and planning framing decision that can be made through executive action, planning documents, or legislation. States and cities can designate heat mitigation assets as critical through levers like climate resilience plans, capital improvement plans, and budget language without new legislation.",
+    "AuthoritiesByLevel": "State and local governments have the authority to take this action.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Prepare for higher temperatures as an acute emergency as well as a chronic risk (ensure long-term planning includes budgeting for new infrastructure maintenance) and Establish a governance structure and training for extreme heat (ensure that leaders have the authority to influence budgets to sustain investments)."
   },
   {
     "Element": "Policy Type",
     "Name": "Create funds for and enable financial investment in heat-resilient communities",
-    "Description": "Develop dedicated funding streams and financial tools, such as grants, revolving loan funds, infrastructure banks, tourism fees, insurance levies, climate resilience districts, and private-sector partnerships to finance heat resilience infrastructure."
+    "Description": "Develop dedicated funding streams and financial tools, such as grants, revolving loan funds, infrastructure banks, tourism fees, insurance levies, climate resilience districts, and private-sector partnerships to finance heat resilience infrastructure.",
+    "ExistingLegalLandscape": "Both state and local governments can raise revenue to finance heat resilience infrastructure. For example, municipal bonds can be issued by local governments within their existing authority. Some public finance mechanisms for heat resilience require state legislation. For example, climate resilience districts, a form of tax-increment financing, requires state enabling legislation. Additionally, infrastructure banks require capitalization through legislative appropriation. Revolving loan funds can be capitalized through federal grants or state appropriations.",
+    "AuthoritiesByLevel": "State and local governments both have revenue-raising authorities. State governments have authority to unlock additional financing mechanisms, like tax-increment financing.",
+    "ConnectionsToOtherRecommendations": "Overlaps with Prepare for higher temperatures as an acute emergency as well as a chronic risk (creates the financial instruments to realize the plan)"
   }
 ]
