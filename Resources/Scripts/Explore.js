@@ -41,16 +41,25 @@ async function render(){
 
     const level = document.createElement('div')
     level.classList.add('ExploreLevel')
-    level.append(renderPrompt())
 
     if(!state.pillar){
+        level.append(renderPrompt())
         level.append(renderPillarButtons())
         level.append(renderSearchSection())
     } else if(!state.recommendation){
+        const panel = Cmpnt.PillarContextPanel(state.pillar)
+        if(panel) level.append(panel)
+        level.append(renderPrompt())
         level.append(renderRecommendationButtons())
     } else if(!state.policyType){
+        const panel = Cmpnt.RecommendationContextPanel(state.recommendation)
+        if(panel) level.append(panel)
+        level.append(renderPrompt())
         level.append(renderPolicyTypeButtons())
     } else {
+        const panel = Cmpnt.StrategyContextPanel(state.policyType)
+        if(panel) level.append(panel)
+        level.append(renderPrompt())
         level.append(renderActions())
     }
 
