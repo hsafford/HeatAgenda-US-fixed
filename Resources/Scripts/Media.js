@@ -106,21 +106,26 @@ function renderEditorialList(pressItems){
 }
 
 const EMBED_SCRIPTS = {
-    tiktok: 'https://www.tiktok.com/embed.js',
     instagram: 'https://www.instagram.com/embed.js',
     x: 'https://platform.twitter.com/widgets.js'
 }
 
 const EMBED_BLOCKQUOTES = {
     tiktok: (item) => {
-        const blockquote = document.createElement('blockquote')
-        blockquote.classList.add('tiktok-embed')
-        blockquote.setAttribute('cite', item['Link URL'])
-        blockquote.setAttribute('data-video-id', item['Video ID'])
-        blockquote.style.maxWidth = '100%'
-        blockquote.style.minWidth = '0'
-        blockquote.innerHTML = `<section><a target="_blank" href="${item['Link URL']}">${item.Author}</a></section>`
-        return blockquote
+        // Renders TikTok's oEmbed player directly instead of a `.tiktok-embed`
+        // blockquote + embed.js: that widget script fails to convert the
+        // blockquote into a player when there's more than one on a page.
+        const iframe = document.createElement('iframe')
+        iframe.classList.add('tiktok-embed')
+        iframe.src = `https://www.tiktok.com/player/v1/${item['Video ID']}?embed_from=oembed&music_info=1&description=1`
+        iframe.title = item.Author
+        iframe.allow = 'fullscreen'
+        iframe.style.maxWidth = '100%'
+        iframe.style.minWidth = '0'
+        iframe.style.border = '0'
+        iframe.width = 325
+        iframe.height = 578
+        return iframe
     },
     instagram: (item) => {
         const blockquote = document.createElement('blockquote')
